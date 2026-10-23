@@ -1,0 +1,36 @@
+{%- liquid
+  assign variant = product.variants.first
+  assign available_variants = product.variants | where: 'available', true
+  if available_variants.size > 0
+    assign variant = available_variants.first
+  endif
+  assign compare = variant.compareAtPriceInCents
+  assign price = variant.priceInCents
+  assign direct_add = false
+  if product.variants.size == 1
+    assign direct_add = true
+  elsif product.options.size == 1 and product.options.first.name == 'Presentación'
+    assign direct_add = true
+  endif
+  assign has_sale = false
+  if compare != nil and price != nil and compare > price
+    assign has_sale = true
+    assign discount = compare | minus: price | times: 100.0 | divided_by: compare | round
+  endif
+-%}
+<article class="card{% unless product.available %} is-soldout{% endunless %}" data-product-card="{{ product.id }}">
+  <a class="card-media" href="{{ product.url }}" tabindex="-1" aria-hidden="true"><figure class="media" style="--ar:1 / 1"><img src="{% if product.coverImage %}{{ product.coverImage | image_url: width: 600 }}{% else %}{{ 'placeholder.svg' | asset_url }}{% endif %}" alt="{{ product.coverImage.alt | default: product.title | escape }}" loading="lazy" width="600" height="600"></figure></a>
+  {% if has_sale or product.available == false %}<div class="badges">{% if has_sale %}<span class="badge badge--sale">−{{ discount }}%</span>{% endif %}{% unless product.available %}<span class="badge badge--out">Sin stock</span>{% endunless %}</div>{% endif %}
+  <button class="fav" type="button" data-wishlist-product="{{ product.id }}" data-product-title="{{ product.title | escape }}" aria-label="Guardar {{ product.title | escape }} en favoritos" aria-pressed="false"><i class="ic ic-heart" aria-hidden="true"></i></button>
+  <h3 class="card-title"><a href="{{ product.url }}">{{ product.title }}</a></h3>
+  <p class="card-pres">{% render 'lib/presentation', product: product, variant: variant %}{% if product.options.first.name == 'Sabor' %} · {{ product.variants.size }} sabores{% elsif product.options.first.name == 'Presentación' and product.variants.size > 1 %}<button class="presentation-picker" type="button" data-choose-product="{{ product.id }}" aria-label="Elegir presentación de {{ product.title | escape }}"><i class="ic ic-chev-down" aria-hidden="true"></i></button>{% endif %}</p>
+  <p class="price{% if has_sale %} is-sale{% endif %}"><strong>{% if price != nil %}{{ price | money: product.currency }}{% else %}A consultar{% endif %}</strong>{% if has_sale %} <s>{{ compare | money: product.currency }}</s>{% endif %}</p>
+  <p class="unit">{% render 'lib/unit-price', product: product, variant: variant %}</p>
+  {% if product.variants.size == 1 and variant.stock != nil and variant.stock > 0 and variant.stock <= 5 %}<p class="stock-low">Últimas {{ variant.stock }} unidades</p>{% endif %}
+  <div class="qa-spacer"></div>
+  {% if product.available and price != nil %}
+    {% if direct_add %}<div class="qa" data-quick-add="{{ product.id }}" data-variant-id="{{ variant.id }}"><button class="btn btn-primary" type="button" data-qa-add><i class="ic ic-plus" aria-hidden="true"></i> Agregar</button><div class="stepper" role="group" aria-label="Cantidad de {{ product.title | escape }}"><button type="button" data-qa-minus aria-label="Quitar uno"><i class="ic ic-minus" aria-hidden="true"></i></button><output aria-live="polite">0</output><button type="button" data-qa-plus aria-label="Sumar uno"><i class="ic ic-plus" aria-hidden="true"></i></button></div></div>
+    {% else %}<button class="btn btn-soft" type="button" data-choose-product="{{ product.id }}">{% if product.options.first.name == 'Sabor' %}Elegir sabor{% else %}Elegir opciones{% endif %}<i class="ic ic-chev-down" aria-hidden="true"></i></button>{% endif %}
+  {% else %}<button class="btn btn-disabled" type="button" disabled>{% if product.available %}A consultar{% else %}Sin stock{% endif %}</button>{% endif %}
+  {% render 'lib/product-json', product: product %}
+</article>

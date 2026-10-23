@@ -1,0 +1,32 @@
+{%- liquid
+  assign icon = ''
+  case handle
+    when 'congelados'
+      assign icon = 'snow'
+    when 'carnes'
+      assign icon = 'beef'
+    when 'pescados'
+      assign icon = 'fish'
+    when 'verduras'
+      assign icon = 'carrot'
+    when 'pastas-y-pizzas'
+      assign icon = 'pizza'
+    when 'helados'
+      assign icon = 'icecream'
+    when 'yerba-y-cafe'
+      assign icon = 'cup'
+    when 'aceites', 'refrescos'
+      assign icon = 'bottle'
+    when 'almacen', 'arroz-y-fideos'
+      assign icon = 'wheat'
+    when 'bebidas', 'aguas'
+      assign icon = 'drop'
+    when 'galletitas'
+      assign icon = 'cookie'
+    when 'conservas'
+      assign icon = 'can'
+    when 'ofertas'
+      assign icon = 'percent'
+  endcase
+-%}
+<span class="cat-ico{% if handle == 'ofertas' %} cat-ico--offer{% endif %}{% if small %} cat-ico--sm{% endif %}" aria-hidden="true">{% if icon != blank %}<i class="ic ic-{{ icon }}"></i>{% else %}{{ name | slice: 0, 1 }}{% endif %}</span>

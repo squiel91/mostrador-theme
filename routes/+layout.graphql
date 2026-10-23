@@ -1,0 +1,13 @@
+query Layout {
+  store { name description whatsappNumber emailAddress countryCode currency personalization {
+    primaryColor primaryButtonTextColor rounding font { family fallbackFamilies variants { weight style url format } }
+  } }
+  mainMenu: menu(handle: "principal") { items { label url openInNewTab } }
+  infoMenu: menu(handle: "footer") { title items { label url openInNewTab } }
+  navigationCollections: collections(first: 100) { nodes { handle name url productCount parent { handle } children { handle name url productCount } } }
+  catalogSummary: collection(handle: "todas") { url productCount }
+  offersLink: collection(handle: "ofertas") { url productCount }
+  headerPromo: product(handle: "papas-prefritas-corte-clasico") { title url currency priceMinInCents compareAtPriceInCents }
+  helpPages: pages(first: 20) { nodes { handle title url } }
+  shippingPage: page(handle: "envios-y-zonas") { url }
+}

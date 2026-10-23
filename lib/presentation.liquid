@@ -1,0 +1,15 @@
+{%- liquid
+  assign presentation = ''
+  for chosen in variant.selectedOptions
+    if chosen.name == 'Presentación'
+      assign presentation = chosen.value
+    endif
+  endfor
+  if presentation == blank
+    for spec in product.specifications
+      if spec.name == 'Presentación'
+        assign presentation = spec.value
+      endif
+    endfor
+  endif
+-%}{{- presentation -}}

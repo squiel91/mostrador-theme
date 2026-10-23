@@ -1,0 +1,8 @@
+query Search($q: String = "", $page: Int = 1, $sort: ProductSort, $available: Boolean) {
+  results: products(query: $q, first: 24, page: $page, sortBy: $sort, available: $available) {
+    totalCount nodes { id handle title url currency priceMinInCents priceMaxInCents compareAtPriceInCents available
+coverImage { url alt } rating reviewsCount metadata specifications { name value }
+options { name displayType values { value color note image { url alt } } }
+variants { id sku priceInCents compareAtPriceInCents stock available image { url alt } selectedOptions { name value } } } pageInfo { currentPage totalPages hasNextPage hasPreviousPage }
+  }
+}

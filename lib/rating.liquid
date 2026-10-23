@@ -1,0 +1,1 @@
+{%- if rating != nil and count > 0 -%}<span class="stars" aria-label="{{ rating | number: 1 }} de 5, {{ count }} reseñas"><span class="star-score" style="--rating:{{ rating | times: 20 }}%" aria-hidden="true">★★★★★</span> {{ rating | number: 1 }} · {{ count }} reseñas</span>{%- endif -%}

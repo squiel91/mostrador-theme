@@ -1,0 +1,16 @@
+{% for option in product.options %}
+<fieldset class="product-option"><legend class="opt-label">{{ option.name }}</legend>
+  {% if option.displayType == 'dropdown' %}<select data-option-name="{{ option.name | escape }}" aria-label="{{ option.name | escape }}">{% for value in option.values %}<option value="{{ value.value | escape }}"{% for choice in variant.selectedOptions %}{% if choice.name == option.name and choice.value == value.value %} selected{% endif %}{% endfor %}>{{ value.value }}</option>{% endfor %}</select>
+  {% else %}<div class="opt-chips">{% for value in option.values %}
+    {%- liquid
+      assign active = false
+      for choice in variant.selectedOptions
+        if choice.name == option.name and choice.value == value.value
+          assign active = true
+        endif
+      endfor
+    -%}
+    <button type="button" class="opt-chip{% if active %} is-on{% endif %}" data-option-name="{{ option.name | escape }}" data-option-value="{{ value.value | escape }}" aria-pressed="{{ active }}"><b>{{ value.value }}{% if product.options.size == 1 %}{% for v in product.variants %}{% if v.selectedOptions.first.value == value.value %} · {{ v.priceInCents | money: product.currency }}{% endif %}{% endfor %}{% endif %}</b>
+      {% if product.options.size == 1 %}{% for v in product.variants %}{% if v.selectedOptions.first.value == value.value %}<small>{% render 'lib/unit-price', product: product, variant: v %}</small>{% endif %}{% endfor %}{% endif %}
+    </button>{% endfor %}</div>{% endif %}
+</fieldset>{% endfor %}

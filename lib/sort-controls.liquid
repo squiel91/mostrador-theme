@@ -1,0 +1,1 @@
+<div class="sort-list">{% for option in options %}<label><input type="radio" name="sort-{{ scope }}" value="{{ option.value }}" data-sort{% if selected == option.value %} checked{% endif %}>{{ option.label }}</label>{% endfor %}</div>

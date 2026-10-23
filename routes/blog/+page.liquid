@@ -1,0 +1,7 @@
+{% metadata title: 'Recetas y consejos', description: 'Ideas para lo que tenés en el freezer y consejos para tu surtido.' %}
+<div class="wrap"><nav class="crumbs" aria-label="Migas"><a href="/">Inicio</a><span aria-hidden="true">/</span><span>Recetas y consejos</span></nav><header class="blog-head"><h1>Recetas y consejos</h1><p>Ideas para lo que tenés en el freezer, en 10 minutos de lectura o menos.</p></header>
+<nav class="post-filters challenge-differed" data-challenge="blog-categories" aria-label="Tipo de nota"><button class="chip is-on" data-post-filter="all" type="button">Todo {{ data.posts.totalCount }}</button><button class="chip" data-post-filter="recetas" type="button">Recetas</button><button class="chip" data-post-filter="consejos" type="button">Consejos</button></nav>
+<div class="post-grid" data-post-grid>{% for post in data.posts.nodes %}{% render 'lib/post-card', post: post %}{% else %}<p class="empty-state">Pronto vamos a compartir recetas y consejos.</p>{% endfor %}</div>
+{% if data.posts.pageInfo.hasNextPage or data.posts.pageInfo.hasPreviousPage %}<nav class="pager" aria-label="Paginación">{% if data.posts.pageInfo.hasPreviousPage %}<a href="/blog?page={{ data.posts.pageInfo.currentPage | minus: 1 }}">Anterior</a>{% endif %}{% if data.posts.pageInfo.hasNextPage %}<a href="/blog?page={{ data.posts.pageInfo.currentPage | plus: 1 }}">Siguiente</a>{% endif %}</nav>{% endif %}
+{% render 'lib/product-row', products: data.blogProducts.nodes, title: 'Lo que más se usa en las recetas', url: data.catalogSummary.url %}
+</div>

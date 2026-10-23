@@ -1,0 +1,63 @@
+{%- liquid
+  assign personalization = data.store.personalization
+  assign primary = personalization.primaryColor | default: '#0e7c4a'
+  assign on_primary = personalization.primaryButtonTextColor | default: '#ffffff'
+  assign font = personalization.font
+  assign whatsapp = data.store.whatsappNumber | remove: '+' | remove: ' ' | remove: '-'
+  assign roots = 'congelados,almacen,bebidas,ofertas' | split: ','
+-%}
+<!doctype html>
+<html lang="es-UY" style="--primary:{{ primary }};--on-primary:{{ on_primary }};{% if font %}--font:'{{ font.family }}',{{ font.fallbackFamilies }};{% endif %}">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  {{ tiendu_head }}
+  {% if font %}<style>{% for variant in font.variants %}{% if variant.url %}@font-face{font-family:'{{ font.family }}';font-style:{{ variant.style }};font-weight:{{ variant.weight }};font-display:swap;src:url('{{ variant.url }}'){% if variant.format %} format('{{ variant.format }}'){% endif %};}{% endif %}{% endfor %}</style>{% endif %}
+  {{ 'theme.css' | asset_url | stylesheet_tag }}
+  {{ 'tiendu-sdk.js' | asset_url | script_tag }}
+  {{ 'theme.js' | asset_url | script_tag }}
+</head>
+<body{% if request.route == 'routes/productos/[handle]' %} class="has-buybar"{% endif %}>
+<a class="skip" href="#main">Saltar al contenido</a>
+<div class="announce" data-rotate><div class="wrap announce-in">
+  <p class="announce-msg is-on"><i class="ic ic-clock" aria-hidden="true"></i> Pedí antes de las 14 h y te llega hoy en Montevideo</p>
+  <p class="announce-msg"><i class="ic ic-truck" aria-hidden="true"></i> Envío gratis en Montevideo desde <b>{{ 250000 | money }}</b></p>
+  <p class="announce-msg"><i class="ic ic-box" aria-hidden="true"></i> Interior por DAC: almacén en 24 a 72 h</p>
+</div></div>
+<header class="site-header">
+  <div class="hd-main"><div class="wrap hd-main-in">
+    <button class="hd-menu" type="button" data-open="drawer" aria-label="Abrir categorías" aria-controls="drawer" aria-expanded="false"><i class="ic ic-menu" aria-hidden="true"></i></button>
+    <a class="logo" href="/" aria-label="{{ data.store.name | escape }}, inicio"><span class="logo-mark"><i class="ic ic-snow" aria-hidden="true"></i></span>{{ data.store.name }}</a>
+    <form class="search" role="search" action="/busqueda" method="get" data-search><i class="ic ic-search" aria-hidden="true"></i><input type="search" name="q" placeholder="Buscá entre {{ data.catalogSummary.productCount }} productos" aria-label="Buscar productos" autocomplete="off"><button class="search-btn" type="submit">Buscar</button></form>
+    <nav class="hd-actions" aria-label="Tu cuenta">
+      <button class="hd-act" type="button" data-open-account aria-label="Ingresar"><i class="ic ic-user" aria-hidden="true"></i><span data-account-label>Ingresar</span></button>
+      <button class="hd-act hd-act--fav" type="button" data-open-wishlist aria-label="Favoritos"><i class="ic ic-heart" aria-hidden="true"></i><span>Favoritos</span></button>
+      <div class="cart-wrap"><button class="cart-pill" type="button" data-open-checkout aria-label="Ver carrito"><span class="cart-ico"><i class="ic ic-cart" aria-hidden="true"></i><b class="cart-badge" data-cart-count>0</b></span><span class="cart-total"><small>Tu pedido</small><strong data-cart-total>{{ 0 | money }}</strong></span></button>
+        <div class="minicart" role="region" aria-label="Resumen del pedido"><div class="minicart-head"><span><b data-cart-count>0</b> productos</span><strong data-cart-total>{{ 0 | money }}</strong></div><div data-mini-lines></div>
+          {% render 'lib/shipping-progress' %}<button class="btn btn-primary btn-block" type="button" data-open-checkout>Ver carrito y pagar</button>
+        </div>
+      </div>
+    </nav>
+  </div></div>
+  <div class="hd-nav"><div class="wrap hd-nav-in"><button class="cat-btn" type="button" aria-expanded="false" aria-controls="mega" data-mega><i class="ic ic-grid" aria-hidden="true"></i> Categorías<i class="ic ic-chev-down" aria-hidden="true"></i></button>
+    <nav class="mainnav" aria-label="Principal">{% for item in data.mainMenu.items %}<a href="{{ item.url }}"{% if item.url == data.offersLink.url %} class="nav-offer"{% endif %}{% if item.openInNewTab %} target="_blank" rel="noopener"{% endif %}>{% if item.url == data.offersLink.url %}<i class="ic ic-percent" aria-hidden="true"></i>{% endif %}{{ item.label }}</a>{% endfor %}</nav>
+    <p class="hd-promise challenge-differed" data-challenge="delivery-countdown"><i class="ic ic-clock" aria-hidden="true"></i><span><b>Llega hoy</b> si pedís antes de las 14 h</span></p>
+  </div>{% render 'lib/mega-menu', collections: data.navigationCollections.nodes, offers: data.offersLink, promo: data.headerPromo %}</div>
+</header>
+<p class="toast" role="status" aria-live="polite" data-global-status hidden></p>
+<main id="main">{{ content }}</main>
+<section class="newsletter" aria-labelledby="nl-t"><div class="wrap newsletter-in"><div><h2 id="nl-t">Recibí las ofertas de la semana.</h2><p>Un mail los jueves con lo que baja de precio. Nada más.</p></div><form class="nl-form" data-newsletter><label class="sr" for="nl-mail">Tu email</label><input id="nl-mail" name="email" type="email" placeholder="Tu email" required autocomplete="email"><button class="btn btn-accent" type="submit">Suscribirme</button><p class="nl-status" role="status" data-newsletter-status hidden></p></form></div></section>
+<footer class="site-footer"><div class="wrap"><div class="ft-cols">
+  <nav aria-label="Categorías del pie"><h3>Categorías</h3><ul>{% for handle in roots %}{% assign c = data.navigationCollections.nodes | where: 'handle', handle | first %}{% if c %}<li><a href="{{ c.url }}">{{ c.name }}</a></li>{% endif %}{% endfor %}<li><a href="{{ data.catalogSummary.url }}">Todos los productos</a></li></ul></nav>
+  <nav aria-label="Ayuda"><h3>Ayuda</h3><ul>{% for item in data.infoMenu.items %}<li><a href="{{ item.url }}"{% if item.openInNewTab %} target="_blank" rel="noopener"{% endif %}>{{ item.label }}</a></li>{% endfor %}</ul></nav>
+  <div><h3>Locales</h3><p><b>La Blanqueada</b><br>Av. 8 de Octubre 3125<br>Lun a sáb 9 a 20 h · Dom 9 a 13 h</p><p><b>Solymar</b><br>Av. Giannattasio km 21.200<br>Lun a sáb 9 a 20 h</p></div>
+  <div class="ft-contact"><h3>Contacto</h3><ul>{% if whatsapp != blank %}<li><a href="https://wa.me/{{ whatsapp }}"><i class="ic ic-wa" aria-hidden="true"></i>{{ data.store.whatsappNumber }}</a></li>{% endif %}{% if data.store.emailAddress %}<li><a href="mailto:{{ data.store.emailAddress }}"><i class="ic ic-mail" aria-hidden="true"></i>{{ data.store.emailAddress }}</a></li>{% endif %}<li><a href="tel:+59826014420"><i class="ic ic-phone" aria-hidden="true"></i>2601 4420</a></li><li><a href="https://www.instagram.com/friosur.uy/" target="_blank" rel="noopener"><i class="ic ic-insta" aria-hidden="true"></i>@friosur.uy</a></li></ul></div>
+</div><div class="ft-pay" aria-label="Medios de pago"><span class="pay"><i class="ic ic-card" aria-hidden="true"></i>Crédito y débito</span><span class="pay"><i class="ic ic-wallet" aria-hidden="true"></i>Mercado Pago</span><span class="pay"><i class="ic ic-receipt" aria-hidden="true"></i>Redpagos y Abitab</span><span class="pay"><i class="ic ic-cash" aria-hidden="true"></i>Efectivo al retirar</span></div><div class="ft-legal"><span>© {{ 'now' | date: '%Y' }} {{ data.store.name }} · Congelados y almacén</span><span>Montevideo y Ciudad de la Costa</span></div></div></footer>
+{% if whatsapp != blank %}<a class="wa" href="https://wa.me/{{ whatsapp }}" aria-label="Pedir por WhatsApp"><i class="ic ic-wa" aria-hidden="true"></i><span>¿Te ayudamos con el pedido?</span></a>{% endif %}
+<div class="cartbar" aria-label="Resumen del pedido"><span class="cartbar-count"><i class="ic ic-cart" aria-hidden="true"></i><b class="cart-badge" data-cart-count>0</b></span><div class="cartbar-mid"><strong data-cart-total>{{ 0 | money }}</strong>{% render 'lib/shipping-progress' %}</div><button class="cartbar-cta" type="button" data-open-checkout>Ver pedido<i class="ic ic-chev-right" aria-hidden="true"></i></button></div>
+<dialog class="sheet" id="drawer" aria-label="Categorías"><div class="sheet-backdrop" data-close></div><div class="sheet-panel"><div class="sheet-head"><h2>Categorías</h2><button class="icon-btn" type="button" data-close aria-label="Cerrar"><i class="ic ic-x" aria-hidden="true"></i></button></div>
+  {% render 'lib/category-tree', collections: data.navigationCollections.nodes %}
+  <nav class="drawer-links" aria-label="Ayuda">{% for item in data.mainMenu.items %}<a href="{{ item.url }}">{{ item.label }}</a>{% endfor %}<button class="drawer-action" type="button" data-open-account><i class="ic ic-user" aria-hidden="true"></i>Mi cuenta</button><button class="drawer-action" type="button" data-open-wishlist><i class="ic ic-heart" aria-hidden="true"></i>Favoritos</button></nav>
+</div></dialog>
+<dialog class="sheet sheet--modal" id="elegir" aria-labelledby="choose-title"><div class="sheet-backdrop" data-close></div><div class="sheet-panel"><div class="sheet-head"><h2 id="choose-title">Elegí una opción</h2><button class="icon-btn" type="button" data-close aria-label="Cerrar"><i class="ic ic-x" aria-hidden="true"></i></button></div><div data-choose-content></div></div></dialog>
+{{ tiendu_body_end }}
+</body></html>

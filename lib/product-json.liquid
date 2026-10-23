@@ -1,0 +1,2 @@
+{%- capture payload -%}{"id":{{ product.id | json }},"title":{{ product.title | json }},"url":{{ product.url | json }},"currency":{{ product.currency | json }},"priceMinInCents":{{ product.priceMinInCents | json }},"options":{{ product.options | json }},"variants":{{ product.variants | json }},"specifications":{{ product.specifications | json }},"metadata":{{ product.metadata | json }},"coverImage":{{ product.coverImage | json }}}{%- endcapture -%}
+<script type="application/json" data-product-json="{{ product.id }}">{{ payload | replace: '</', '<\/' }}</script>

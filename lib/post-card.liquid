@@ -1,0 +1,6 @@
+<article class="post" data-post-category="{% if post.handle == 'cuanto-dura-cada-cosa-en-el-freezer' %}consejos{% else %}recetas{% endif %}">
+  <a href="{{ post.url }}" tabindex="-1" aria-hidden="true"><figure class="media" style="--ar:16 / 9">{% if post.coverImage %}<img src="{{ post.coverImage | image_url: width: 900 }}" alt="{{ post.coverImage.alt | default: post.title | escape }}" width="900" height="506" loading="lazy">{% endif %}</figure></a>
+  <p class="post-meta"><span class="post-tag challenge-differed" data-challenge="blog-categories">{% if post.handle == 'cuanto-dura-cada-cosa-en-el-freezer' %}Consejos{% else %}Receta{% endif %}</span><time datetime="{{ post.publishedAt }}">{{ post.publishedAt | date: '%e de %B de %Y' }}</time></p>
+  <h2><a href="{{ post.url }}">{{ post.title }}</a></h2><p>{{ post.excerpt }}</p>
+  <p class="post-uses challenge-differed" data-challenge="shoppable-recipes"><i class="ic ic-cart" aria-hidden="true"></i> {% case post.handle %}{% when 'milanesas-al-horno' %}2 productos de la tienda{% when 'cuanto-dura-cada-cosa-en-el-freezer' %}3 productos de la tienda{% else %}1 producto de la tienda{% endcase %}</p>
+</article>

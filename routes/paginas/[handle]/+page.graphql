@@ -1,0 +1,1 @@
+query Page($handle: String!) { page(handle: $handle) @required { handle title template html seo { title description } } }

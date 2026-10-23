@@ -1,0 +1,7 @@
+query Blog($page: Int = 1) {
+  posts: blogPosts(first: 12, page: $page) { totalCount nodes { handle title url excerpt publishedAt coverImage { url alt } } pageInfo { currentPage totalPages hasNextPage hasPreviousPage } }
+  blogProducts: products(first: 6, sortBy: "best-selling") { nodes { id handle title url currency priceMinInCents priceMaxInCents compareAtPriceInCents available
+coverImage { url alt } rating reviewsCount metadata specifications { name value }
+options { name displayType values { value color note image { url alt } } }
+variants { id sku priceInCents compareAtPriceInCents stock available image { url alt } selectedOptions { name value } } } }
+}

@@ -1,0 +1,66 @@
+{%- liquid
+  assign product = data.product
+  assign variant = product.variants.first
+  assign available_variants = product.variants | where: 'available', true
+  if available_variants.size > 0
+    assign variant = available_variants.first
+  endif
+  assign primary_collection = product.collections | where: 'handle', 'congelados' | first
+  if primary_collection == nil
+    assign primary_collection = product.collections.first
+  endif
+  assign whatsapp = data.store.whatsappNumber | remove: '+' | remove: ' ' | remove: '-'
+  assign title = product.seo.title | default: product.title
+  capture wa_message
+    echo 'Hola, quiero consultar por ' | append: product.title
+  endcapture
+-%}
+{% metadata title: title, description: product.seo.description, image: product.coverImage.url %}
+{%- capture json_ld -%}
+{"@context":"https://schema.org","@type":"Product","name":{{ product.title | json }}
+{%- if product.description %},"description":{{ product.description | json }}{% endif -%}
+{%- assign image_urls = product.images | map: 'url' -%}
+{%- if image_urls.size > 0 %},"image":{{ image_urls | json }}{% endif -%}
+{%- if product.rating and product.reviewsCount > 0 %},"aggregateRating":{"@type":"AggregateRating","ratingValue":{{ product.rating }},"reviewCount":{{ product.reviewsCount }}}{% endif -%}
+{%- if product.reviews.nodes.size > 0 %},"review":[
+  {%- for review in product.reviews.nodes -%}
+    {"@type":"Review","author":{"@type":"Person","name":{{ review.authorName | json }}},"reviewRating":{"@type":"Rating","ratingValue":{{ review.rating }},"bestRating":5},"reviewBody":{{ review.content | json }}}{% unless forloop.last %},{% endunless %}
+  {%- endfor -%}
+]{% endif -%}
+,"offers":[
+  {%- assign first_offer = true -%}
+  {%- for variant in product.variants -%}
+    {%- if variant.priceInCents -%}
+      {%- unless first_offer %},{% endunless -%}
+      {"@type":"Offer","price":{{ variant.priceInCents | divided_by: 100.0 }},"priceCurrency":{{ product.currency | json }},"availability":"https://schema.org/{% if variant.available %}InStock{% else %}OutOfStock{% endif %}"{% if variant.sku %},"sku":{{ variant.sku | json }}{% endif %}}
+      {%- assign first_offer = false -%}
+    {%- endif -%}
+  {%- endfor -%}
+]}
+{%- endcapture -%}
+{% head %}
+<script type="application/ld+json">{{ json_ld | replace: '</', '<\/' }}</script>
+{% endhead %}
+<div class="wrap" data-product-page="{{ product.id }}">
+  <nav class="crumbs" aria-label="Migas"><a href="/">Inicio</a><span aria-hidden="true">/</span>{% if primary_collection %}<a href="{{ primary_collection.url }}">{{ primary_collection.name }}</a><span aria-hidden="true">/</span>{% endif %}<span>{{ product.title }}</span></nav>
+  <div class="pdp"><div class="gallery"><div class="gallery-main" data-gallery>
+    {% for image in product.images %}<figure class="media{% if forloop.first %} is-on{% endif %}" data-gallery-image="{{ image.url | escape }}" style="--ar:1 / 1"><img src="{{ image | image_url: width: 1200 }}" alt="{{ image.alt | default: product.title | escape }}" width="1200" height="1200"{% unless forloop.first %} loading="lazy"{% endunless %}></figure>{% else %}<figure class="media is-on" style="--ar:1 / 1"><img src="{{ 'placeholder.svg' | asset_url }}" alt="{{ product.title | escape }}"></figure>{% endfor %}
+    <button class="fav" type="button" data-wishlist-product="{{ product.id }}" data-product-title="{{ product.title | escape }}" aria-label="Guardar {{ product.title | escape }} en favoritos" aria-pressed="false"><i class="ic ic-heart" aria-hidden="true"></i></button>
+  </div><div class="thumbs">{% for image in product.images %}<button type="button"{% if forloop.first %} class="is-on"{% endif %} data-thumb="{{ image.url | escape }}" aria-label="Ver imagen {{ forloop.index }}" aria-pressed="{% if forloop.first %}true{% else %}false{% endif %}"><figure class="media" style="--ar:1 / 1"><img src="{{ image | image_url: width: 180 }}" alt="" width="180" height="180" loading="lazy"></figure></button>{% endfor %}</div></div>
+    <div class="buy" data-purchase="{{ product.id }}"><div><p class="buy-cat">{% if primary_collection %}<a href="{{ primary_collection.url }}">{{ primary_collection.name }}</a>{% endif %}</p><h1>{{ product.title }}</h1><p class="buy-meta"><span data-pres>{% render 'lib/presentation', product: product, variant: variant %}</span>{% if variant.sku %}<span>Código <span data-sku>{{ variant.sku }}</span></span>{% endif %}{% if product.reviewsCount > 0 %}<a href="#resenas">{% render 'lib/rating', rating: product.rating, count: product.reviewsCount %}</a>{% endif %}</p></div>
+      <div class="buy-price"><strong data-price>{% if variant.priceInCents != nil %}{{ variant.priceInCents | money: product.currency }}{% else %}A consultar{% endif %}</strong><s data-compare{% unless variant.compareAtPriceInCents %} hidden{% endunless %}>{{ variant.compareAtPriceInCents | money: product.currency }}</s><span class="unit" data-unit>{% render 'lib/unit-price', product: product, variant: variant %}</span></div>
+      {% render 'lib/variant-options', product: product, variant: variant %}
+      <p class="stock{% if variant.stock != nil and variant.stock > 0 and variant.stock <= 5 %} is-low{% endif %}" data-stock>{% if variant.available %}{% if variant.stock != nil and variant.stock <= 5 %}Últimas {{ variant.stock }} unidades{% else %}En stock{% endif %}{% else %}Sin stock{% endif %}</p>
+      <div class="buy-row">{% render 'lib/quantity' %}<button class="btn btn-primary" type="button" data-pdp-add{% unless variant.available and variant.priceInCents != nil %} disabled{% endunless %}>Agregar al carrito<i class="ic ic-cart" aria-hidden="true"></i></button></div>
+      {% if whatsapp != blank %}<a class="btn btn-wa" href="https://wa.me/{{ whatsapp }}?text={{ wa_message | url_encode }}"><i class="ic ic-wa" aria-hidden="true"></i>Pedir por WhatsApp</a>{% endif %}
+      <p role="status" class="small purchase-status" data-purchase-status></p>
+      <ul class="logi"><li class="challenge-differed" data-challenge="delivery-rules"><i class="ic ic-truck" aria-hidden="true"></i><div><b>Envío en el día en Montevideo</b>Pedidos antes de las 14 h, de lunes a sábado. Gratis desde {{ 250000 | money }}.</div></li><li class="challenge-differed" data-challenge="cold-chain-rules"><i class="ic ic-snow" aria-hidden="true"></i><div><b>Viaja en caja térmica</b>Ciudad de la Costa al día siguiente. Los congelados no van al interior.</div></li><li><i class="ic ic-store" aria-hidden="true"></i><div><b>Retiro sin costo</b>La Blanqueada o Solymar. Esperá nuestra confirmación.</div></li><li><i class="ic ic-card" aria-hidden="true"></i><div><b>Pagá con Mercado Pago</b>Consultá los medios disponibles al pagar.</div></li></ul>
+    </div>
+  </div>
+  <section class="section pdp-info"><div><h2>Descripción</h2><div class="prose"><p>{{ product.description | escape | newline_to_br }}</p></div></div><div><h2>Especificaciones</h2><table class="specs">{% for spec in product.specifications %}<tr><th scope="row">{{ spec.name }}</th><td{% if spec.name == 'Presentación' %} data-spec-presentation{% elsif spec.name == 'Unidades' %} data-spec-units{% endif %}>{{ spec.value }}</td></tr>{% endfor %}</table></div></section>
+  <section class="section" id="resenas" aria-labelledby="rv-t"><div class="sec-head"><h2 id="rv-t">Reseñas</h2></div>{% if product.reviewsCount > 0 %}<div class="reviews"><div class="rv-sum"><strong>{{ product.rating | number: 1 }}</strong>{% render 'lib/rating', rating: product.rating, count: product.reviewsCount %}</div>{% for review in product.reviews.nodes %}<article class="rv"><span class="stars"><span class="star-score" style="--rating:{{ review.rating | times: 20 }}%" aria-label="{{ review.rating }} de 5">★★★★★</span></span><p>{{ review.content }}</p><footer>{{ review.authorName }} · {{ review.createdAt | date: '%B %Y' }}{% if review.verifiedPurchase %} · Compra verificada{% endif %}</footer></article>{% endfor %}</div>{% if product.reviews.pageInfo.hasNextPage %}<p class="section"><a class="btn btn-outline" href="{{ product.url }}?reviewsPage={{ product.reviews.pageInfo.currentPage | plus: 1 }}#resenas">Más reseñas</a></p>{% endif %}{% else %}<p class="muted">Este producto todavía no tiene reseñas.</p>{% endif %}</section>
+  {% render 'lib/product-row', products: product.related, title: 'Comprá también', url: primary_collection.url, link_label: 'Ver la categoría' %}
+  {% render 'lib/product-row', products: data.productBestSellers.nodes, title: 'Más vendidos', url: data.catalogSummary.url %}
+  {% render 'lib/product-json', product: product %}
+</div>
+<div class="buybar" data-purchase="{{ product.id }}"><div class="buybar-price"><strong data-price>{{ variant.priceInCents | money: product.currency }}</strong><small data-pres>{% render 'lib/presentation', product: product, variant: variant %}</small></div>{% render 'lib/quantity' %}<button class="btn btn-primary" type="button" data-pdp-add{% unless variant.available and variant.priceInCents != nil %} disabled{% endunless %}>Agregar<i class="ic ic-cart" aria-hidden="true"></i></button></div>

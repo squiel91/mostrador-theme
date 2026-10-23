@@ -1,0 +1,18 @@
+query Product($handle: String!, $reviewsPage: Int = 1) {
+  product(handle: $handle) @required {
+    id handle title url currency priceMinInCents priceMaxInCents compareAtPriceInCents available
+coverImage { url alt } rating reviewsCount metadata specifications { name value }
+options { name displayType values { value color note image { url alt } } }
+variants { id sku priceInCents compareAtPriceInCents stock available image { url alt } selectedOptions { name value } }
+    description images { url alt } seo { title description } collections { handle name url }
+    related(first: 8) { id handle title url currency priceMinInCents priceMaxInCents compareAtPriceInCents available
+coverImage { url alt } rating reviewsCount metadata specifications { name value }
+options { name displayType values { value color note image { url alt } } }
+variants { id sku priceInCents compareAtPriceInCents stock available image { url alt } selectedOptions { name value } } }
+    reviews(first: 10, page: $reviewsPage) { totalCount nodes { rating content authorName verifiedPurchase createdAt } pageInfo { currentPage totalPages hasNextPage } }
+  }
+  productBestSellers: products(first: 6, sortBy: "best-selling") { nodes { id handle title url currency priceMinInCents priceMaxInCents compareAtPriceInCents available
+coverImage { url alt } rating reviewsCount metadata specifications { name value }
+options { name displayType values { value color note image { url alt } } }
+variants { id sku priceInCents compareAtPriceInCents stock available image { url alt } selectedOptions { name value } } } }
+}

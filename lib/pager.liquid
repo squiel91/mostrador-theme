@@ -1,0 +1,12 @@
+{%- if info.totalPages > 1 -%}
+{%- liquid
+  assign current = info.currentPage
+  assign end_index = current | times: 24 | at_most: total
+  assign start_index = current | minus: 1 | times: 24 | plus: 1
+  assign fraction = end_index | times: 100.0 | divided_by: total
+-%}
+<div class="loadmore" data-pager>
+  <p class="small muted" data-page-progress>Viste {{ end_index }} de {{ total }} productos</p><span class="progress"><i style="width:{{ fraction }}%"></i></span>
+  {% if info.hasNextPage %}<a class="btn btn-outline" data-load-more href="{{ url }}?page={{ current | plus: 1 }}{{ query_string }}">Cargar {{ total | minus: end_index | at_most: 24 }} más<i class="ic ic-plus" aria-hidden="true"></i></a>{% endif %}
+  <nav class="pager" aria-label="Paginación">{% if info.hasPreviousPage %}<a href="{{ url }}?page={{ current | minus: 1 }}{{ query_string }}" aria-label="Página anterior">‹</a>{% endif %}{% for number in (1..info.totalPages) %}{% if number <= 5 or number == current or number == info.totalPages %}<a href="{{ url }}?page={{ number }}{{ query_string }}"{% if number == current %} aria-current="page"{% endif %}>{{ number }}</a>{% endif %}{% endfor %}{% if info.hasNextPage %}<a href="{{ url }}?page={{ current | plus: 1 }}{{ query_string }}" aria-label="Página siguiente">›</a>{% endif %}</nav>
+</div>{%- endif -%}

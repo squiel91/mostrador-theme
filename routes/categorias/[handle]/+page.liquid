@@ -1,0 +1,32 @@
+{%- liquid
+  assign c = data.collection
+  assign selected = request.query.sort | default: c.defaultSortBy
+  assign in_stock = false
+  if request.query.available == true or request.query.available == 'true'
+    assign in_stock = true
+  endif
+  assign current = c.products.pageInfo.currentPage
+  assign first_index = current | minus: 1 | times: 24 | plus: 1
+  assign last_index = current | times: 24 | at_most: c.products.totalCount
+  capture suffix
+    echo '&sort=' | append: selected
+    if in_stock
+      echo '&available=true'
+    endif
+  endcapture
+  assign title = c.seo.title | default: c.name
+-%}
+{% metadata title: title, description: c.seo.description %}
+<div class="wrap" data-catalog data-total="{{ c.products.totalCount }}">
+  <nav class="crumbs" aria-label="Migas"><a href="/">Inicio</a><span aria-hidden="true">/</span>{% if c.parent %}<a href="{{ c.parent.url }}">{{ c.parent.name }}</a><span aria-hidden="true">/</span>{% endif %}<span>{{ c.name }}</span></nav>
+  <header class="col-head"><h1>{{ c.name }}</h1><p class="count">{{ c.products.totalCount }} productos</p><p class="col-desc">{{ c.description }}</p></header>
+  {% render 'lib/subcategories', collection: c, collections: data.navigationCollections.nodes %}
+  <div class="mbar"><button type="button" data-open="drawer"><i class="ic ic-grid" aria-hidden="true"></i>Categorías</button><button type="button" data-open="ordenar"><i class="ic ic-sort" aria-hidden="true"></i>Ordenar</button><label class="switch"><input type="checkbox" data-instock{% if in_stock %} checked{% endif %}>Solo con stock</label></div>
+  <div class="col-layout"><aside class="side" aria-label="Filtros"><div class="side-block side-tree"><h2>Categorías</h2>{% render 'lib/category-tree', collections: data.navigationCollections.nodes %}</div><div class="side-block"><h2>Disponibilidad</h2><label class="switch"><input type="checkbox" data-instock{% if in_stock %} checked{% endif %}>Solo con stock</label></div><div class="side-block"><h2>Ordenar por</h2>{% render 'lib/sort-controls', options: c.sortOptions, selected: selected, scope: 'sidebar' %}</div></aside>
+  <section aria-label="Productos"><div class="toolbar"><span data-results-range>{% if c.products.totalCount > 0 %}Mostrando <b>{{ first_index }}–{{ last_index }}</b> de {{ c.products.totalCount }}{% else %}No hay productos disponibles{% endif %}</span><div class="toolbar-r"><label class="switch"><input type="checkbox" data-instock{% if in_stock %} checked{% endif %}>Solo con stock</label><label for="sort">Ordenar</label><select id="sort" data-sort>{% for option in c.sortOptions %}<option value="{{ option.value }}"{% if selected == option.value %} selected{% endif %}>{{ option.label }}</option>{% endfor %}</select></div></div>
+    <div class="grid-products" data-grid>{% for product in c.products.nodes %}{% render 'lib/product-card', product: product %}{% if forloop.index == 6 and current == 1 and data.offersLink %}<a class="promo-tile" href="{{ data.offersLink.url }}"><span class="eyebrow">Oferta de la semana</span><strong>{{ data.headerPromo.title }}</strong><span class="small">Hasta agotar stock.</span><span class="tag-price"><b>{{ data.headerPromo.priceMinInCents | money: data.headerPromo.currency }}</b>{% if data.headerPromo.compareAtPriceInCents %}<s>antes {{ data.headerPromo.compareAtPriceInCents | money: data.headerPromo.currency }}</s>{% endif %}</span><span class="see-all">Ver ofertas<i class="ic ic-arrow-right" aria-hidden="true"></i></span></a>{% endif %}{% endfor %}</div>
+    {% if c.products.totalCount == 0 %}<div class="empty-state"><h2>No encontramos productos con estos filtros.</h2><a class="btn btn-outline" href="{{ c.url }}">Ver todos</a></div>{% endif %}
+    {% render 'lib/pager', info: c.products.pageInfo, total: c.products.totalCount, url: c.url, query_string: suffix %}
+  </section></div>
+</div>
+<dialog class="sheet" id="ordenar" aria-labelledby="sort-title"><div class="sheet-backdrop" data-close></div><div class="sheet-panel"><div class="sheet-head"><h2 id="sort-title">Ordenar por</h2><button class="icon-btn" type="button" data-close aria-label="Cerrar"><i class="ic ic-x" aria-hidden="true"></i></button></div>{% render 'lib/sort-controls', options: c.sortOptions, selected: selected, scope: 'sheet' %}</div></dialog>

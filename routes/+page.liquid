@@ -1,0 +1,82 @@
+{% metadata title: data.store.name, description: data.store.description %}
+<div class="wrap"><section class="section" aria-label="Promociones" style="padding-top:12px">
+    <div class="hero">
+      <a class="banner banner--main" href="{{ data.offers.url }}">
+        <figure class="media only-desk" style="--ar:3"><img src="http://localhost:8787/tiendu/images/5ec5cac3-d44f-4a1c-ae9f-c813fe0d416c/original.svg" alt="" loading="lazy"></figure><figure class="media only-mob" style="--ar:1.3333333333333333"><img src="http://localhost:8787/tiendu/images/b1f45331-2ec3-4a1d-af5f-21da9a43fe6f/original.svg" alt="" loading="lazy"></figure>
+        <div class="banner-body">
+          <span class="banner-eyebrow"><i class="ic ic-percent" aria-hidden="true"></i> Ofertas de la semana</span>
+          <h2 class="banner-title">Papas prefritas de 2,5 kg a {{ data.headerPromo.priceMinInCents | money: data.headerPromo.currency }}.</h2>
+          <p class="banner-text">Corte clásico, al horno o en freidora de aire. Hasta agotar stock.</p>
+          <span class="btn btn-primary">Ver ofertas <i class="ic ic-arrow-right" aria-hidden="true"></i></span>
+        </div>
+        <span class="tag-price"><b>{{ data.headerPromo.priceMinInCents | money: data.headerPromo.currency }}</b><s>antes {{ data.headerPromo.compareAtPriceInCents | money: data.headerPromo.currency }}</s></span>
+      </a>
+      <a class="banner banner--sm banner--dark" href="{{ data.featuredFish.url }}">
+        <figure class="media only-desk media--dark" style="--ar:3"><img src="http://localhost:8787/tiendu/images/3401d2a9-8eb3-4b9e-8e69-afa8187698e4/original.svg" alt="" loading="lazy"></figure><figure class="media only-mob media--dark" style="--ar:1.3333333333333333"><img src="http://localhost:8787/tiendu/images/dbb1f09a-0fb6-41ed-88d9-f797d4a22c41/original.svg" alt="" loading="lazy"></figure>
+        <div class="banner-body">
+          <span class="banner-eyebrow"><i class="ic ic-fish" aria-hidden="true"></i> Pescados</span>
+          <h2 class="banner-title">Merluza en medallones, {{ data.featuredFish.priceMinInCents | money: data.featuredFish.currency }}.</h2>
+          <p class="banner-text">Sin espinas, del freezer a la sartén.</p>
+          <span class="btn btn-accent">Ver pescados</span>
+        </div>
+      </a>
+      <a class="banner banner--sm" href="{{ data.shippingPage.url }}">
+        <figure class="media only-desk" style="--ar:3"><img src="http://localhost:8787/tiendu/images/73443f4d-9e20-4fd8-8466-9e4d89b4ee1a/original.svg" alt="" loading="lazy"></figure><figure class="media only-mob" style="--ar:1.3333333333333333"><img src="http://localhost:8787/tiendu/images/e25c3b4a-2ea4-4a76-8282-e922b2f61550/original.svg" alt="" loading="lazy"></figure>
+        <div class="banner-body">
+          <span class="banner-eyebrow"><i class="ic ic-truck" aria-hidden="true"></i> Envío en el día</span>
+          <h2 class="banner-title challenge-differed" data-challenge="delivery-countdown">Pedí antes de las 14&nbsp;h y te llega hoy.</h2>
+          <p class="banner-text">Montevideo, de lunes a sábado.</p>
+          <span class="btn btn-ink">Ver zonas</span>
+        </div>
+      </a>
+    </div>
+  </section>
+
+
+<section class="section" aria-labelledby="cats-t"><div class="sec-head"><h2 id="cats-t">Comprá por categoría</h2><a class="see-all" href="{{ data.catalogSummary.url }}">Todas<i class="ic ic-arrow-right" aria-hidden="true"></i></a></div>
+  <nav class="cats" aria-label="Categorías">{% assign tile_handles = 'carnes,pescados,verduras,pastas-y-pizzas,helados,yerba-y-cafe,aceites,ofertas' | split: ',' %}{% for handle in tile_handles %}{% assign c = data.navigationCollections.nodes | where: 'handle', handle | first %}{% if c %}<a class="cat-tile" href="{{ c.url }}">{% render 'lib/category-icon', handle: handle, name: c.name %}<b>{{ c.name }}</b><small>{{ c.productCount }} productos</small></a>{% endif %}{% endfor %}</nav>
+</section></div>
+{% render 'lib/product-row', products: data.offers.products.nodes, title: 'Ofertas de la semana.', offers: true, url: data.offers.url, link_label: 'Ver todas las ofertas' %}
+<div class="wrap"><section class="section" aria-labelledby="best-t"><div class="sec-head"><h2 id="best-t">Más vendidos</h2><a class="see-all" href="{{ data.catalogSummary.url }}">Ver todo<i class="ic ic-arrow-right" aria-hidden="true"></i></a></div><div class="grid-products">{% for product in data.bestSellers.nodes %}{% render 'lib/product-card', product: product %}{% endfor %}</div></section>
+{% render 'lib/product-row', products: data.frozen.products.nodes, title: data.frozen.name, url: data.frozen.url, link_label: 'Ver Congelados' %}
+{% render 'lib/product-row', products: data.pantry.products.nodes, title: data.pantry.name, url: data.pantry.url, link_label: 'Ver Almacén' %}
+<section class="section" id="como-comprar" aria-labelledby="how-t">
+    <div class="howto">
+      <h2 id="how-t">Hacé el surtido sin salir de casa.</h2>
+      <ol class="steps">
+        <li class="step"><span class="step-n">1</span><div><b>Elegí</b><p>Sumá desde la lista con el +, sin entrar a cada producto.</p></div></li>
+        <li class="step"><span class="step-n">2</span><div><b>Pagá con Mercado Pago</b><p>Tarjetas, Redpagos o Abitab. Si retirás, también en efectivo.</p></div></li>
+        <li class="step"><span class="step-n">3</span><div><b>Recibí o retirá</b><p>Montevideo en el día, Ciudad de la Costa al día siguiente, o en el local en 2 h.</p></div></li>
+      </ol>
+      <div class="howto-foot">
+        <span><i class="ic ic-clock" aria-hidden="true"></i> Franjas de entrega: 15 a 18&nbsp;h y 18 a 21 h</span>
+        <span><i class="ic ic-receipt" aria-hidden="true"></i> Compra mínima para envío: $&nbsp;900</span>
+        <a class="link" href="{{ data.shippingPage.url }}">Ver zonas y costos</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" aria-label="Beneficios">
+    <ul class="benefits">
+      <li class="benefit"><i class="ic ic-truck" aria-hidden="true"></i><div><b>Envío gratis desde $&nbsp;2.500</b><p>En Montevideo. Ciudad de la Costa desde $&nbsp;3.000.</p></div></li>
+      <li class="benefit"><i class="ic ic-store" aria-hidden="true"></i><div><b>Retiro sin costo</b><p>En La Blanqueada o Solymar, listo en 2 horas.</p></div></li>
+      <li class="benefit"><i class="ic ic-receipt" aria-hidden="true"></i><div><b>Mínimo $&nbsp;900 para envío</b><p>Si retirás en el local, no hay mínimo.</p></div></li>
+      <li class="benefit"><i class="ic ic-users" aria-hidden="true"></i><div><b>Mayorista por WhatsApp</b><p>Para restoranes y almacenes: pedí la lista.</p></div></li>
+    </ul>
+  </section>
+
+  <section class="section" aria-labelledby="loc-t">
+    <div class="sec-head"><h2 id="loc-t">Nuestros locales</h2></div>
+    <div class="stores">
+      <article class="store"><p class="store-name"><i class="ic ic-pin" aria-hidden="true"></i> La Blanqueada <span class="store-open challenge-differed" data-challenge="opening-status">Abierto hasta las 20 h</span></p>
+        <dl class="challenge-differed" data-challenge="opening-hours"><dt>Dirección</dt><dd>Av. 8 de Octubre 3125</dd><dt>Lun a sáb</dt><dd>9 a 20 h</dd><dt>Domingo</dt><dd>9 a 13 h</dd></dl>
+        <div class="store-actions"><a class="btn btn-outline" href="https://www.google.com/maps/search/?api=1&amp;query=Av.+8+de+Octubre+3125+Montevideo" target="_blank" rel="noopener"><i class="ic ic-pin" aria-hidden="true"></i> Cómo llegar</a><a class="btn btn-outline" href="tel:+59826014420"><i class="ic ic-phone" aria-hidden="true"></i> Llamar</a></div></article>
+      <article class="store"><p class="store-name"><i class="ic ic-pin" aria-hidden="true"></i> Solymar <span class="store-open challenge-differed" data-challenge="opening-status">Abierto hasta las 20 h</span></p>
+        <dl class="challenge-differed" data-challenge="opening-hours"><dt>Dirección</dt><dd>Av. Giannattasio km 21.200</dd><dt>Lun a sáb</dt><dd>9 a 20 h</dd><dt>Domingo</dt><dd>Cerrado</dd></dl>
+        <div class="store-actions"><a class="btn btn-outline" href="https://www.google.com/maps/search/?api=1&amp;query=Av.+Giannattasio+km+21.200+Solymar" target="_blank" rel="noopener"><i class="ic ic-pin" aria-hidden="true"></i> Cómo llegar</a><a class="btn btn-outline" href="tel:+59826014420"><i class="ic ic-phone" aria-hidden="true"></i> Llamar</a></div></article>
+      <article class="store store--info"><p class="store-name"><i class="ic ic-box" aria-hidden="true"></i> Retiro en el local</p>
+        <p class="small muted">Comprás online y pasás a buscarlo. Te avisamos por WhatsApp cuando está listo, en 2 horas en horario de local. Lo guardamos en freezer hasta 48 h.</p>
+        <div class="store-actions"><a class="btn btn-outline" href="{{ data.shippingPage.url }}">Más sobre el retiro</a></div></article>
+    </div>
+  </section>
+</div>

@@ -1,0 +1,8 @@
+query Article($handle: String!) {
+  post: blogPost(handle: $handle) @required { handle title url excerpt publishedAt coverImage { url alt } html seo { title description } }
+  morePosts: blogPosts(first: 4) { nodes { handle title url excerpt publishedAt coverImage { url alt } } }
+  recipeProducts: products(handles: ["milanesas-de-pollo-rebozadas", "papas-prefritas-corte-clasico", "medallones-de-merluza", "empanadas-para-horno-x-12"], first: 4) { nodes { id handle title url currency priceMinInCents priceMaxInCents compareAtPriceInCents available
+coverImage { url alt } rating reviewsCount metadata specifications { name value }
+options { name displayType values { value color note image { url alt } } }
+variants { id sku priceInCents compareAtPriceInCents stock available image { url alt } selectedOptions { name value } } } }
+}

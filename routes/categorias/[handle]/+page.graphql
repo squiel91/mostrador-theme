@@ -1,0 +1,12 @@
+query Collection($handle: String!, $page: Int = 1, $sort: ProductSort, $available: Boolean) {
+  collection(handle: $handle) @required {
+    handle name description url productCount parent { handle name url }
+    children { handle name url productCount } defaultSortBy sortOptions { value label } seo { title description }
+    products(first: 24, page: $page, sortBy: $sort, available: $available) {
+      nodes { id handle title url currency priceMinInCents priceMaxInCents compareAtPriceInCents available
+coverImage { url alt } rating reviewsCount metadata specifications { name value }
+options { name displayType values { value color note image { url alt } } }
+variants { id sku priceInCents compareAtPriceInCents stock available image { url alt } selectedOptions { name value } } } totalCount pageInfo { currentPage totalPages hasNextPage hasPreviousPage }
+    }
+  }
+}

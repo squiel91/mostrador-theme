@@ -1,0 +1,12 @@
+<div class="mega" id="mega" aria-label="Categorías"><div class="wrap mega-in">
+  {% assign roots = 'congelados,almacen,bebidas' | split: ',' %}<div class="mega-roots">
+    {% for handle in roots %}{% assign root = collections | where: 'handle', handle | first %}{% if root %}<button type="button" data-root="{{ handle }}" class="{% if forloop.first %}is-active{% endif %}">{% render 'lib/category-icon', handle: handle, name: root.name, small: true %}{{ root.name }}<small>{{ root.productCount }}</small></button>{% endif %}{% endfor %}
+    {% if offers %}<a class="btn btn-soft" href="{{ offers.url }}"><i class="ic ic-percent" aria-hidden="true"></i>Ofertas <small>{{ offers.productCount }}</small></a>{% endif %}
+  </div><div class="mega-panels">
+  {% for handle in roots %}{% assign root = collections | where: 'handle', handle | first %}{% if root %}
+    <div class="mega-panel{% if forloop.first %} is-active{% endif %}" data-panel="{{ handle }}"><div class="mega-head"><h3>{{ root.name }}</h3><a class="see-all" href="{{ root.url }}">Ver los {{ root.productCount }} productos<i class="ic ic-arrow-right" aria-hidden="true"></i></a></div>
+      <ul class="mega-children{% if root.children.size == 0 %} challenge-differed{% endif %}"{% if root.children.size == 0 %} data-challenge="category-hierarchy"{% endif %}>{% render 'lib/category-children', parent: root, collections: collections, icons: true %}</ul>
+      {% if offers %}<a class="mega-promo" href="{{ offers.url }}"><span class="small">Ofertas de la semana</span><strong>{{ promo.title }}</strong><span class="tag-price"><b>{{ promo.priceMinInCents | money: promo.currency }}</b>{% if promo.compareAtPriceInCents %}<s>antes {{ promo.compareAtPriceInCents | money: promo.currency }}</s>{% endif %}</span><span class="see-all">Ver las {{ offers.productCount }} ofertas<i class="ic ic-arrow-right" aria-hidden="true"></i></span></a>{% endif %}
+    </div>{% endif %}{% endfor %}
+  </div>
+</div></div>

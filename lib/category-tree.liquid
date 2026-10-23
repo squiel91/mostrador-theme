@@ -1,0 +1,14 @@
+{%- assign roots = 'congelados,almacen,bebidas,ofertas' | split: ',' -%}
+<ul class="tree">
+{%- for handle in roots -%}
+  {%- assign root = collections | where: 'handle', handle | first -%}
+  {%- if root -%}<li>
+    {% if handle == 'ofertas' %}<a class="tree-offers" href="{{ root.url }}">{% render 'lib/category-icon', handle: handle, name: root.name %}{{ root.name }} <small>{{ root.productCount }}</small><i class="ic ic-chev-right" aria-hidden="true"></i></a>
+    {% else %}<details{% if handle == 'congelados' %} open{% endif %}><summary>{% render 'lib/category-icon', handle: handle, name: root.name %} {{ root.name }} <small>{{ root.productCount }}</small><i class="ic ic-chev-down" aria-hidden="true"></i></summary>
+      <ul{% if root.children.size == 0 %} class="challenge-differed" data-challenge="category-hierarchy"{% endif %}>
+        <li style="grid-column:1/-1"><a class="all" href="{{ root.url }}">Ver todo {{ root.name }} <i class="ic ic-arrow-right" aria-hidden="true"></i></a></li>
+        {% render 'lib/category-children', parent: root, collections: collections %}
+      </ul></details>{% endif %}
+  </li>{%- endif -%}
+{%- endfor -%}
+</ul>

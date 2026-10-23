@@ -1,0 +1,33 @@
+{%- liquid
+  assign price = variant.priceInCents | default: product.priceMinInCents
+  capture presentation
+    render 'lib/presentation', product: product, variant: variant
+  endcapture
+  assign normalized = presentation | strip | downcase | remove: ' ' | replace: ',', '.'
+  assign amount = normalized | remove: 'kg' | remove: 'mg' | remove: 'g' | remove: 'ml' | remove: 'cl' | remove: 'l' | remove: 'x' | plus: 0
+  assign unit = ''
+  if normalized contains 'kg'
+    assign unit = 'el kg'
+  elsif normalized contains 'mg'
+    assign amount = amount | divided_by: 1000000.0
+    assign unit = 'el kg'
+  elsif normalized contains 'g'
+    assign amount = amount | divided_by: 1000.0
+    assign unit = 'el kg'
+  elsif normalized contains 'ml'
+    assign amount = amount | divided_by: 1000.0
+    assign unit = 'el litro'
+  elsif normalized contains 'cl'
+    assign amount = amount | divided_by: 100.0
+    assign unit = 'el litro'
+  elsif normalized contains 'l'
+    assign unit = 'el litro'
+  elsif normalized contains 'x'
+    assign amount = normalized | remove: 'x' | plus: 0
+    assign unit = 'c/u'
+  endif
+  if amount > 0 and unit != blank and price != nil
+    assign unit_price = price | divided_by: amount | round
+  endif
+-%}
+{%- if amount > 0 and unit != blank and price != nil -%}{{ unit_price | money: product.currency }} {{ unit }}{%- endif -%}
