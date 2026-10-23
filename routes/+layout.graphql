@@ -4,7 +4,7 @@ query Layout {
   } }
   mainMenu: menu(handle: "principal") { items { label url openInNewTab } }
   infoMenu: menu(handle: "footer") { title items { label url openInNewTab } }
-  navigationCollections: collections(first: 100) { nodes { handle name url productCount parent { handle } children { handle name url productCount } } }
+  navigationCollections: collections(first: 100) { nodes { handle name url productTotals: products(includeDescendants: true, first: 0) { totalCount } parent { handle } children { handle name url productTotals: products(includeDescendants: true, first: 0) { totalCount } } } }
   catalogSummary: collection(handle: "todas") { url productCount }
   offersLink: collection(handle: "ofertas") { url productCount }
   headerPromo: product(handle: "papas-prefritas-corte-clasico") { title url currency priceMinInCents compareAtPriceInCents }

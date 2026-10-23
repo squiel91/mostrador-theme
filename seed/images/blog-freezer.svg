@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900"><rect width="1600" height="900" fill="#eaf3fa"/><rect x="140" y="100" width="1320" height="690" rx="48" fill="#d2e2ed" stroke="#b9d0e0" stroke-width="18"/><g transform="translate(130 100) scale(.35 .7)"><defs><linearGradient id="pack0" x1="0" x2="1"><stop stop-color="#d93b2b"/><stop offset=".5" stop-color="#d93b2b"/><stop offset="1" stop-color="#d93b2b" stop-opacity=".75"/></linearGradient></defs><ellipse cx="500" cy="900" rx="210" ry="22" fill="#14171f" opacity=".08"/><path d="M290 115Q500 95 710 115L735 855Q500 895 265 855Z" fill="url(#pack0)"/>
+        <path d="M290 115L304 855M710 115L695 855" fill="none" stroke="white" opacity=".22" stroke-width="15"/>
+        <path d="M290 122H710M276 844H723" stroke="#ffffff" stroke-width="16" opacity=".65"/>
+        <path d="M300 110V140M320 110V140M340 110V140M360 110V140M380 110V140M400 110V140M420 110V140M440 110V140M460 110V140M480 110V140M500 110V140M520 110V140M540 110V140M560 110V140M580 110V140M600 110V140M620 110V140M640 110V140M660 110V140M680 110V140M700 110V140" stroke="#fff" opacity=".45" stroke-width="7"/>
+        <rect x="330" y="220" width="340" height="100" rx="13" fill="#fff8e8"/>
+        <path d="M350 470Q500 395 650 470L665 690Q510 760 335 690Z" fill="#f7d891"/>
+        <ellipse cx="470" cy="555" rx="96" ry="46" transform="rotate(-20 470 555)" fill="#edc572"/>
+        <ellipse cx="540" cy="625" rx="96" ry="46" transform="rotate(18 540 625)" fill="#e6b85f"/>
+        <path d="M325 370H675" stroke="#fff4cd" stroke-width="3" opacity=".6"/></g><g transform="translate(450 100) scale(.35 .7)"><defs><linearGradient id="pack1" x1="0" x2="1"><stop stop-color="#2c6db3"/><stop offset=".5" stop-color="#2c6db3"/><stop offset="1" stop-color="#2c6db3" stop-opacity=".75"/></linearGradient></defs><ellipse cx="500" cy="900" rx="210" ry="22" fill="#14171f" opacity=".08"/><path d="M290 115Q500 95 710 115L735 855Q500 895 265 855Z" fill="url(#pack1)"/>
+        <path d="M290 115L304 855M710 115L695 855" fill="none" stroke="white" opacity=".22" stroke-width="15"/>
+        <path d="M290 122H710M276 844H723" stroke="#ffffff" stroke-width="16" opacity=".65"/>
+        <path d="M300 110V140M320 110V140M340 110V140M360 110V140M380 110V140M400 110V140M420 110V140M440 110V140M460 110V140M480 110V140M500 110V140M520 110V140M540 110V140M560 110V140M580 110V140M600 110V140M620 110V140M640 110V140M660 110V140M680 110V140M700 110V140" stroke="#fff" opacity=".45" stroke-width="7"/>
+        <rect x="330" y="220" width="340" height="100" rx="13" fill="#fff8e8"/>
+        <path d="M350 470Q500 395 650 470L665 690Q510 760 335 690Z" fill="#f7d891"/>
+        <ellipse cx="470" cy="555" rx="96" ry="46" transform="rotate(-20 470 555)" fill="#edc572"/>
+        <ellipse cx="540" cy="625" rx="96" ry="46" transform="rotate(18 540 625)" fill="#e6b85f"/>
+        <path d="M325 370H675" stroke="#fff4cd" stroke-width="3" opacity=".6"/></g><g transform="translate(770 100) scale(.35 .7)"><defs><linearGradient id="pack2" x1="0" x2="1"><stop stop-color="#e39a35"/><stop offset=".5" stop-color="#e39a35"/><stop offset="1" stop-color="#e39a35" stop-opacity=".75"/></linearGradient></defs><ellipse cx="500" cy="900" rx="210" ry="22" fill="#14171f" opacity=".08"/><path d="M290 115Q500 95 710 115L735 855Q500 895 265 855Z" fill="url(#pack2)"/>
+        <path d="M290 115L304 855M710 115L695 855" fill="none" stroke="white" opacity=".22" stroke-width="15"/>
+        <path d="M290 122H710M276 844H723" stroke="#ffffff" stroke-width="16" opacity=".65"/>
+        <path d="M300 110V140M320 110V140M340 110V140M360 110V140M380 110V140M400 110V140M420 110V140M440 110V140M460 110V140M480 110V140M500 110V140M520 110V140M540 110V140M560 110V140M580 110V140M600 110V140M620 110V140M640 110V140M660 110V140M680 110V140M700 110V140" stroke="#fff" opacity=".45" stroke-width="7"/>
+        <rect x="330" y="220" width="340" height="100" rx="13" fill="#fff8e8"/>
+        <path d="M350 470Q500 395 650 470L665 690Q510 760 335 690Z" fill="#f7d891"/>
+        <ellipse cx="470" cy="555" rx="96" ry="46" transform="rotate(-20 470 555)" fill="#edc572"/>
+        <ellipse cx="540" cy="625" rx="96" ry="46" transform="rotate(18 540 625)" fill="#e6b85f"/>
+        <path d="M325 370H675" stroke="#fff4cd" stroke-width="3" opacity=".6"/></g><g transform="translate(1090 100) scale(.35 .7)"><defs><linearGradient id="pack3" x1="0" x2="1"><stop stop-color="#1d7a44"/><stop offset=".5" stop-color="#1d7a44"/><stop offset="1" stop-color="#1d7a44" stop-opacity=".75"/></linearGradient></defs><ellipse cx="500" cy="900" rx="210" ry="22" fill="#14171f" opacity=".08"/><path d="M290 115Q500 95 710 115L735 855Q500 895 265 855Z" fill="url(#pack3)"/>
+        <path d="M290 115L304 855M710 115L695 855" fill="none" stroke="white" opacity=".22" stroke-width="15"/>
+        <path d="M290 122H710M276 844H723" stroke="#ffffff" stroke-width="16" opacity=".65"/>
+        <path d="M300 110V140M320 110V140M340 110V140M360 110V140M380 110V140M400 110V140M420 110V140M440 110V140M460 110V140M480 110V140M500 110V140M520 110V140M540 110V140M560 110V140M580 110V140M600 110V140M620 110V140M640 110V140M660 110V140M680 110V140M700 110V140" stroke="#fff" opacity=".45" stroke-width="7"/>
+        <rect x="330" y="220" width="340" height="100" rx="13" fill="#fff8e8"/>
+        <path d="M350 470Q500 395 650 470L665 690Q510 760 335 690Z" fill="#f7d891"/>
+        <ellipse cx="470" cy="555" rx="96" ry="46" transform="rotate(-20 470 555)" fill="#edc572"/>
+        <ellipse cx="540" cy="625" rx="96" ry="46" transform="rotate(18 540 625)" fill="#e6b85f"/>
+        <path d="M325 370H675" stroke="#fff4cd" stroke-width="3" opacity=".6"/></g><path d="M170 735H1430" stroke="white" stroke-width="18"/></svg>

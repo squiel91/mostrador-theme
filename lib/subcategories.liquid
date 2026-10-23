@@ -1,16 +1,3 @@
-{%- liquid
-  assign handles = ''
-  case collection.handle
-    when 'congelados'
-      assign handles = 'carnes,pescados,verduras,pastas-y-pizzas,empanadas-y-tartas,helados,postres'
-    when 'almacen'
-      assign handles = 'yerba-y-cafe,aceites,galletitas,arroz-y-fideos,conservas'
-    when 'bebidas'
-      assign handles = 'aguas,refrescos,jugos'
-  endcase
-  assign intended = handles | split: ','
--%}
-{% if collection.children.size > 0 or handles != blank %}<nav class="subchips{% if collection.children.size == 0 %} challenge-differed{% endif %}" aria-label="Subcategorías"{% if collection.children.size == 0 %} data-challenge="category-hierarchy"{% endif %}><a class="chip is-on" href="{{ collection.url }}">Todo<small>{{ collection.productCount }}</small></a>
-  {% if collection.children.size > 0 %}{% for child in collection.children %}<a class="chip" href="{{ child.url }}">{% render 'lib/category-icon', handle: child.handle, name: child.name %}{{ child.name }}<small>{{ child.productCount }}</small></a>{% endfor %}
-  {% else %}{% for handle in intended %}{% assign child = collections | where: 'handle', handle | first %}{% if child %}<a class="chip" href="{{ child.url }}">{% render 'lib/category-icon', handle: child.handle, name: child.name %}{{ child.name }}<small>{{ child.productCount }}</small></a>{% endif %}{% endfor %}{% endif %}
+{% if collection.children.size > 0 %}<nav class="subchips" aria-label="Subcategorías"><a class="chip is-on" href="{{ collection.url }}">Todo<small>{{ collection.productTotals.totalCount }}</small></a>
+  {% for child in collection.children %}<a class="chip" href="{{ child.url }}">{% render 'lib/category-icon', handle: child.handle, name: child.name %}{{ child.name }}<small>{{ child.productTotals.totalCount }}</small></a>{% endfor %}
 </nav>{% endif %}

@@ -22,41 +22,57 @@ Mostrador's configuration already contains the correct patterns, and its rendere
 links work. Search falls back to the rendered `/busqueda` route until the public
 API has product URLs for native search-result links.
 
-## Category hierarchy
+## Resolved: category hierarchy
 
-Creating a collection with a non-null parentId and updating a collection's parent
-both return HTTP 500. Current demo categories are valid independent records,
-with products assigned to both the intended parent and child. Theme grouping
-preserves the intended presentation and is marked `category-hierarchy`.
+Collection parent updates now succeed. All 15 children are nested under
+Congelados, Almacén or Bebidas. Navigation, subcategory chips and breadcrumbs use
+native relationships; the hardcoded child lists and category overlay were removed.
 
-The older migration defining `check_category_cycles()` queries `categories`,
-while current services use `collections`; this is a suspected source of the
-failure, not a confirmed database diagnosis. No migration or platform patch
-was applied during theme work.
+Products are assigned to child categories, plus Ofertas where appropriate.
+Redundant direct assignments to the three parents were removed. Category pages
+and home collection rails use `products(includeDescendants: true)`; navigation
+and subcategory counts use the combined `totalCount`, because `productCount`
+still counts direct assignments. Sorting, stock filtering, pagination and
+deduplication run on the combined branch on the server.
 
-When native children exist, navigation uses the real `children` data and removes
-the hierarchy fallback marker automatically.
+## Resolved by fixed theme constants: shipping, delivery, stores and promotions
 
-## Delivery, locations and promotions
+Customize all these values in `lib/constants.liquid`; see README.md for the keys,
+units and surfaces. This file feeds fixed regional costs/eligibility/thresholds,
+minimums, delivery cutoffs/slots, pickup times, location hours/status, cold-chain
+copy and promotion terms. Shipping page policy content is rendered by the theme
+from these constants, rather than duplicating saved page HTML values.
 
-Public Store data does not expose the general scheduling, location hours and
-campaign-expiration contracts needed to implement those reference interactions.
-The demo's shipping copy, countdown placeholder, hours and opening badges stay
-visible under scoped red markers.
+Cart quantity/subtotal remain real. Progress uses the configured Montevideo
+threshold and region rendered into the DOM; no shopper address is inferred.
+Shipping, delivery, store and promotion markers were removed by request. These
+are storefront settings; checkout shipping methods are configured in Tiendu.
 
-Cart quantities and subtotal are real. The remaining-to-free-shipping arithmetic
-is implemented from the actual cart with a demo threshold of UYU 2,500. Its
-eligibility/threshold source is still marked because checkout's destination-aware
-rules are authoritative and the reference itself has different regional limits.
+Unit prices and Ofertas category membership are complete.
 
-Unit prices are complete: package labels in Presentación are normalized to kg,
-liters or individual units. Offers are complete: the `ofertas` collection owns
-the product selection and the theme uses current API prices and compare-at prices.
+## Blog metadata saved; theme integration pending
 
-## Shoppable recipes and editorial fields
+BlogPost metadata is now available and populated for all three articles. The
+Merchant Center form (`--detailed-blog-post-metadata`) edits `category`, optional
+`recipe` facts and ordered `products` with native product pickers, variant IDs,
+whole-package quantities and notes. Merchant and Store API list/detail reads were verified;
+all six references resolve to matching product variants, and the actual metadata
+editor validator accepts the schema and values. Article bodies/publication fields
+were preserved. See `docs/blog-metadata.md` for the complete contract.
 
-The public BlogPost schema and Merchant API do not expose structured product
-references, recipe facts or categories. The reference sidebar and recipe facts
-are reproduced using a temporary theme mapping and marked in red. Recipe add
-actions are disabled until that relationship and variant-choice contract is
-agreed. Ordinary product cards elsewhere remain functional.
+The theme still uses its previous handle mappings/fixed facts and disabled recipe
+buttons. Its red markers remain until queries, rendering, filtering and purchase
+handlers consume the new metadata. Metadata filtering is not a Store API option;
+load all needed article pages before computing category filters/counts.
+
+The native picker key issue is resolved. All six references now preserve
+`__type__: "product"` through both APIs, and the editing form uses product pickers
+again. The documented named-query pattern was verified with the real renderer:
+all six referenced products appear in initial HTML with no browser lookup. See
+`docs/blog-metadata.md` for the pattern and the eight-call render limit.
+
+Review the remaining integration:
+
+- Shoppable recipes: http://localhost:4174/blog/milanesas-al-horno#recipe-products
+- Recipe details: http://localhost:4174/blog/milanesas-al-horno#recipe-details
+- Blog categories: http://localhost:4174/blog#post-filters

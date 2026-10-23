@@ -3,15 +3,15 @@ query Home {
 coverImage { url alt } rating reviewsCount metadata specifications { name value }
 options { name displayType values { value color note image { url alt } } }
 variants { id sku priceInCents compareAtPriceInCents stock available image { url alt } selectedOptions { name value } } } }
-  offers: collection(handle: "ofertas") { name url productCount products(first: 8) { nodes { id handle title url currency priceMinInCents priceMaxInCents compareAtPriceInCents available
+  offers: collection(handle: "ofertas") { name url productCount products(includeDescendants: true, first: 8) { nodes { id handle title url currency priceMinInCents priceMaxInCents compareAtPriceInCents available
 coverImage { url alt } rating reviewsCount metadata specifications { name value }
 options { name displayType values { value color note image { url alt } } }
 variants { id sku priceInCents compareAtPriceInCents stock available image { url alt } selectedOptions { name value } } } } }
-  frozen: collection(handle: "congelados") { name url products(first: 8) { nodes { id handle title url currency priceMinInCents priceMaxInCents compareAtPriceInCents available
+  frozen: collection(handle: "congelados") { name url products(includeDescendants: true, first: 8) { nodes { id handle title url currency priceMinInCents priceMaxInCents compareAtPriceInCents available
 coverImage { url alt } rating reviewsCount metadata specifications { name value }
 options { name displayType values { value color note image { url alt } } }
 variants { id sku priceInCents compareAtPriceInCents stock available image { url alt } selectedOptions { name value } } } } }
-  pantry: collection(handle: "almacen") { name url products(first: 8) { nodes { id handle title url currency priceMinInCents priceMaxInCents compareAtPriceInCents available
+  pantry: collection(handle: "almacen") { name url products(includeDescendants: true, first: 8) { nodes { id handle title url currency priceMinInCents priceMaxInCents compareAtPriceInCents available
 coverImage { url alt } rating reviewsCount metadata specifications { name value }
 options { name displayType values { value color note image { url alt } } }
 variants { id sku priceInCents compareAtPriceInCents stock available image { url alt } selectedOptions { name value } } } } }

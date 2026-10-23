@@ -1,4 +1,4 @@
-<div class="shipping-progress challenge-differed" data-challenge="shipping-progress" data-free-shipping-cents="250000">
-  <p class="ship" data-ship-msg>Te faltan <b>{{ 250000 | money: 'UYU' }}</b> para el envío gratis en Montevideo</p>
+<div class="shipping-progress" data-free-shipping-cents="{% render 'lib/constants', key: 'montevideo_free_shipping_cents' %}" data-free-shipping-region="{% render 'lib/constants', key: 'montevideo_name' %}">
+  <p class="ship" data-ship-msg>Te faltan <b>{% render 'lib/constants', key: 'montevideo_free_shipping_cents', format: 'money' %}</b> para el envío gratis en {% render 'lib/constants', key: 'montevideo_name' %}</p>
   <span class="progress"><i data-ship-bar style="width:0%"></i></span>
 </div>

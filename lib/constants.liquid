@@ -1,0 +1,113 @@
+{%- comment -%}
+  Customize fixed delivery, shipping, store and promotion values here.
+  Money is in cents (250000 = UYU 2,500). All storefront surfaces use these keys.
+  Read with: render 'lib/constants', key: 'montevideo_free_shipping_cents'
+  Format money with the optional format: 'money' argument.
+  These are storefront values; checkout delivery methods are configured in Tiendu.
+{%- endcomment -%}
+{%- liquid
+  assign cutoff_hour = 14
+  assign weekday_open_hour = 9
+  assign weekday_close_hour = 20
+  assign blanqueada_sunday_close_hour = 13
+  assign blanqueada_name = 'La Blanqueada'
+  assign blanqueada_address = 'Av. 8 de Octubre 3125'
+  assign solymar_name = 'Solymar'
+  assign solymar_address = 'Av. Giannattasio km 21.200'
+  assign carrier = 'DAC'
+
+  case key
+    when 'delivery_cutoff_hour'
+      assign value = cutoff_hour
+    when 'delivery_days'
+      assign value = 'de lunes a sábado'
+    when 'delivery_weekday_slots'
+      assign value = '15 a 18 h o de 18 a 21 h'
+    when 'delivery_saturday_slot'
+      assign value = '10 a 14 h'
+    when 'delivery_minimum_cents'
+      assign value = 90000
+    when 'montevideo_name'
+      assign value = 'Montevideo'
+    when 'montevideo_cost_cents'
+      assign value = 15000
+    when 'montevideo_free_shipping_cents'
+      assign value = 250000
+    when 'montevideo_delivery'
+      assign value = 'En el día'
+    when 'coast_name'
+      assign value = 'Ciudad de la Costa'
+    when 'coast_delivery'
+      assign value = 'Al día siguiente'
+    when 'coast_coverage'
+      assign value = 'hasta El Pinar'
+    when 'coast_cost_cents'
+      assign value = 19000
+    when 'coast_free_shipping_cents'
+      assign value = 300000
+    when 'canelones_name'
+      assign value = 'Resto de Canelones'
+    when 'canelones_delivery'
+      assign value = 'Martes y viernes'
+    when 'canelones_coverage'
+      assign value = 'Pando, Las Piedras, La Paz'
+    when 'canelones_cost_cents'
+      assign value = 25000
+    when 'canelones_free_shipping_cents'
+      assign value = 400000
+    when 'interior_carrier'
+      assign value = carrier
+    when 'interior_delivery'
+      assign value = '24 a 72 h'
+    when 'interior_cost'
+      assign value = 'Según ' | append: carrier
+    when 'interior_eligibility'
+      assign value = 'solo productos de almacén'
+    when 'frozen_eligibility'
+      assign value = 'Los congelados solo se envían a Montevideo y Canelones.'
+    when 'cold_chain_title'
+      assign value = 'Viaja en caja térmica'
+    when 'cold_chain_transport'
+      assign value = 'En cajas térmicas con placas de frío, en camioneta refrigerada.'
+    when 'pickup_ready_hours'
+      assign value = 2
+    when 'pickup_hold_hours'
+      assign value = 48
+    when 'pickup_locations'
+      assign value = blanqueada_name | append: ' o ' | append: solymar_name
+    when 'blanqueada_name'
+      assign value = blanqueada_name
+    when 'blanqueada_address'
+      assign value = blanqueada_address
+    when 'blanqueada_map_query'
+      assign value = blanqueada_address | append: ' Montevideo' | url_encode
+    when 'solymar_name'
+      assign value = solymar_name
+    when 'solymar_address'
+      assign value = solymar_address
+    when 'solymar_map_query'
+      assign value = solymar_address | append: ' Solymar' | url_encode
+    when 'store_phone'
+      assign value = '+59826014420'
+    when 'store_phone_display'
+      assign value = '2601 4420'
+    when 'store_weekdays'
+      assign value = 'Lun a sáb'
+    when 'store_weekday_hours'
+      assign value = weekday_open_hour | append: ' a ' | append: weekday_close_hour | append: ' h'
+    when 'blanqueada_sunday_hours'
+      assign value = weekday_open_hour | append: ' a ' | append: blanqueada_sunday_close_hour | append: ' h'
+    when 'solymar_sunday_hours'
+      assign value = 'Cerrado'
+    when 'store_status'
+      assign value = 'Abierto hasta las ' | append: weekday_close_hour | append: ' h'
+    when 'promotion_terms'
+      assign value = 'Hasta agotar stock'
+  endcase
+
+  if format == 'money'
+    echo value | money: 'UYU'
+  else
+    echo value
+  endif
+-%}

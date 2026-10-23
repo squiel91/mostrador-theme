@@ -1,1 +1,31 @@
-{{ page.html | replace: 'class="facts"', 'class="facts challenge-differed" data-challenge="shipping-policy"' | replace: 'class="zones"', 'class="zones challenge-differed" data-challenge="delivery-rules"' }}
+<div class="facts">
+  <div class="fact"><span class="cat-ico"><i class="ic ic-clock" aria-hidden="true"></i></span><div><b>Corte a las {% render 'lib/constants', key: 'delivery_cutoff_hour' %} h</b><span>para recibir hoy en {% render 'lib/constants', key: 'montevideo_name' %}</span></div></div>
+  <div class="fact"><span class="cat-ico"><i class="ic ic-truck" aria-hidden="true"></i></span><div><b>Gratis desde {% render 'lib/constants', key: 'montevideo_free_shipping_cents', format: 'money' %}</b><span>en {% render 'lib/constants', key: 'montevideo_name' %}</span></div></div>
+  <div class="fact"><span class="cat-ico"><i class="ic ic-store" aria-hidden="true"></i></span><div><b>Retiro sin costo</b><span>listo en {% render 'lib/constants', key: 'pickup_ready_hours' %} horas</span></div></div>
+</div>
+<section><h2>Zonas, días y costos</h2>
+  <div class="zones"><div class="zone zone--head"><span>Zona</span><span>Cuándo llega</span><span>Costo</span><span>Gratis desde</span></div>
+    {% assign zone_keys = 'montevideo,coast,canelones' | split: ',' %}
+    {% for zone in zone_keys %}
+      {% assign name_key = zone | append: '_name' %}{% assign delivery_key = zone | append: '_delivery' %}{% assign coverage_key = zone | append: '_coverage' %}{% assign cost_key = zone | append: '_cost_cents' %}{% assign free_key = zone | append: '_free_shipping_cents' %}
+      <div class="zone"><b>{% render 'lib/constants', key: name_key %}</b><span><small>Cuándo llega: </small><em>{% render 'lib/constants', key: delivery_key %}</em> · {% if zone == 'montevideo' %}pedidos antes de las {% render 'lib/constants', key: 'delivery_cutoff_hour' %} h{% else %}{% render 'lib/constants', key: coverage_key %}{% endif %}</span><span><small>Costo: </small><em>{% render 'lib/constants', key: cost_key, format: 'money' %}</em></span><span><small>Gratis desde: </small><em>{% render 'lib/constants', key: free_key, format: 'money' %}</em></span></div>
+    {% endfor %}
+    <div class="zone"><b>Interior</b><span><small>Cuándo llega: </small><em>{% render 'lib/constants', key: 'interior_carrier' %}, {% render 'lib/constants', key: 'interior_delivery' %}</em> · {% render 'lib/constants', key: 'interior_eligibility' %}</span><span><small>Costo: </small><em>{% render 'lib/constants', key: 'interior_cost' %}</em></span><span><small>Gratis desde: </small><em>—</em></span></div>
+  </div>
+</section>
+<section><h2>Franjas de entrega</h2><div class="prose">
+  <p>De lunes a viernes entregamos de {% render 'lib/constants', key: 'delivery_weekday_slots' %}; los sábados, de {% render 'lib/constants', key: 'delivery_saturday_slot' %}. Coordinamos la franja por WhatsApp y te avisamos cuando la camioneta sale.</p>
+  <p>La compra mínima para envío es de {% render 'lib/constants', key: 'delivery_minimum_cents', format: 'money' %}. Si retirás en el local, no hay mínimo.</p>
+</div></section>
+<p class="note">{% render 'lib/constants', key: 'frozen_eligibility' %} Al interior mandamos {% render 'lib/constants', key: 'interior_eligibility' %} por {% render 'lib/constants', key: 'interior_carrier' %}, de {% render 'lib/constants', key: 'interior_delivery' %}.</p>
+<section id="retiro"><h2>Retiro en el local</h2><div class="prose">
+  <p>Comprás online, elegís “Retiro” al pagar y te avisamos cuando está listo, en unas {% render 'lib/constants', key: 'pickup_ready_hours' %} horas en horario de local. Lo guardamos en freezer hasta {% render 'lib/constants', key: 'pickup_hold_hours' %} h.</p>
+  <p><b>{% render 'lib/constants', key: 'blanqueada_name' %}:</b> {% render 'lib/constants', key: 'blanqueada_address' %}, {% render 'lib/constants', key: 'store_weekdays' %} de {% render 'lib/constants', key: 'store_weekday_hours' %} y domingo de {% render 'lib/constants', key: 'blanqueada_sunday_hours' %}. <b>{% render 'lib/constants', key: 'solymar_name' %}:</b> {% render 'lib/constants', key: 'solymar_address' %}, {% render 'lib/constants', key: 'store_weekdays' %} de {% render 'lib/constants', key: 'store_weekday_hours' %}. Domingo: {% render 'lib/constants', key: 'solymar_sunday_hours' %}.</p>
+</div></section>
+<section id="preguntas" class="faq"><h2>Preguntas frecuentes</h2>
+  <details open><summary>¿Hasta qué hora puedo pedir para recibir hoy? <i class="ic ic-plus" aria-hidden="true"></i></summary><p>Hasta las {% render 'lib/constants', key: 'delivery_cutoff_hour' %} h, {% render 'lib/constants', key: 'delivery_days' %}, en {% render 'lib/constants', key: 'montevideo_name' %}. Lo que entra después sale al día siguiente en la primera franja.</p></details>
+  <details><summary>¿Cómo llegan los congelados? <i class="ic ic-plus" aria-hidden="true"></i></summary><p>{% render 'lib/constants', key: 'cold_chain_transport' %} Si no hay nadie, coordinamos por WhatsApp una nueva entrega.</p></details>
+  <details><summary>¿Puedo elegir la franja horaria? <i class="ic ic-plus" aria-hidden="true"></i></summary><p>Coordinamos por WhatsApp entre {% render 'lib/constants', key: 'delivery_weekday_slots' %}. Los sábados hay una sola franja, de {% render 'lib/constants', key: 'delivery_saturday_slot' %}.</p></details>
+  <details><summary>¿Mandan congelados al interior? <i class="ic ic-plus" aria-hidden="true"></i></summary><p>{% render 'lib/constants', key: 'frozen_eligibility' %} Al interior enviamos {% render 'lib/constants', key: 'interior_eligibility' %} por {% render 'lib/constants', key: 'interior_carrier' %}.</p></details>
+  <details><summary>¿Qué pasa si falta un producto de mi pedido? <i class="ic ic-plus" aria-hidden="true"></i></summary><p>Te escribimos por WhatsApp antes de salir para cambiarlo por otro o devolverte la diferencia.</p></details>
+</section>

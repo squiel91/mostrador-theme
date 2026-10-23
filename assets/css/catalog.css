@@ -1,0 +1,59 @@
+/* Mostrador: catalog styles, including responsive rules and component states. */
+.crumbs { display: flex; flex-wrap: wrap; gap: 6px; padding-block: 12px; font-size: var(--text-small); color: var(--color-muted); }
+.crumbs a:hover { color: var(--primary); text-decoration: underline; }
+.crumbs span[aria-hidden] { color: #a0a6b1; }
+.col-head { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 14px; }
+.col-head .count { color: var(--color-muted); font-weight: 500; }
+.col-desc { flex-basis: 100%; color: var(--color-muted); font-size: var(--text-small); max-width: 60ch; margin-top: 4px; }
+.subchips { display: flex; gap: 8px; overflow-x: auto; scrollbar-width: none; margin: 14px calc(-1 * var(--gutter)) 0; padding: 2px var(--gutter); }
+.subchips::-webkit-scrollbar { display: none; }
+.subchips .chip { height: 40px; padding-left: 6px; }
+.subchips .chip .cat-ico { width: 28px; height: 28px; font-size: .8125rem; }
+.subchips .chip .cat-ico .ic { width: 16px; height: 16px; }
+.subchips .chip:first-child { padding-left: 14px; }
+
+.mbar { position: sticky; top: var(--hd-h); z-index: 30; display: grid; grid-template-columns: 1fr 1fr 1.3fr; margin: 14px calc(-1 * var(--gutter)) 0; background: #fff; border-block: 1px solid var(--color-line); }
+.mbar > * { display: flex; align-items: center; justify-content: center; gap: 8px; height: 48px; border: 0; background: none; font-weight: 600; font-size: .875rem; }
+.mbar > * + * { border-left: 1px solid var(--color-line); }
+.mbar .switch input { width: 34px; height: 20px; }
+.mbar .switch input::before { width: 14px; height: 14px; }
+.mbar .switch input:checked::before { transform: translateX(14px); }
+
+.col-layout { display: block; margin-top: 12px; }
+.side { display: none; }
+.toolbar { display: none; }
+@media (min-width: 1024px) {
+  .mbar { display: none; }
+  .col-layout { display: grid; grid-template-columns: 240px minmax(0, 1fr); gap: 24px; margin-top: 20px; }
+  .side { display: block; position: sticky; top: calc(var(--hd-h) + 16px); align-self: start; }
+  .side-block { padding: 16px; border: 1px solid var(--color-line); border-radius: var(--radius-card); margin-bottom: 12px; }
+  .side-block h2 { font-size: .8125rem; font-weight: 700; color: var(--color-muted); margin-bottom: 8px; }
+  .side-tree a { display: flex; justify-content: space-between; gap: 8px; padding: 6px 8px; margin-inline: -8px; border-radius: 6px; font-size: .9375rem; }
+  .side-tree a:hover { background: var(--color-surface); }
+  .side-tree a small { color: var(--color-muted); }
+  .side-tree .is-current { font-weight: 700; color: var(--primary); background: var(--primary-soft); }
+  .side-tree ul ul { padding-left: 12px; border-left: 2px solid var(--color-line); margin: 2px 0 6px 6px; }
+  .side-tree ul ul a { font-size: .875rem; }
+  .side .sort-list label { min-height: 36px; border: 0; font-size: .9375rem; }
+  .side .sort-list input { width: 18px; height: 18px; }
+  .toolbar { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 12px; padding: 8px 12px; background: var(--color-surface); border-radius: var(--radius-ctl); font-size: .875rem; }
+  .toolbar-r { display: flex; align-items: center; gap: 16px; }
+  .subchips { margin-inline: 0; padding-inline: 0; flex-wrap: wrap; }
+}
+.more { display: grid; justify-items: center; gap: 12px; margin-top: 24px; text-align: center; }
+.more .progress { width: 220px; margin: 0; }
+.more .btn { min-width: 220px; }
+.pager { display: flex; gap: 4px; flex-wrap: wrap; justify-content: center; font-size: .875rem; }
+.pager a, .pager span { white-space: nowrap; display: flex !important; align-items: center; gap: 4px; min-width: 36px; height: 36px; display: grid; place-items: center; padding: 0 8px; border-radius: 6px; }
+.pager a:hover { background: var(--color-surface); }
+.pager [aria-current] { background: var(--color-ink); color: #fff; font-weight: 700; }
+.side .tree summary { min-height: 42px; font-size: .875rem; gap: 8px; }
+.side .tree .cat-ico { width: 26px; height: 26px; }
+.side .tree .cat-ico .ic { width: 17px; height: 17px; }
+.side .tree ul { grid-template-columns: 1fr; gap: 0; padding-left: 10px; }
+.side .tree ul a { background: transparent; min-height: 34px; padding: 4px 7px; font-size: .8125rem; }
+.side .tree-offers { min-height: 42px; gap: 8px; font-size: .875rem; }
+.side-tree { overflow: hidden; }
+.loadmore { display: grid; justify-items: center; gap: 12px; margin-top: 24px; }
+.loadmore > .progress { width: 200px; }
+.toolbar select { min-height: 40px; padding: 6px 12px; border: 1px solid var(--color-line); border-radius: var(--radius-ctl); background: white; }

@@ -1,0 +1,4679 @@
+{
+  "format": "mostrador-store-seed",
+  "version": 1,
+  "exportedAt": "2026-10-23T18:18:13.304197+00:00",
+  "description": "Frío Sur demo data archive for future Tiendu seed adaptation.",
+  "store": {
+    "name": "Frío Sur",
+    "description": "Congelados y almacén, con envío en el día en Montevideo.",
+    "countryCode": "UY",
+    "industry": "food",
+    "pickUpText": "Retiro sin costo en La Blanqueada (Av. 8 de Octubre 3125) o Solymar (Av. Giannattasio km 21.200). Listo en unas 2 horas; esperá nuestra confirmación.",
+    "pickUpLocationLink": null,
+    "isPickUpEnabled": true,
+    "whatsappNumber": "+59898431207",
+    "emailAddress": "hola@friosur.uy",
+    "storefrontUiPrimaryColor": "#0e7c4a",
+    "storefrontUiPrimaryButtonTextColor": "#ffffff",
+    "storefrontUiRounding": "md",
+    "storefrontUiFontPickerValue": "figtree_n4",
+    "currency": "UYU",
+    "emailLogoImageKey": "logo-frio-sur",
+    "storefrontUiAccountAccessImageKey": null
+  },
+  "images": [
+    {
+      "key": "aceite-de-oliva-extra-virgen",
+      "path": "images/aceite-de-oliva-extra-virgen.svg",
+      "mimeType": "image/svg+xml",
+      "alt": "Aceite de oliva extra virgen · 500 ml",
+      "aspectRatio": 1,
+      "sha256": "f92cf54047523db6736f151a5d30b3053666490b0d474bc5edc519703c4e403f"
+    },
+    {
+      "key": "aceite-girasol-1",
+      "path": "images/aceite-girasol-1.svg",
+      "mimeType": "image/svg+xml",
+      "alt": "Aceite de girasol · 1,5 L",
+      "aspectRatio": 1,
+      "sha256": "75a7d4f6ccd73a0096342f2d4e9ca56bdd5964fe008b22d58b0aa879153925e1"
+    },
+    {
+      "key": "agua-con-gas",
+      "path": "images/agua-con-gas.svg",
+      "mimeType": "image/svg+xml",
+      "alt": "Agua con gas · 2 L",
+      "aspectRatio": 1,
+      "sha256": "5c20e173f55d606d35b09a848f8c533ce2813b2389ba40f05d999765410c03a3"
+    },
+    {
+      "key": "agua-sin-gas",
+      "path": "images/agua-sin-gas.svg",
+      "mimeType": "image/svg+xml",
+      "alt": "Agua sin gas · 2 L",
+      "aspectRatio": 1,
+      "sha256": "9e7182c30745e12eec0db1e65159d4bd18855ae68c13af2ef228ed6d33a8c348"
+    },
+    {
+      "key": "albondigas-caseras",
+      "path": "images/albondigas-caseras.svg",
+      "mimeType": "image/svg+xml",
+      "alt": "Albóndigas caseras · 1 kg",
+      "aspectRatio": 1,
+      "sha256": "135f109b95bda842bf63c20ceb093b47c13672ce7c2a70b39ce6405f5a1e8c0f"
+    },
+    {
+      "key": "anillas-de-calamar",
+      "path": "images/anillas-de-calamar.svg",
+      "mimeType": "image/svg+xml",
+      "alt": "Anillas de calamar · 500 g",
+      "aspectRatio": 1,
+      "sha256": "4d2d78996f0b1deb77e2cc167e4611b41433f779068d55ca4c22d19f254894df"
+    },
+    {
+      "key": "arroz-largo-fino",
+      "path": "images/arroz-largo-fino.svg",
+      "mimeType": "image/svg+xml",
+      "alt": "Arroz largo fino · 1 kg",
+      "aspectRatio": 1,
+      "sha256": "7ca60f716fe602b3819707e62ea4984c832f5f780b6acc8eada406f3bbf8c525"
+    },
+    {
+      "key": "arvejas-congeladas",
+      "path": "images/arvejas-congeladas.svg",
+      "mimeType": "image/svg+xml",
+      "alt": "Arvejas congeladas · 1 kg",
+      "aspectRatio": 1,
+      "sha256": "d80bc6f243e06f1330812af3e5accae8f84161ad34ce14dba6bafbadb88b4826"
+    },
+    {
+      "key": "atun-al-natural",
+      "path": "images/atun-al-natural.svg",
+      "mimeType": "image/svg+xml",
+      "alt": "Atún al natural · 170 g",
+      "aspectRatio": 1,
+      "sha256": "e6eb295048f0a8198c9dcf67d66879700fd3a757f8bd44eabec329ad1a7e58f2"
+    },
+    {
+      "key": "banner-entrega-movil",
+      "path": "images/banner-entrega-movil.svg",
+      "mimeType": "image/svg+xml",
+      "alt": "Camioneta refrigerada Frío Sur",
+      "aspectRatio": 1.3333333333333333,
+      "sha256": "a9dcef938e5c5eedb7746d82a5d87cc9a61203eeda30875b219cc0cc6b4d3c70"
+    },
+    {
+      "key": "banner-entrega-wide",
+      "path": "images/banner-entrega-wide.svg",
+      "mimeType": "image/svg+xml",
+      "alt": "Camioneta refrigerada Frío Sur",
+      "aspectRatio": 3,
+      "sha256": "cbdf1ac6df07cb4f1d5141255a7e56a966170e0d02ead47f09e06e5fec046cc2"
+    },
+    {
+      "key": "banner-papas-movil",
+      "path": "images/banner-papas-movil.svg",
+      "mimeType": "image/svg+xml",
+      "alt": "Papas prefritas doradas",
+      "aspectRatio": 1.3333333333333333,
+      "sha256": "9a9fcbb694569be506f893dc60fec6f114e96fa578a59370e288e63b659e9e7c"
+    },
+    {
+      "key": "banner-papas-wide",
+      "path": "images/banner-papas-wide.svg",
+      "mimeType": "image/svg+xml",
+      "alt": "Papas prefritas doradas",
+      "aspectRatio": 3,
+      "sha256": "4746f1f9e4d85df5de2de1a7f434051ea6c4347439111103590c5e8308621c04"
+    },
+    {
+      "key": "banner-pescado-movil",
+      "path": "images/banner-pescado-movil.svg",
+      "mimeType": "image/svg+xml",
+      "alt": "Medallones de merluza",
+      "aspectRatio": 1.3333333333333333,
+      "sha256": "88cb78d886c8f0a8539e1dbde09c68f8ace2b7b15c2013398df5e3fe71e4b642"
+    },
+    {
+      "key": "banner-pescado-wide",
+      "path": "images/banner-pescado-wide.svg",
+      "mimeType": "image/svg+xml",
+      "alt": "Medallones de merluza",
+      "aspectRatio": 3,
+      "sha256": "910549a27ba71698c595bb4163d1537a9913d2b0b5f6c88194b14b4100e105ff"
+    },
+    {
+      "key": "bastones-de-pescado",
+      "path": "images/bastones-de-pescado.svg",
+      "mimeType": "image/svg+xml",
+      "alt": "Bastones de pescado · 600 g",
+      "aspectRatio": 1,
+      "sha256": "71457d6d59af63f60306b390458ea276ed23f9562367ab4fcb1d46decb159213"
+    },
+    {
+      "key": "bastones-de-pollo",
+      "path": "images/bastones-de-pollo.svg",
+      "mimeType": "image/svg+xml",
+      "alt": "Bastones de pollo · 600 g",
+      "aspectRatio": 1,
+      "sha256": "233b3553630a2219399c69583de23f6b8f5859e9991f35dc4c63de02ef10c497"
+    },
+    {
+      "key": "blog-empanadas",
+      "path": "images/blog-empanadas.svg",
+      "mimeType": "image/svg+xml",
+      "alt": "Empanadas doradas listas para servir",
+      "aspectRatio": 1.7777777777777777,
+      "sha256": "4934ba45dcc10f9438575e730e9c97ea5b0d3b033795f2568f1b99be0bac51a9"
+    },
+    {
+      "key": "blog-freezer",
+      "path": "images/blog-freezer.svg",
+      "mimeType": "image/svg+xml",
+      "alt": "Freezer ordenado con paquetes de congelados",
+      "aspectRatio": 1.7777777777777777,
+      "sha256": "bfe4e7a62bc3c4085db3144f8d6acc1c474cd58aa87a144bfcc9e3a94980a388"
+    },
+    {
+      "key": "blog-milanesas-horno",
+      "path": "images/blog-milanesas-horno.svg",
+      "mimeType": "image/svg+xml",
+      "alt": "Milanesas doradas al horno sobre un plato",
+      "aspectRatio": 1.7777777777777777,
+      "sha256": "59b46531beabe204119416883b4cea3ce22f0b2aa521445cc7b51a46ca322242"
+    },
+    {
+      "key": "brocoli-en-flores",
+      "path": "images/brocoli-en-flores.svg",
+      "mimeType": "image/svg+xml",
+      "alt": "Brócoli en flores · 1 kg",
+      "aspectRatio": 1,
+      "sha256": "b8e3d16a9eda2a2d3d1e66d106edb00f0de5becacf23831420f7e93d5fedfc42"
+    },
+    {
+      "key": "cafe-molido-clasico",
+      "path": "images/cafe-molido-clasico.svg",
+      "mimeType": "image/svg+xml",
+      "alt": "Café molido clásico · 250 g",
+      "aspectRatio": 1,
+      "sha256": "a6474cc23bcb8e387dd30ef24cf60e5d0ea63f9bfd17878f1668e71ffabf07af"
+    },
+    {
+      "key": "cheesecake-de-frutos-rojos",
+      "path": "images/cheesecake-de-frutos-rojos.svg",
+      "mimeType": "image/svg+xml",
+      "alt": "Cheesecake de frutos rojos · 800 g",
+      "aspectRatio": 1,
+      "sha256": "d90cf28df7618a6aedcce609ef9f6573b4aeee835fe88ad989709015f0ba1cc5"
+    },
+    {
+      "key": "empanadas-carne",
+      "path": "images/empanadas-carne.svg",
+      "mimeType": "image/svg+xml",
+      "alt": "Empanadas para horno x 12 · x 12",
+      "aspectRatio": 1,
+      "sha256": "a3427f1dbf60d8a2a3fe70c1c79ffe441254e6204b0185f09ad8f0c4422e052f"
+    },
+    {
+      "key": "empanadas-jyq",
+      "path": "images/empanadas-jyq.svg",
+      "mimeType": "image/svg+xml",
+      "alt": "Empanadas para horno x 12 · x 12",
+      "aspectRatio": 1,
+      "sha256": "d63b2c9d84882dcaf407d75d8275355142f71169ba5183ddb2b787ded25a1a2e"
+    },
+    {
+      "key": "empanadas-pollo",
+      "path": "images/empanadas-pollo.svg",
+      "mimeType": "image/svg+xml",
+      "alt": "Empanadas para horno x 12 · x 12",
+      "aspectRatio": 1,
+      "sha256": "c315fa72e860f241214cb2613b36afa6be18383df484728b99e0111e0e6dabf7"
+    },
+    {
+      "key": "espinaca-picada",
+      "path": "images/espinaca-picada.svg",
+      "mimeType": "image/svg+xml",
+      "alt": "Espinaca picada · 1 kg",
+      "aspectRatio": 1,
+      "sha256": "f55ab0728e8228cc0668ea74e33f4b7c4f74143b8ce24563c5e574cf85dbf20b"
+    },
+    {
+      "key": "fideos-tirabuzon",
+      "path": "images/fideos-tirabuzon.svg",
+      "mimeType": "image/svg+xml",
+      "alt": "Fideos tirabuzón · 500 g",
+      "aspectRatio": 1,
+      "sha256": "1cb1cde6bcdd4c8b0a08171334e2226d1c1e7ebc8aa550a26d64b5b2fe7ff0e6"
+    },
+    {
+      "key": "filetes-de-merluza",
+      "path": "images/filetes-de-merluza.svg",
+      "mimeType": "image/svg+xml",
+      "alt": "Filetes de merluza · 1 kg",
+      "aspectRatio": 1,
+      "sha256": "ac7ad23d665276df1d2777fe6be1223890fad8c0a6951d6c702bfa07f5050cfa"
+    },
+    {
+      "key": "galletas-de-arroz",
+      "path": "images/galletas-de-arroz.svg",
+      "mimeType": "image/svg+xml",
+      "alt": "Galletas de arroz · 100 g",
+      "aspectRatio": 1,
+      "sha256": "06877f022f8874230041b1e9270387914de5f96e5c22cace9b989ac1455e1029"
+    },
+    {
+      "key": "galletitas-de-avena",
+      "path": "images/galletitas-de-avena.svg",
+      "mimeType": "image/svg+xml",
+      "alt": "Galletitas de avena · 300 g",
+      "aspectRatio": 1,
+      "sha256": "c1b2c2b0b86b1eb40b85de011eeb872ca6158ac199c4796017a2037c7f1370fe"
+    },
+    {
+      "key": "galletitas-de-chocolate",
+      "path": "images/galletitas-de-chocolate.svg",
+      "mimeType": "image/svg+xml",
+      "alt": "Galletitas de chocolate · 300 g",
+      "aspectRatio": 1,
+      "sha256": "0bf697998f57b6d978a233d265578274344a370bd9926e1d647feb8c5c7ff9a6"
+    },
+    {
+      "key": "hamburguesas-de-carne-x-8",
+      "path": "images/hamburguesas-de-carne-x-8.svg",
+      "mimeType": "image/svg+xml",
+      "alt": "Hamburguesas de carne x 8 · x 8",
+      "aspectRatio": 1,
+      "sha256": "50d80f052f6a8f58126282706d3b59e558221fb4d0683e15b705c978ddb4c452"
+    },
+    {
+      "key": "hamburguesas-de-pollo-x-8",
+      "path": "images/hamburguesas-de-pollo-x-8.svg",
+      "mimeType": "image/svg+xml",
+      "alt": "Hamburguesas de pollo x 8 · x 8",
+      "aspectRatio": 1,
+      "sha256": "ba5d1f1ada483aca72a04bf86f4b8f4b83f756b7213bb507da48fddaba031c10"
+    },
+    {
+      "key": "helado-de-chocolate",
+      "path": "images/helado-de-chocolate.svg",
+      "mimeType": "image/svg+xml",
+      "alt": "Helado de chocolate · 1 L",
+      "aspectRatio": 1,
+      "sha256": "a45993f628d682e97e8b82bccc90f2e95ec4b98eb64656b05338a1d5ee6e3b44"
+    },
+    {
+      "key": "helado-de-crema-americana",
+      "path": "images/helado-de-crema-americana.svg",
+      "mimeType": "image/svg+xml",
+      "alt": "Helado de crema americana · 1 L",
+      "aspectRatio": 1,
+      "sha256": "6b65529aecac0bf173c431d8eca7dc2753aaa298b770d86a54f1d80f612e3b46"
+    },
+    {
+      "key": "helado-de-dulce-de-leche",
+      "path": "images/helado-de-dulce-de-leche.svg",
+      "mimeType": "image/svg+xml",
+      "alt": "Helado de dulce de leche · 1 L",
+      "aspectRatio": 1,
+      "sha256": "6c26bd8494567f9b3b10200b98a1ba66b227df1827831b275a6a374cfe291b36"
+    },
+    {
+      "key": "jugo-de-manzana",
+      "path": "images/jugo-de-manzana.svg",
+      "mimeType": "image/svg+xml",
+      "alt": "Jugo de manzana · 1 L",
+      "aspectRatio": 1,
+      "sha256": "60e7303e3610cf147806c2d38e82ff5042f66455b1e33c67067ad7fffc2e40d8"
+    },
+    {
+      "key": "jugo-de-naranja",
+      "path": "images/jugo-de-naranja.svg",
+      "mimeType": "image/svg+xml",
+      "alt": "Jugo de naranja · 1 L",
+      "aspectRatio": 1,
+      "sha256": "53332242b88c61867e2123e7174eaee6a4e78ca63f7482dcbaa91daacdfc76a3"
+    },
+    {
+      "key": "logo-frio-sur",
+      "path": "images/logo-frio-sur.svg",
+      "mimeType": "image/svg+xml",
+      "alt": "Frío Sur · congelados y almacén",
+      "aspectRatio": 3.3333333333333335,
+      "sha256": "260aff137b786e7c6926d33f3e36f514e27a797e28e38b6a122d1976522023d1"
+    },
+    {
+      "key": "medallones-merluza-1",
+      "path": "images/medallones-merluza-1.svg",
+      "mimeType": "image/svg+xml",
+      "alt": "Medallones de merluza · 800 g",
+      "aspectRatio": 1,
+      "sha256": "057cd0348ef072e205e1bfcdaf7b0f1800e63aec64fdf0b7a7c8ef224d80dbd3"
+    },
+    {
+      "key": "medallones-merluza-2",
+      "path": "images/medallones-merluza-2.svg",
+      "mimeType": "image/svg+xml",
+      "alt": "Medallones de merluza · 800 g",
+      "aspectRatio": 1,
+      "sha256": "7a144bdcba95de531a4fdf2b0ad40065a88bf4eebef6d257adda0820959dc68f"
+    },
+    {
+      "key": "milanesas-de-carne",
+      "path": "images/milanesas-de-carne.svg",
+      "mimeType": "image/svg+xml",
+      "alt": "Milanesas de carne · 1 kg",
+      "aspectRatio": 1,
+      "sha256": "06ea4b591cf20f1476b14b6454cc01358eb1fb556c88aa20923688af40ada844"
+    },
+    {
+      "key": "milanesas-pollo-1",
+      "path": "images/milanesas-pollo-1.svg",
+      "mimeType": "image/svg+xml",
+      "alt": "Milanesas de pollo rebozadas · 1 kg",
+      "aspectRatio": 1,
+      "sha256": "96cfec94a744b16995472bd3081b20bc395e4f12b9faa2d63166c0c6a9ef6849"
+    },
+    {
+      "key": "milanesas-pollo-2",
+      "path": "images/milanesas-pollo-2.svg",
+      "mimeType": "image/svg+xml",
+      "alt": "Milanesas de pollo rebozadas · 1 kg",
+      "aspectRatio": 1,
+      "sha256": "bbd26bc3329e4009ca2887e921205a6c1f00a5c33622d896c0570924cf34f47c"
+    },
+    {
+      "key": "milanesas-pollo-25",
+      "path": "images/milanesas-pollo-25.svg",
+      "mimeType": "image/svg+xml",
+      "alt": "Milanesas de pollo rebozadas · 2,5 kg",
+      "aspectRatio": 1,
+      "sha256": "7692847c4280f4f89ffd432708cebc740d716cb4a1fc1c760038cb53cfe24fc2"
+    },
+    {
+      "key": "milanesas-pollo-3",
+      "path": "images/milanesas-pollo-3.svg",
+      "mimeType": "image/svg+xml",
+      "alt": "Milanesas de pollo rebozadas · 1 kg",
+      "aspectRatio": 1,
+      "sha256": "bbd26bc3329e4009ca2887e921205a6c1f00a5c33622d896c0570924cf34f47c"
+    },
+    {
+      "key": "mini-pizzas-x-6",
+      "path": "images/mini-pizzas-x-6.svg",
+      "mimeType": "image/svg+xml",
+      "alt": "Mini pizzas x 6 · x 6",
+      "aspectRatio": 1,
+      "sha256": "7037bfbcf94b166a6e12cab5b820c155a47be089faa6c74e213d703213bf6cc6"
+    },
+    {
+      "key": "mix-de-verduras",
+      "path": "images/mix-de-verduras.svg",
+      "mimeType": "image/svg+xml",
+      "alt": "Mix de verduras · 1 kg",
+      "aspectRatio": 1,
+      "sha256": "e65b9285a9341bc2e11debd2b77a13d0bd1fcbd1c0efaaeae49c412fceb7773e"
+    },
+    {
+      "key": "noquis-de-papa",
+      "path": "images/noquis-de-papa.svg",
+      "mimeType": "image/svg+xml",
+      "alt": "Ñoquis de papa · 1 kg",
+      "aspectRatio": 1,
+      "sha256": "97283cc8f8c09280fec568b2f282142dc31fd7608dc7f8adc15e83d0b4a1712f"
+    },
+    {
+      "key": "nuggets-de-pollo",
+      "path": "images/nuggets-de-pollo.svg",
+      "mimeType": "image/svg+xml",
+      "alt": "Nuggets de pollo · 750 g",
+      "aspectRatio": 1,
+      "sha256": "449ea08e57209aa00428297e910cd4f8687fe024b69334352679963fb8281de0"
+    },
+    {
+      "key": "papas-prefritas-1",
+      "path": "images/papas-prefritas-1.svg",
+      "mimeType": "image/svg+xml",
+      "alt": "Papas prefritas corte clásico · 2,5 kg",
+      "aspectRatio": 1,
+      "sha256": "617a77644c6bd90ca8c9da6ec09dede563eaa968f7208601a6409432a6aaba40"
+    },
+    {
+      "key": "papas-prefritas-2",
+      "path": "images/papas-prefritas-2.svg",
+      "mimeType": "image/svg+xml",
+      "alt": "Papas prefritas corte clásico · 2,5 kg",
+      "aspectRatio": 1,
+      "sha256": "0f8125f21ed66ed265e30cd510945084f00b57bb5407be28e7d8ecebdcb852ef"
+    },
+    {
+      "key": "pascualina-casera",
+      "path": "images/pascualina-casera.svg",
+      "mimeType": "image/svg+xml",
+      "alt": "Pascualina casera · 800 g",
+      "aspectRatio": 1,
+      "sha256": "efbd23227281a29d179b062a1b4b611c47a0310dccee2e465dea09538d0851c1"
+    },
+    {
+      "key": "pizza-de-muzzarella",
+      "path": "images/pizza-de-muzzarella.svg",
+      "mimeType": "image/svg+xml",
+      "alt": "Pizza de muzzarella · 600 g",
+      "aspectRatio": 1,
+      "sha256": "797b92c3218629629fe8dceea1c1ce6a348b555d27e92bd9dae596b272f1b983"
+    },
+    {
+      "key": "ravioles-de-ricota",
+      "path": "images/ravioles-de-ricota.svg",
+      "mimeType": "image/svg+xml",
+      "alt": "Ravioles de ricota · 500 g",
+      "aspectRatio": 1,
+      "sha256": "f19e9fdc28d53f495ed48d65655f5115921579b89db81e455d89045beefea550"
+    },
+    {
+      "key": "refresco-cola",
+      "path": "images/refresco-cola.svg",
+      "mimeType": "image/svg+xml",
+      "alt": "Refresco cola · 2 L",
+      "aspectRatio": 1,
+      "sha256": "3828a978e0b2e358e88ecf7fe711d1b43aefc7a72547fbb4a46f323bbca5defa"
+    },
+    {
+      "key": "refresco-de-naranja",
+      "path": "images/refresco-de-naranja.svg",
+      "mimeType": "image/svg+xml",
+      "alt": "Refresco de naranja · 2 L",
+      "aspectRatio": 1,
+      "sha256": "f23226907c26f9b9348943f15a4980375d14c5e9c480218cc317b48b0d621356"
+    },
+    {
+      "key": "supremas-de-pollo",
+      "path": "images/supremas-de-pollo.svg",
+      "mimeType": "image/svg+xml",
+      "alt": "Supremas de pollo · 1 kg",
+      "aspectRatio": 1,
+      "sha256": "c72e6df2ea8f5bd548b50ffa142fb8a7630b04396440b3ca41c93e77b34b40c7"
+    },
+    {
+      "key": "tarta-de-jamon-y-queso",
+      "path": "images/tarta-de-jamon-y-queso.svg",
+      "mimeType": "image/svg+xml",
+      "alt": "Tarta de jamón y queso · 800 g",
+      "aspectRatio": 1,
+      "sha256": "33a7647cd3137ad4388915d4cca63f7f5cecc4ba86dc1b90e8f6ec5acd3c0f72"
+    },
+    {
+      "key": "tomate-triturado",
+      "path": "images/tomate-triturado.svg",
+      "mimeType": "image/svg+xml",
+      "alt": "Tomate triturado · 400 g",
+      "aspectRatio": 1,
+      "sha256": "bed1f316806b5172afd08ea68472fe48e2f60c3ae202d1ed071d19424365ea09"
+    },
+    {
+      "key": "torta-de-chocolate",
+      "path": "images/torta-de-chocolate.svg",
+      "mimeType": "image/svg+xml",
+      "alt": "Torta de chocolate · 800 g",
+      "aspectRatio": 1,
+      "sha256": "2cd3132de5427cf684b55d8692edb846d5451b0a775363e0acb59cad5331aeba"
+    },
+    {
+      "key": "yerba-mate-intensa",
+      "path": "images/yerba-mate-intensa.svg",
+      "mimeType": "image/svg+xml",
+      "alt": "Yerba mate intensa · 1 kg",
+      "aspectRatio": 1,
+      "sha256": "b4170529ea50e03a4b109b6db087fbba3afb1abbde58778a8b7a2c132d94775a"
+    },
+    {
+      "key": "yerba-suave-1",
+      "path": "images/yerba-suave-1.svg",
+      "mimeType": "image/svg+xml",
+      "alt": "Yerba mate suave · 1 kg",
+      "aspectRatio": 1,
+      "sha256": "78fa603cd0b60f0181e4c69b34b95a8f4a290c7eb04df85b257e39cc1998d63e"
+    },
+    {
+      "key": "yerba-suave-2",
+      "path": "images/yerba-suave-2.svg",
+      "mimeType": "image/svg+xml",
+      "alt": "Yerba mate suave · 1 kg",
+      "aspectRatio": 1,
+      "sha256": "78fa603cd0b60f0181e4c69b34b95a8f4a290c7eb04df85b257e39cc1998d63e"
+    },
+    {
+      "key": "zanahorias-en-cubos",
+      "path": "images/zanahorias-en-cubos.svg",
+      "mimeType": "image/svg+xml",
+      "alt": "Zanahorias en cubos · 1 kg",
+      "aspectRatio": 1,
+      "sha256": "b619e91152d03ec08e89576e07b8cd18ad8bea8721aa1912267425d3a77ea24a"
+    }
+  ],
+  "attributes": [
+    {
+      "key": "presentacion",
+      "name": "Presentación",
+      "displayType": "radio",
+      "metaBusinessFieldMapping": null,
+      "values": [
+        {
+          "key": "presentacion/1-kg",
+          "value": "1 kg",
+          "color": null,
+          "note": null,
+          "imageKey": "milanesas-pollo-1"
+        },
+        {
+          "key": "presentacion/2-5-kg",
+          "value": "2,5 kg",
+          "color": null,
+          "note": null,
+          "imageKey": "milanesas-pollo-25"
+        }
+      ]
+    },
+    {
+      "key": "sabor",
+      "name": "Sabor",
+      "displayType": "radio",
+      "metaBusinessFieldMapping": null,
+      "values": [
+        {
+          "key": "sabor/carne",
+          "value": "Carne",
+          "color": null,
+          "note": null,
+          "imageKey": "empanadas-carne"
+        },
+        {
+          "key": "sabor/pollo",
+          "value": "Pollo",
+          "color": null,
+          "note": null,
+          "imageKey": "empanadas-pollo"
+        },
+        {
+          "key": "sabor/jamon-y-queso",
+          "value": "Jamón y queso",
+          "color": null,
+          "note": null,
+          "imageKey": "empanadas-jyq"
+        }
+      ]
+    }
+  ],
+  "collections": [
+    {
+      "key": "aceites",
+      "name": "Aceites",
+      "handle": "aceites",
+      "description": "Aceites para completar tu surtido.",
+      "defaultSortBy": "manual",
+      "seo": {
+        "title": "Aceites · Frío Sur",
+        "description": "Aceites para completar tu surtido."
+      },
+      "isListed": true,
+      "isEnabled": true,
+      "templateSuffix": null,
+      "metadata": null,
+      "coverImageKey": "aceite-girasol-1",
+      "parentKey": "almacen",
+      "productKeys": [
+        "aceite-de-girasol",
+        "aceite-de-oliva-extra-virgen"
+      ]
+    },
+    {
+      "key": "aguas",
+      "name": "Aguas",
+      "handle": "aguas",
+      "description": "Aguas para completar tu surtido.",
+      "defaultSortBy": "manual",
+      "seo": {
+        "title": "Aguas · Frío Sur",
+        "description": "Aguas para completar tu surtido."
+      },
+      "isListed": true,
+      "isEnabled": true,
+      "templateSuffix": null,
+      "metadata": null,
+      "coverImageKey": "agua-sin-gas",
+      "parentKey": "bebidas",
+      "productKeys": [
+        "agua-sin-gas",
+        "agua-con-gas"
+      ]
+    },
+    {
+      "key": "almacen",
+      "name": "Almacén",
+      "handle": "almacen",
+      "description": "Yerba, aceites, galletitas y lo de todos los días, para completar el pedido.",
+      "defaultSortBy": "manual",
+      "seo": {
+        "title": "Almacén · Frío Sur",
+        "description": "Yerba, aceites, galletitas y lo de todos los días, para completar el pedido."
+      },
+      "isListed": true,
+      "isEnabled": true,
+      "templateSuffix": null,
+      "metadata": null,
+      "coverImageKey": "yerba-suave-1",
+      "parentKey": null,
+      "productKeys": []
+    },
+    {
+      "key": "arroz-y-fideos",
+      "name": "Arroz y fideos",
+      "handle": "arroz-y-fideos",
+      "description": "Arroz y fideos para completar tu surtido.",
+      "defaultSortBy": "manual",
+      "seo": {
+        "title": "Arroz y fideos · Frío Sur",
+        "description": "Arroz y fideos para completar tu surtido."
+      },
+      "isListed": true,
+      "isEnabled": true,
+      "templateSuffix": null,
+      "metadata": null,
+      "coverImageKey": "arroz-largo-fino",
+      "parentKey": "almacen",
+      "productKeys": [
+        "arroz-largo-fino",
+        "fideos-tirabuzon"
+      ]
+    },
+    {
+      "key": "bebidas",
+      "name": "Bebidas",
+      "handle": "bebidas",
+      "description": "Agua, refrescos y jugos para acompañar tu pedido.",
+      "defaultSortBy": "manual",
+      "seo": {
+        "title": "Bebidas · Frío Sur",
+        "description": "Agua, refrescos y jugos para acompañar tu pedido."
+      },
+      "isListed": true,
+      "isEnabled": true,
+      "templateSuffix": null,
+      "metadata": null,
+      "coverImageKey": "agua-sin-gas",
+      "parentKey": null,
+      "productKeys": []
+    },
+    {
+      "key": "carnes",
+      "name": "Carnes",
+      "handle": "carnes",
+      "description": "Carnes para completar tu surtido.",
+      "defaultSortBy": "manual",
+      "seo": {
+        "title": null,
+        "description": null
+      },
+      "isListed": true,
+      "isEnabled": true,
+      "templateSuffix": null,
+      "metadata": null,
+      "coverImageKey": "milanesas-pollo-1",
+      "parentKey": "congelados",
+      "productKeys": [
+        "milanesas-de-pollo-rebozadas",
+        "milanesas-de-carne",
+        "supremas-de-pollo",
+        "nuggets-de-pollo",
+        "hamburguesas-de-carne-x-8",
+        "hamburguesas-de-pollo-x-8",
+        "albondigas-caseras",
+        "bastones-de-pollo"
+      ]
+    },
+    {
+      "key": "congelados",
+      "name": "Congelados",
+      "handle": "congelados",
+      "description": "Carnes, pescados, verduras, pastas y helados. Todo viaja en caja térmica y llega a −18 °C.",
+      "defaultSortBy": "manual",
+      "seo": {
+        "title": "Congelados · Frío Sur",
+        "description": "Carnes, pescados, verduras, pastas y helados. Todo viaja en caja térmica y llega a −18 °C."
+      },
+      "isListed": true,
+      "isEnabled": true,
+      "templateSuffix": null,
+      "metadata": null,
+      "coverImageKey": "milanesas-pollo-1",
+      "parentKey": null,
+      "productKeys": []
+    },
+    {
+      "key": "conservas",
+      "name": "Conservas",
+      "handle": "conservas",
+      "description": "Conservas para completar tu surtido.",
+      "defaultSortBy": "manual",
+      "seo": {
+        "title": "Conservas · Frío Sur",
+        "description": "Conservas para completar tu surtido."
+      },
+      "isListed": true,
+      "isEnabled": true,
+      "templateSuffix": null,
+      "metadata": null,
+      "coverImageKey": "tomate-triturado",
+      "parentKey": "almacen",
+      "productKeys": [
+        "tomate-triturado",
+        "atun-al-natural"
+      ]
+    },
+    {
+      "key": "empanadas-y-tartas",
+      "name": "Empanadas y tartas",
+      "handle": "empanadas-y-tartas",
+      "description": "Empanadas y tartas para completar tu surtido.",
+      "defaultSortBy": "manual",
+      "seo": {
+        "title": "Empanadas y tartas · Frío Sur",
+        "description": "Empanadas y tartas para completar tu surtido."
+      },
+      "isListed": true,
+      "isEnabled": true,
+      "templateSuffix": null,
+      "metadata": null,
+      "coverImageKey": "empanadas-carne",
+      "parentKey": "congelados",
+      "productKeys": [
+        "empanadas-para-horno-x-12",
+        "tarta-de-jamon-y-queso",
+        "pascualina-casera"
+      ]
+    },
+    {
+      "key": "galletitas",
+      "name": "Galletitas",
+      "handle": "galletitas",
+      "description": "Galletitas para completar tu surtido.",
+      "defaultSortBy": "manual",
+      "seo": {
+        "title": "Galletitas · Frío Sur",
+        "description": "Galletitas para completar tu surtido."
+      },
+      "isListed": true,
+      "isEnabled": true,
+      "templateSuffix": null,
+      "metadata": null,
+      "coverImageKey": "galletitas-de-avena",
+      "parentKey": "almacen",
+      "productKeys": [
+        "galletitas-de-avena",
+        "galletitas-de-chocolate",
+        "galletas-de-arroz"
+      ]
+    },
+    {
+      "key": "helados",
+      "name": "Helados",
+      "handle": "helados",
+      "description": "Helados para completar tu surtido.",
+      "defaultSortBy": "manual",
+      "seo": {
+        "title": "Helados · Frío Sur",
+        "description": "Helados para completar tu surtido."
+      },
+      "isListed": true,
+      "isEnabled": true,
+      "templateSuffix": null,
+      "metadata": null,
+      "coverImageKey": "helado-de-crema-americana",
+      "parentKey": "congelados",
+      "productKeys": [
+        "helado-de-crema-americana",
+        "helado-de-chocolate",
+        "helado-de-dulce-de-leche"
+      ]
+    },
+    {
+      "key": "jugos",
+      "name": "Jugos",
+      "handle": "jugos",
+      "description": "Jugos para completar tu surtido.",
+      "defaultSortBy": "manual",
+      "seo": {
+        "title": "Jugos · Frío Sur",
+        "description": "Jugos para completar tu surtido."
+      },
+      "isListed": true,
+      "isEnabled": true,
+      "templateSuffix": null,
+      "metadata": null,
+      "coverImageKey": "jugo-de-naranja",
+      "parentKey": "bebidas",
+      "productKeys": [
+        "jugo-de-naranja",
+        "jugo-de-manzana"
+      ]
+    },
+    {
+      "key": "ofertas",
+      "name": "Ofertas",
+      "handle": "ofertas",
+      "description": "Precios especiales para hacer rendir el surtido. Hasta agotar stock.",
+      "defaultSortBy": "manual",
+      "seo": {
+        "title": "Ofertas · Frío Sur",
+        "description": "Precios especiales para hacer rendir el surtido. Hasta agotar stock."
+      },
+      "isListed": true,
+      "isEnabled": true,
+      "templateSuffix": null,
+      "metadata": null,
+      "coverImageKey": "papas-prefritas-1",
+      "parentKey": null,
+      "productKeys": [
+        "papas-prefritas-corte-clasico",
+        "medallones-de-merluza",
+        "yerba-mate-suave",
+        "nuggets-de-pollo",
+        "filetes-de-merluza",
+        "arvejas-congeladas",
+        "zanahorias-en-cubos",
+        "mini-pizzas-x-6",
+        "helado-de-chocolate",
+        "yerba-mate-intensa",
+        "arroz-largo-fino",
+        "refresco-cola",
+        "jugo-de-naranja"
+      ]
+    },
+    {
+      "key": "pastas-y-pizzas",
+      "name": "Pastas y pizzas",
+      "handle": "pastas-y-pizzas",
+      "description": "Pastas y pizzas para completar tu surtido.",
+      "defaultSortBy": "manual",
+      "seo": {
+        "title": "Pastas y pizzas · Frío Sur",
+        "description": "Pastas y pizzas para completar tu surtido."
+      },
+      "isListed": true,
+      "isEnabled": true,
+      "templateSuffix": null,
+      "metadata": null,
+      "coverImageKey": "pizza-de-muzzarella",
+      "parentKey": "congelados",
+      "productKeys": [
+        "pizza-de-muzzarella",
+        "mini-pizzas-x-6",
+        "ravioles-de-ricota",
+        "noquis-de-papa"
+      ]
+    },
+    {
+      "key": "pescados",
+      "name": "Pescados",
+      "handle": "pescados",
+      "description": "Pescados para completar tu surtido.",
+      "defaultSortBy": "manual",
+      "seo": {
+        "title": "Pescados · Frío Sur",
+        "description": "Pescados para completar tu surtido."
+      },
+      "isListed": true,
+      "isEnabled": true,
+      "templateSuffix": null,
+      "metadata": null,
+      "coverImageKey": "medallones-merluza-1",
+      "parentKey": "congelados",
+      "productKeys": [
+        "medallones-de-merluza",
+        "filetes-de-merluza",
+        "bastones-de-pescado",
+        "anillas-de-calamar"
+      ]
+    },
+    {
+      "key": "postres",
+      "name": "Postres",
+      "handle": "postres",
+      "description": "Postres para completar tu surtido.",
+      "defaultSortBy": "manual",
+      "seo": {
+        "title": "Postres · Frío Sur",
+        "description": "Postres para completar tu surtido."
+      },
+      "isListed": true,
+      "isEnabled": true,
+      "templateSuffix": null,
+      "metadata": null,
+      "coverImageKey": "torta-de-chocolate",
+      "parentKey": "congelados",
+      "productKeys": [
+        "torta-de-chocolate",
+        "cheesecake-de-frutos-rojos"
+      ]
+    },
+    {
+      "key": "refrescos",
+      "name": "Refrescos",
+      "handle": "refrescos",
+      "description": "Refrescos para completar tu surtido.",
+      "defaultSortBy": "manual",
+      "seo": {
+        "title": "Refrescos · Frío Sur",
+        "description": "Refrescos para completar tu surtido."
+      },
+      "isListed": true,
+      "isEnabled": true,
+      "templateSuffix": null,
+      "metadata": null,
+      "coverImageKey": "refresco-cola",
+      "parentKey": "bebidas",
+      "productKeys": [
+        "refresco-cola",
+        "refresco-de-naranja"
+      ]
+    },
+    {
+      "key": "verduras",
+      "name": "Verduras",
+      "handle": "verduras",
+      "description": "Verduras para completar tu surtido.",
+      "defaultSortBy": "manual",
+      "seo": {
+        "title": "Verduras · Frío Sur",
+        "description": "Verduras para completar tu surtido."
+      },
+      "isListed": true,
+      "isEnabled": true,
+      "templateSuffix": null,
+      "metadata": null,
+      "coverImageKey": "papas-prefritas-1",
+      "parentKey": "congelados",
+      "productKeys": [
+        "papas-prefritas-corte-clasico",
+        "arvejas-congeladas",
+        "brocoli-en-flores",
+        "espinaca-picada",
+        "mix-de-verduras",
+        "zanahorias-en-cubos"
+      ]
+    },
+    {
+      "key": "yerba-y-cafe",
+      "name": "Yerba y café",
+      "handle": "yerba-y-cafe",
+      "description": "Yerba y café para completar tu surtido.",
+      "defaultSortBy": "manual",
+      "seo": {
+        "title": "Yerba y café · Frío Sur",
+        "description": "Yerba y café para completar tu surtido."
+      },
+      "isListed": true,
+      "isEnabled": true,
+      "templateSuffix": null,
+      "metadata": null,
+      "coverImageKey": "yerba-suave-1",
+      "parentKey": "almacen",
+      "productKeys": [
+        "yerba-mate-suave",
+        "cafe-molido-clasico",
+        "yerba-mate-intensa"
+      ]
+    }
+  ],
+  "products": [
+    {
+      "key": "aceite-de-girasol",
+      "title": "Aceite de girasol",
+      "handle": "aceite-de-girasol",
+      "currency": "UYU",
+      "description": "Aceite de girasol refinado, para cocinar y para ensaladas. Botella de 1,5 L con tapa a rosca. Vuelve a entrar la semana que viene.",
+      "seo": {
+        "title": "Aceite de girasol · Frío Sur",
+        "description": "Aceite de girasol refinado, para cocinar y para ensaladas. Botella de 1,5 L con tapa a rosca. Vuelve a entrar la semana que viene."
+      },
+      "specifications": [
+        {
+          "name": "Presentación",
+          "value": "1,5 L"
+        },
+        {
+          "name": "Origen",
+          "value": "Argentina"
+        }
+      ],
+      "videoUrl": null,
+      "isPhysical": true,
+      "isListed": true,
+      "basePriceInCents": 18900,
+      "baseCompareAtPriceInCents": null,
+      "baseWeightInGrams": null,
+      "templateSuffix": null,
+      "imageKeys": [
+        "aceite-girasol-1"
+      ],
+      "collectionKeys": [
+        "aceites"
+      ],
+      "attributeValueKeys": [],
+      "metadata": {
+        "mostrador": {
+          "demo": true,
+          "unitPricing": {
+            "unit": "L",
+            "amount": 1.5
+          },
+          "presentation": "1,5 L"
+        }
+      },
+      "variants": [
+        {
+          "key": "aceite-de-girasol/FS-1042",
+          "priceInCents": 18900,
+          "compareAtPriceInCents": null,
+          "weightInGrams": null,
+          "stock": 0,
+          "sku": "FS-1042",
+          "isListed": true,
+          "coverImageKey": "aceite-girasol-1",
+          "attributeValueKeys": []
+        }
+      ],
+      "reviews": []
+    },
+    {
+      "key": "aceite-de-oliva-extra-virgen",
+      "title": "Aceite de oliva extra virgen",
+      "handle": "aceite-de-oliva-extra-virgen",
+      "currency": "UYU",
+      "description": "Aceite de oliva extra virgen, presentación 500 ml. Guardá en un lugar fresco y seco, protegido del sol.",
+      "seo": {
+        "title": "Aceite de oliva extra virgen · Frío Sur",
+        "description": "Aceite de oliva extra virgen, presentación 500 ml. Guardá en un lugar fresco y seco, protegido del sol."
+      },
+      "specifications": [
+        {
+          "name": "Presentación",
+          "value": "500 ml"
+        },
+        {
+          "name": "Conservación",
+          "value": "Lugar fresco y seco"
+        }
+      ],
+      "videoUrl": null,
+      "isPhysical": true,
+      "isListed": true,
+      "basePriceInCents": 39900,
+      "baseCompareAtPriceInCents": null,
+      "baseWeightInGrams": null,
+      "templateSuffix": null,
+      "imageKeys": [
+        "aceite-de-oliva-extra-virgen"
+      ],
+      "collectionKeys": [
+        "aceites"
+      ],
+      "attributeValueKeys": [],
+      "metadata": {
+        "mostrador": {
+          "demo": true,
+          "unitPricing": {
+            "unit": "L",
+            "amount": 0.5
+          },
+          "presentation": "500 ml"
+        }
+      },
+      "variants": [
+        {
+          "key": "aceite-de-oliva-extra-virgen/FS-1100",
+          "priceInCents": 39900,
+          "compareAtPriceInCents": null,
+          "weightInGrams": null,
+          "stock": 33,
+          "sku": "FS-1100",
+          "isListed": true,
+          "coverImageKey": "aceite-de-oliva-extra-virgen",
+          "attributeValueKeys": []
+        }
+      ],
+      "reviews": []
+    },
+    {
+      "key": "agua-con-gas",
+      "title": "Agua con gas",
+      "handle": "agua-con-gas",
+      "currency": "UYU",
+      "description": "Agua con gas, presentación 2 L. Guardá en un lugar fresco y seco, protegido del sol.",
+      "seo": {
+        "title": "Agua con gas · Frío Sur",
+        "description": "Agua con gas, presentación 2 L. Guardá en un lugar fresco y seco, protegido del sol."
+      },
+      "specifications": [
+        {
+          "name": "Presentación",
+          "value": "2 L"
+        },
+        {
+          "name": "Conservación",
+          "value": "Lugar fresco y seco"
+        }
+      ],
+      "videoUrl": null,
+      "isPhysical": true,
+      "isListed": true,
+      "basePriceInCents": 6900,
+      "baseCompareAtPriceInCents": null,
+      "baseWeightInGrams": null,
+      "templateSuffix": null,
+      "imageKeys": [
+        "agua-con-gas"
+      ],
+      "collectionKeys": [
+        "aguas"
+      ],
+      "attributeValueKeys": [],
+      "metadata": {
+        "mostrador": {
+          "demo": true,
+          "unitPricing": {
+            "unit": "L",
+            "amount": 2
+          },
+          "presentation": "2 L"
+        }
+      },
+      "variants": [
+        {
+          "key": "agua-con-gas/FS-1118",
+          "priceInCents": 6900,
+          "compareAtPriceInCents": null,
+          "weightInGrams": null,
+          "stock": 27,
+          "sku": "FS-1118",
+          "isListed": true,
+          "coverImageKey": "agua-con-gas",
+          "attributeValueKeys": []
+        }
+      ],
+      "reviews": []
+    },
+    {
+      "key": "agua-sin-gas",
+      "title": "Agua sin gas",
+      "handle": "agua-sin-gas",
+      "currency": "UYU",
+      "description": "Agua sin gas, presentación 2 L. Guardá en un lugar fresco y seco, protegido del sol.",
+      "seo": {
+        "title": "Agua sin gas · Frío Sur",
+        "description": "Agua sin gas, presentación 2 L. Guardá en un lugar fresco y seco, protegido del sol."
+      },
+      "specifications": [
+        {
+          "name": "Presentación",
+          "value": "2 L"
+        },
+        {
+          "name": "Conservación",
+          "value": "Lugar fresco y seco"
+        }
+      ],
+      "videoUrl": null,
+      "isPhysical": true,
+      "isListed": true,
+      "basePriceInCents": 6500,
+      "baseCompareAtPriceInCents": null,
+      "baseWeightInGrams": null,
+      "templateSuffix": null,
+      "imageKeys": [
+        "agua-sin-gas"
+      ],
+      "collectionKeys": [
+        "aguas"
+      ],
+      "attributeValueKeys": [],
+      "metadata": {
+        "mostrador": {
+          "demo": true,
+          "unitPricing": {
+            "unit": "L",
+            "amount": 2
+          },
+          "presentation": "2 L"
+        }
+      },
+      "variants": [
+        {
+          "key": "agua-sin-gas/FS-1116",
+          "priceInCents": 6500,
+          "compareAtPriceInCents": null,
+          "weightInGrams": null,
+          "stock": 26,
+          "sku": "FS-1116",
+          "isListed": true,
+          "coverImageKey": "agua-sin-gas",
+          "attributeValueKeys": []
+        }
+      ],
+      "reviews": []
+    },
+    {
+      "key": "albondigas-caseras",
+      "title": "Albóndigas caseras",
+      "handle": "albondigas-caseras",
+      "currency": "UYU",
+      "description": "Albóndigas caseras, presentación 1 kg. Conservá en freezer a −18 °C y prepará desde congelado.",
+      "seo": {
+        "title": "Albóndigas caseras · Frío Sur",
+        "description": "Albóndigas caseras, presentación 1 kg. Conservá en freezer a −18 °C y prepará desde congelado."
+      },
+      "specifications": [
+        {
+          "name": "Presentación",
+          "value": "1 kg"
+        },
+        {
+          "name": "Conservación",
+          "value": "Freezer a −18 °C"
+        }
+      ],
+      "videoUrl": null,
+      "isPhysical": true,
+      "isListed": true,
+      "basePriceInCents": 38900,
+      "baseCompareAtPriceInCents": null,
+      "baseWeightInGrams": 1000,
+      "templateSuffix": null,
+      "imageKeys": [
+        "albondigas-caseras"
+      ],
+      "collectionKeys": [
+        "carnes"
+      ],
+      "attributeValueKeys": [],
+      "metadata": {
+        "mostrador": {
+          "demo": true,
+          "unitPricing": {
+            "unit": "kg",
+            "amount": 1
+          },
+          "presentation": "1 kg"
+        }
+      },
+      "variants": [
+        {
+          "key": "albondigas-caseras/FS-1054",
+          "priceInCents": 38900,
+          "compareAtPriceInCents": null,
+          "weightInGrams": 1000,
+          "stock": 25,
+          "sku": "FS-1054",
+          "isListed": true,
+          "coverImageKey": "albondigas-caseras",
+          "attributeValueKeys": []
+        }
+      ],
+      "reviews": []
+    },
+    {
+      "key": "anillas-de-calamar",
+      "title": "Anillas de calamar",
+      "handle": "anillas-de-calamar",
+      "currency": "UYU",
+      "description": "Anillas de calamar, presentación 500 g. Conservá en freezer a −18 °C y prepará desde congelado.",
+      "seo": {
+        "title": "Anillas de calamar · Frío Sur",
+        "description": "Anillas de calamar, presentación 500 g. Conservá en freezer a −18 °C y prepará desde congelado."
+      },
+      "specifications": [
+        {
+          "name": "Presentación",
+          "value": "500 g"
+        },
+        {
+          "name": "Conservación",
+          "value": "Freezer a −18 °C"
+        }
+      ],
+      "videoUrl": null,
+      "isPhysical": true,
+      "isListed": true,
+      "basePriceInCents": 59000,
+      "baseCompareAtPriceInCents": null,
+      "baseWeightInGrams": 500,
+      "templateSuffix": null,
+      "imageKeys": [
+        "anillas-de-calamar"
+      ],
+      "collectionKeys": [
+        "pescados"
+      ],
+      "attributeValueKeys": [],
+      "metadata": {
+        "mostrador": {
+          "demo": true,
+          "unitPricing": {
+            "unit": "kg",
+            "amount": 0.5
+          },
+          "presentation": "500 g"
+        }
+      },
+      "variants": [
+        {
+          "key": "anillas-de-calamar/FS-1062",
+          "priceInCents": 59000,
+          "compareAtPriceInCents": null,
+          "weightInGrams": 500,
+          "stock": 2,
+          "sku": "FS-1062",
+          "isListed": true,
+          "coverImageKey": "anillas-de-calamar",
+          "attributeValueKeys": []
+        }
+      ],
+      "reviews": []
+    },
+    {
+      "key": "arroz-largo-fino",
+      "title": "Arroz largo fino",
+      "handle": "arroz-largo-fino",
+      "currency": "UYU",
+      "description": "Arroz largo fino, presentación 1 kg. Guardá en un lugar fresco y seco, protegido del sol.",
+      "seo": {
+        "title": "Arroz largo fino · Frío Sur",
+        "description": "Arroz largo fino, presentación 1 kg. Guardá en un lugar fresco y seco, protegido del sol."
+      },
+      "specifications": [
+        {
+          "name": "Presentación",
+          "value": "1 kg"
+        },
+        {
+          "name": "Conservación",
+          "value": "Lugar fresco y seco"
+        }
+      ],
+      "videoUrl": null,
+      "isPhysical": true,
+      "isListed": true,
+      "basePriceInCents": 7900,
+      "baseCompareAtPriceInCents": 11900,
+      "baseWeightInGrams": 1000,
+      "templateSuffix": null,
+      "imageKeys": [
+        "arroz-largo-fino"
+      ],
+      "collectionKeys": [
+        "ofertas",
+        "arroz-y-fideos"
+      ],
+      "attributeValueKeys": [],
+      "metadata": {
+        "mostrador": {
+          "demo": true,
+          "unitPricing": {
+            "unit": "kg",
+            "amount": 1
+          },
+          "presentation": "1 kg"
+        }
+      },
+      "variants": [
+        {
+          "key": "arroz-largo-fino/FS-1108",
+          "priceInCents": 7900,
+          "compareAtPriceInCents": 11900,
+          "weightInGrams": 1000,
+          "stock": 22,
+          "sku": "FS-1108",
+          "isListed": true,
+          "coverImageKey": "arroz-largo-fino",
+          "attributeValueKeys": []
+        }
+      ],
+      "reviews": []
+    },
+    {
+      "key": "arvejas-congeladas",
+      "title": "Arvejas congeladas",
+      "handle": "arvejas-congeladas",
+      "currency": "UYU",
+      "description": "Arvejas congeladas, presentación 1 kg. Conservá en freezer a −18 °C y prepará desde congelado.",
+      "seo": {
+        "title": "Arvejas congeladas · Frío Sur",
+        "description": "Arvejas congeladas, presentación 1 kg. Conservá en freezer a −18 °C y prepará desde congelado."
+      },
+      "specifications": [
+        {
+          "name": "Presentación",
+          "value": "1 kg"
+        },
+        {
+          "name": "Conservación",
+          "value": "Freezer a −18 °C"
+        }
+      ],
+      "videoUrl": null,
+      "isPhysical": true,
+      "isListed": true,
+      "basePriceInCents": 15900,
+      "baseCompareAtPriceInCents": 19900,
+      "baseWeightInGrams": 1000,
+      "templateSuffix": null,
+      "imageKeys": [
+        "arvejas-congeladas"
+      ],
+      "collectionKeys": [
+        "ofertas",
+        "verduras"
+      ],
+      "attributeValueKeys": [],
+      "metadata": {
+        "mostrador": {
+          "demo": true,
+          "unitPricing": {
+            "unit": "kg",
+            "amount": 1
+          },
+          "presentation": "1 kg"
+        }
+      },
+      "variants": [
+        {
+          "key": "arvejas-congeladas/FS-1064",
+          "priceInCents": 15900,
+          "compareAtPriceInCents": 19900,
+          "weightInGrams": 1000,
+          "stock": 30,
+          "sku": "FS-1064",
+          "isListed": true,
+          "coverImageKey": "arvejas-congeladas",
+          "attributeValueKeys": []
+        }
+      ],
+      "reviews": []
+    },
+    {
+      "key": "atun-al-natural",
+      "title": "Atún al natural",
+      "handle": "atun-al-natural",
+      "currency": "UYU",
+      "description": "Atún al natural, presentación 170 g. Guardá en un lugar fresco y seco, protegido del sol.",
+      "seo": {
+        "title": "Atún al natural · Frío Sur",
+        "description": "Atún al natural, presentación 170 g. Guardá en un lugar fresco y seco, protegido del sol."
+      },
+      "specifications": [
+        {
+          "name": "Presentación",
+          "value": "170 g"
+        },
+        {
+          "name": "Conservación",
+          "value": "Lugar fresco y seco"
+        }
+      ],
+      "videoUrl": null,
+      "isPhysical": true,
+      "isListed": true,
+      "basePriceInCents": 14900,
+      "baseCompareAtPriceInCents": null,
+      "baseWeightInGrams": 170,
+      "templateSuffix": null,
+      "imageKeys": [
+        "atun-al-natural"
+      ],
+      "collectionKeys": [
+        "conservas"
+      ],
+      "attributeValueKeys": [],
+      "metadata": {
+        "mostrador": {
+          "demo": true,
+          "unitPricing": {
+            "unit": "kg",
+            "amount": 0.17
+          },
+          "presentation": "170 g"
+        }
+      },
+      "variants": [
+        {
+          "key": "atun-al-natural/FS-1114",
+          "priceInCents": 14900,
+          "compareAtPriceInCents": null,
+          "weightInGrams": 170,
+          "stock": 25,
+          "sku": "FS-1114",
+          "isListed": true,
+          "coverImageKey": "atun-al-natural",
+          "attributeValueKeys": []
+        }
+      ],
+      "reviews": []
+    },
+    {
+      "key": "bastones-de-pescado",
+      "title": "Bastones de pescado",
+      "handle": "bastones-de-pescado",
+      "currency": "UYU",
+      "description": "Bastones de pescado, presentación 600 g. Conservá en freezer a −18 °C y prepará desde congelado.",
+      "seo": {
+        "title": "Bastones de pescado · Frío Sur",
+        "description": "Bastones de pescado, presentación 600 g. Conservá en freezer a −18 °C y prepará desde congelado."
+      },
+      "specifications": [
+        {
+          "name": "Presentación",
+          "value": "600 g"
+        },
+        {
+          "name": "Conservación",
+          "value": "Freezer a −18 °C"
+        }
+      ],
+      "videoUrl": null,
+      "isPhysical": true,
+      "isListed": true,
+      "basePriceInCents": 31500,
+      "baseCompareAtPriceInCents": null,
+      "baseWeightInGrams": 600,
+      "templateSuffix": null,
+      "imageKeys": [
+        "bastones-de-pescado"
+      ],
+      "collectionKeys": [
+        "pescados"
+      ],
+      "attributeValueKeys": [],
+      "metadata": {
+        "mostrador": {
+          "demo": true,
+          "unitPricing": {
+            "unit": "kg",
+            "amount": 0.6
+          },
+          "presentation": "600 g"
+        }
+      },
+      "variants": [
+        {
+          "key": "bastones-de-pescado/FS-1060",
+          "priceInCents": 31500,
+          "compareAtPriceInCents": null,
+          "weightInGrams": 600,
+          "stock": 28,
+          "sku": "FS-1060",
+          "isListed": true,
+          "coverImageKey": "bastones-de-pescado",
+          "attributeValueKeys": []
+        }
+      ],
+      "reviews": []
+    },
+    {
+      "key": "bastones-de-pollo",
+      "title": "Bastones de pollo",
+      "handle": "bastones-de-pollo",
+      "currency": "UYU",
+      "description": "Bastones de pollo, presentación 600 g. Conservá en freezer a −18 °C y prepará desde congelado.",
+      "seo": {
+        "title": "Bastones de pollo · Frío Sur",
+        "description": "Bastones de pollo, presentación 600 g. Conservá en freezer a −18 °C y prepará desde congelado."
+      },
+      "specifications": [
+        {
+          "name": "Presentación",
+          "value": "600 g"
+        },
+        {
+          "name": "Conservación",
+          "value": "Freezer a −18 °C"
+        }
+      ],
+      "videoUrl": null,
+      "isPhysical": true,
+      "isListed": true,
+      "basePriceInCents": 32900,
+      "baseCompareAtPriceInCents": null,
+      "baseWeightInGrams": 600,
+      "templateSuffix": null,
+      "imageKeys": [
+        "bastones-de-pollo"
+      ],
+      "collectionKeys": [
+        "carnes"
+      ],
+      "attributeValueKeys": [],
+      "metadata": {
+        "mostrador": {
+          "demo": true,
+          "unitPricing": {
+            "unit": "kg",
+            "amount": 0.6
+          },
+          "presentation": "600 g"
+        }
+      },
+      "variants": [
+        {
+          "key": "bastones-de-pollo/FS-1056",
+          "priceInCents": 32900,
+          "compareAtPriceInCents": null,
+          "weightInGrams": 600,
+          "stock": 26,
+          "sku": "FS-1056",
+          "isListed": true,
+          "coverImageKey": "bastones-de-pollo",
+          "attributeValueKeys": []
+        }
+      ],
+      "reviews": []
+    },
+    {
+      "key": "brocoli-en-flores",
+      "title": "Brócoli en flores",
+      "handle": "brocoli-en-flores",
+      "currency": "UYU",
+      "description": "Brócoli en flores, presentación 1 kg. Conservá en freezer a −18 °C y prepará desde congelado.",
+      "seo": {
+        "title": "Brócoli en flores · Frío Sur",
+        "description": "Brócoli en flores, presentación 1 kg. Conservá en freezer a −18 °C y prepará desde congelado."
+      },
+      "specifications": [
+        {
+          "name": "Presentación",
+          "value": "1 kg"
+        },
+        {
+          "name": "Conservación",
+          "value": "Freezer a −18 °C"
+        }
+      ],
+      "videoUrl": null,
+      "isPhysical": true,
+      "isListed": true,
+      "basePriceInCents": 21500,
+      "baseCompareAtPriceInCents": null,
+      "baseWeightInGrams": 1000,
+      "templateSuffix": null,
+      "imageKeys": [
+        "brocoli-en-flores"
+      ],
+      "collectionKeys": [
+        "verduras"
+      ],
+      "attributeValueKeys": [],
+      "metadata": {
+        "mostrador": {
+          "demo": true,
+          "unitPricing": {
+            "unit": "kg",
+            "amount": 1
+          },
+          "presentation": "1 kg"
+        }
+      },
+      "variants": [
+        {
+          "key": "brocoli-en-flores/FS-1066",
+          "priceInCents": 21500,
+          "compareAtPriceInCents": null,
+          "weightInGrams": 1000,
+          "stock": 31,
+          "sku": "FS-1066",
+          "isListed": true,
+          "coverImageKey": "brocoli-en-flores",
+          "attributeValueKeys": []
+        }
+      ],
+      "reviews": []
+    },
+    {
+      "key": "cafe-molido-clasico",
+      "title": "Café molido clásico",
+      "handle": "cafe-molido-clasico",
+      "currency": "UYU",
+      "description": "Café molido clásico, presentación 250 g. Guardá en un lugar fresco y seco, protegido del sol.",
+      "seo": {
+        "title": "Café molido clásico · Frío Sur",
+        "description": "Café molido clásico, presentación 250 g. Guardá en un lugar fresco y seco, protegido del sol."
+      },
+      "specifications": [
+        {
+          "name": "Presentación",
+          "value": "250 g"
+        },
+        {
+          "name": "Conservación",
+          "value": "Lugar fresco y seco"
+        }
+      ],
+      "videoUrl": null,
+      "isPhysical": true,
+      "isListed": true,
+      "basePriceInCents": 27900,
+      "baseCompareAtPriceInCents": null,
+      "baseWeightInGrams": 250,
+      "templateSuffix": null,
+      "imageKeys": [
+        "cafe-molido-clasico"
+      ],
+      "collectionKeys": [
+        "yerba-y-cafe"
+      ],
+      "attributeValueKeys": [],
+      "metadata": {
+        "mostrador": {
+          "demo": true,
+          "unitPricing": {
+            "unit": "kg",
+            "amount": 0.25
+          },
+          "presentation": "250 g"
+        }
+      },
+      "variants": [
+        {
+          "key": "cafe-molido-clasico/FS-1096",
+          "priceInCents": 27900,
+          "compareAtPriceInCents": null,
+          "weightInGrams": 250,
+          "stock": 31,
+          "sku": "FS-1096",
+          "isListed": true,
+          "coverImageKey": "cafe-molido-clasico",
+          "attributeValueKeys": []
+        }
+      ],
+      "reviews": []
+    },
+    {
+      "key": "cheesecake-de-frutos-rojos",
+      "title": "Cheesecake de frutos rojos",
+      "handle": "cheesecake-de-frutos-rojos",
+      "currency": "UYU",
+      "description": "Cheesecake de frutos rojos, presentación 800 g. Conservá en freezer a −18 °C y prepará desde congelado.",
+      "seo": {
+        "title": "Cheesecake de frutos rojos · Frío Sur",
+        "description": "Cheesecake de frutos rojos, presentación 800 g. Conservá en freezer a −18 °C y prepará desde congelado."
+      },
+      "specifications": [
+        {
+          "name": "Presentación",
+          "value": "800 g"
+        },
+        {
+          "name": "Conservación",
+          "value": "Freezer a −18 °C"
+        }
+      ],
+      "videoUrl": null,
+      "isPhysical": true,
+      "isListed": true,
+      "basePriceInCents": 75000,
+      "baseCompareAtPriceInCents": null,
+      "baseWeightInGrams": 800,
+      "templateSuffix": null,
+      "imageKeys": [
+        "cheesecake-de-frutos-rojos"
+      ],
+      "collectionKeys": [
+        "postres"
+      ],
+      "attributeValueKeys": [],
+      "metadata": {
+        "mostrador": {
+          "demo": true,
+          "unitPricing": {
+            "unit": "kg",
+            "amount": 0.8
+          },
+          "presentation": "800 g"
+        }
+      },
+      "variants": [
+        {
+          "key": "cheesecake-de-frutos-rojos/FS-1094",
+          "priceInCents": 75000,
+          "compareAtPriceInCents": null,
+          "weightInGrams": 800,
+          "stock": 0,
+          "sku": "FS-1094",
+          "isListed": true,
+          "coverImageKey": "cheesecake-de-frutos-rojos",
+          "attributeValueKeys": []
+        }
+      ],
+      "reviews": []
+    },
+    {
+      "key": "empanadas-para-horno-x-12",
+      "title": "Empanadas para horno x 12",
+      "handle": "empanadas-para-horno-x-12",
+      "currency": "UYU",
+      "description": "Masa de hojaldre criollo cerrada a mano, con repulgue. Se hornean desde congeladas: 200 °C durante 22 a 25 minutos, o freidora de aire a 180 °C durante 14 minutos. La caja trae 12 del mismo sabor, separadas con papel para sacar solo las que vas a usar.",
+      "seo": {
+        "title": "Empanadas para horno x 12 · Frío Sur",
+        "description": "Masa de hojaldre criollo cerrada a mano, con repulgue. Se hornean desde congeladas: 200 °C durante 22 a 25 minutos, o freidora de aire a 180 °C durante 14"
+      },
+      "specifications": [
+        {
+          "name": "Presentación",
+          "value": "x 12"
+        },
+        {
+          "name": "Peso",
+          "value": "1,1 kg"
+        },
+        {
+          "name": "Conservación",
+          "value": "Freezer a −18 °C"
+        },
+        {
+          "name": "Origen",
+          "value": "Elaboradas en Montevideo"
+        }
+      ],
+      "videoUrl": null,
+      "isPhysical": true,
+      "isListed": true,
+      "basePriceInCents": 54000,
+      "baseCompareAtPriceInCents": null,
+      "baseWeightInGrams": 1100,
+      "templateSuffix": null,
+      "imageKeys": [
+        "empanadas-carne",
+        "empanadas-pollo",
+        "empanadas-jyq"
+      ],
+      "collectionKeys": [
+        "empanadas-y-tartas"
+      ],
+      "attributeValueKeys": [
+        "sabor/carne",
+        "sabor/pollo",
+        "sabor/jamon-y-queso"
+      ],
+      "metadata": {
+        "mostrador": {
+          "demo": true,
+          "variants": {
+            "empanadas-para-horno-x-12/FS-EMP-1": {
+              "units": null,
+              "unitPricing": {
+                "unit": "unidad",
+                "amount": 12
+              },
+              "presentation": "x 12"
+            },
+            "empanadas-para-horno-x-12/FS-EMP-2": {
+              "units": null,
+              "unitPricing": {
+                "unit": "unidad",
+                "amount": 12
+              },
+              "presentation": "x 12"
+            },
+            "empanadas-para-horno-x-12/FS-EMP-3": {
+              "units": null,
+              "unitPricing": {
+                "unit": "unidad",
+                "amount": 12
+              },
+              "presentation": "x 12"
+            }
+          },
+          "unitPricing": {
+            "unit": "unidad",
+            "amount": 12
+          },
+          "presentation": "x 12"
+        }
+      },
+      "variants": [
+        {
+          "key": "empanadas-para-horno-x-12/FS-EMP-1",
+          "priceInCents": 54000,
+          "compareAtPriceInCents": null,
+          "weightInGrams": 1100,
+          "stock": 24,
+          "sku": "FS-EMP-1",
+          "isListed": true,
+          "coverImageKey": "empanadas-carne",
+          "attributeValueKeys": [
+            "sabor/carne"
+          ]
+        },
+        {
+          "key": "empanadas-para-horno-x-12/FS-EMP-2",
+          "priceInCents": 54000,
+          "compareAtPriceInCents": null,
+          "weightInGrams": 1100,
+          "stock": 18,
+          "sku": "FS-EMP-2",
+          "isListed": true,
+          "coverImageKey": "empanadas-pollo",
+          "attributeValueKeys": [
+            "sabor/pollo"
+          ]
+        },
+        {
+          "key": "empanadas-para-horno-x-12/FS-EMP-3",
+          "priceInCents": 54000,
+          "compareAtPriceInCents": null,
+          "weightInGrams": 1100,
+          "stock": 12,
+          "sku": "FS-EMP-3",
+          "isListed": true,
+          "coverImageKey": "empanadas-jyq",
+          "attributeValueKeys": [
+            "sabor/jamon-y-queso"
+          ]
+        }
+      ],
+      "reviews": [
+        {
+          "rating": 4,
+          "authorName": "Sofía G.",
+          "content": "Las de carne son las favoritas en casa. Muy prácticas para el freezer.",
+          "isVerifiedPurchase": false,
+          "isListed": true,
+          "createdAt": "2026-10-05T15:00:00.000Z",
+          "imageKeys": []
+        }
+      ]
+    },
+    {
+      "key": "espinaca-picada",
+      "title": "Espinaca picada",
+      "handle": "espinaca-picada",
+      "currency": "UYU",
+      "description": "Espinaca picada, presentación 1 kg. Conservá en freezer a −18 °C y prepará desde congelado.",
+      "seo": {
+        "title": "Espinaca picada · Frío Sur",
+        "description": "Espinaca picada, presentación 1 kg. Conservá en freezer a −18 °C y prepará desde congelado."
+      },
+      "specifications": [
+        {
+          "name": "Presentación",
+          "value": "1 kg"
+        },
+        {
+          "name": "Conservación",
+          "value": "Freezer a −18 °C"
+        }
+      ],
+      "videoUrl": null,
+      "isPhysical": true,
+      "isListed": true,
+      "basePriceInCents": 18500,
+      "baseCompareAtPriceInCents": null,
+      "baseWeightInGrams": 1000,
+      "templateSuffix": null,
+      "imageKeys": [
+        "espinaca-picada"
+      ],
+      "collectionKeys": [
+        "verduras"
+      ],
+      "attributeValueKeys": [],
+      "metadata": {
+        "mostrador": {
+          "demo": true,
+          "unitPricing": {
+            "unit": "kg",
+            "amount": 1
+          },
+          "presentation": "1 kg"
+        }
+      },
+      "variants": [
+        {
+          "key": "espinaca-picada/FS-1068",
+          "priceInCents": 18500,
+          "compareAtPriceInCents": null,
+          "weightInGrams": 1000,
+          "stock": 32,
+          "sku": "FS-1068",
+          "isListed": true,
+          "coverImageKey": "espinaca-picada",
+          "attributeValueKeys": []
+        }
+      ],
+      "reviews": []
+    },
+    {
+      "key": "fideos-tirabuzon",
+      "title": "Fideos tirabuzón",
+      "handle": "fideos-tirabuzon",
+      "currency": "UYU",
+      "description": "Fideos tirabuzón, presentación 500 g. Guardá en un lugar fresco y seco, protegido del sol.",
+      "seo": {
+        "title": "Fideos tirabuzón · Frío Sur",
+        "description": "Fideos tirabuzón, presentación 500 g. Guardá en un lugar fresco y seco, protegido del sol."
+      },
+      "specifications": [
+        {
+          "name": "Presentación",
+          "value": "500 g"
+        },
+        {
+          "name": "Conservación",
+          "value": "Lugar fresco y seco"
+        }
+      ],
+      "videoUrl": null,
+      "isPhysical": true,
+      "isListed": true,
+      "basePriceInCents": 8500,
+      "baseCompareAtPriceInCents": null,
+      "baseWeightInGrams": 500,
+      "templateSuffix": null,
+      "imageKeys": [
+        "fideos-tirabuzon"
+      ],
+      "collectionKeys": [
+        "arroz-y-fideos"
+      ],
+      "attributeValueKeys": [],
+      "metadata": {
+        "mostrador": {
+          "demo": true,
+          "unitPricing": {
+            "unit": "kg",
+            "amount": 0.5
+          },
+          "presentation": "500 g"
+        }
+      },
+      "variants": [
+        {
+          "key": "fideos-tirabuzon/FS-1110",
+          "priceInCents": 8500,
+          "compareAtPriceInCents": null,
+          "weightInGrams": 500,
+          "stock": 23,
+          "sku": "FS-1110",
+          "isListed": true,
+          "coverImageKey": "fideos-tirabuzon",
+          "attributeValueKeys": []
+        }
+      ],
+      "reviews": []
+    },
+    {
+      "key": "filetes-de-merluza",
+      "title": "Filetes de merluza",
+      "handle": "filetes-de-merluza",
+      "currency": "UYU",
+      "description": "Filetes de merluza, presentación 1 kg. Conservá en freezer a −18 °C y prepará desde congelado.",
+      "seo": {
+        "title": "Filetes de merluza · Frío Sur",
+        "description": "Filetes de merluza, presentación 1 kg. Conservá en freezer a −18 °C y prepará desde congelado."
+      },
+      "specifications": [
+        {
+          "name": "Presentación",
+          "value": "1 kg"
+        },
+        {
+          "name": "Conservación",
+          "value": "Freezer a −18 °C"
+        }
+      ],
+      "videoUrl": null,
+      "isPhysical": true,
+      "isListed": true,
+      "basePriceInCents": 44900,
+      "baseCompareAtPriceInCents": 48900,
+      "baseWeightInGrams": 1000,
+      "templateSuffix": null,
+      "imageKeys": [
+        "filetes-de-merluza"
+      ],
+      "collectionKeys": [
+        "ofertas",
+        "pescados"
+      ],
+      "attributeValueKeys": [],
+      "metadata": {
+        "mostrador": {
+          "demo": true,
+          "unitPricing": {
+            "unit": "kg",
+            "amount": 1
+          },
+          "presentation": "1 kg"
+        }
+      },
+      "variants": [
+        {
+          "key": "filetes-de-merluza/FS-1058",
+          "priceInCents": 44900,
+          "compareAtPriceInCents": 48900,
+          "weightInGrams": 1000,
+          "stock": 27,
+          "sku": "FS-1058",
+          "isListed": true,
+          "coverImageKey": "filetes-de-merluza",
+          "attributeValueKeys": []
+        }
+      ],
+      "reviews": []
+    },
+    {
+      "key": "galletas-de-arroz",
+      "title": "Galletas de arroz",
+      "handle": "galletas-de-arroz",
+      "currency": "UYU",
+      "description": "Galletas de arroz, presentación 100 g. Guardá en un lugar fresco y seco, protegido del sol.",
+      "seo": {
+        "title": "Galletas de arroz · Frío Sur",
+        "description": "Galletas de arroz, presentación 100 g. Guardá en un lugar fresco y seco, protegido del sol."
+      },
+      "specifications": [
+        {
+          "name": "Presentación",
+          "value": "100 g"
+        },
+        {
+          "name": "Conservación",
+          "value": "Lugar fresco y seco"
+        }
+      ],
+      "videoUrl": null,
+      "isPhysical": true,
+      "isListed": true,
+      "basePriceInCents": 8900,
+      "baseCompareAtPriceInCents": null,
+      "baseWeightInGrams": 100,
+      "templateSuffix": null,
+      "imageKeys": [
+        "galletas-de-arroz"
+      ],
+      "collectionKeys": [
+        "galletitas"
+      ],
+      "attributeValueKeys": [],
+      "metadata": {
+        "mostrador": {
+          "demo": true,
+          "unitPricing": {
+            "unit": "kg",
+            "amount": 0.1
+          },
+          "presentation": "100 g"
+        }
+      },
+      "variants": [
+        {
+          "key": "galletas-de-arroz/FS-1106",
+          "priceInCents": 8900,
+          "compareAtPriceInCents": null,
+          "weightInGrams": 100,
+          "stock": 21,
+          "sku": "FS-1106",
+          "isListed": true,
+          "coverImageKey": "galletas-de-arroz",
+          "attributeValueKeys": []
+        }
+      ],
+      "reviews": []
+    },
+    {
+      "key": "galletitas-de-avena",
+      "title": "Galletitas de avena",
+      "handle": "galletitas-de-avena",
+      "currency": "UYU",
+      "description": "Galletitas de avena, presentación 300 g. Guardá en un lugar fresco y seco, protegido del sol.",
+      "seo": {
+        "title": "Galletitas de avena · Frío Sur",
+        "description": "Galletitas de avena, presentación 300 g. Guardá en un lugar fresco y seco, protegido del sol."
+      },
+      "specifications": [
+        {
+          "name": "Presentación",
+          "value": "300 g"
+        },
+        {
+          "name": "Conservación",
+          "value": "Lugar fresco y seco"
+        }
+      ],
+      "videoUrl": null,
+      "isPhysical": true,
+      "isListed": true,
+      "basePriceInCents": 11900,
+      "baseCompareAtPriceInCents": null,
+      "baseWeightInGrams": 300,
+      "templateSuffix": null,
+      "imageKeys": [
+        "galletitas-de-avena"
+      ],
+      "collectionKeys": [
+        "galletitas"
+      ],
+      "attributeValueKeys": [],
+      "metadata": {
+        "mostrador": {
+          "demo": true,
+          "unitPricing": {
+            "unit": "kg",
+            "amount": 0.3
+          },
+          "presentation": "300 g"
+        }
+      },
+      "variants": [
+        {
+          "key": "galletitas-de-avena/FS-1102",
+          "priceInCents": 11900,
+          "compareAtPriceInCents": null,
+          "weightInGrams": 300,
+          "stock": 34,
+          "sku": "FS-1102",
+          "isListed": true,
+          "coverImageKey": "galletitas-de-avena",
+          "attributeValueKeys": []
+        }
+      ],
+      "reviews": []
+    },
+    {
+      "key": "galletitas-de-chocolate",
+      "title": "Galletitas de chocolate",
+      "handle": "galletitas-de-chocolate",
+      "currency": "UYU",
+      "description": "Galletitas de chocolate, presentación 300 g. Guardá en un lugar fresco y seco, protegido del sol.",
+      "seo": {
+        "title": "Galletitas de chocolate · Frío Sur",
+        "description": "Galletitas de chocolate, presentación 300 g. Guardá en un lugar fresco y seco, protegido del sol."
+      },
+      "specifications": [
+        {
+          "name": "Presentación",
+          "value": "300 g"
+        },
+        {
+          "name": "Conservación",
+          "value": "Lugar fresco y seco"
+        }
+      ],
+      "videoUrl": null,
+      "isPhysical": true,
+      "isListed": true,
+      "basePriceInCents": 13900,
+      "baseCompareAtPriceInCents": null,
+      "baseWeightInGrams": 300,
+      "templateSuffix": null,
+      "imageKeys": [
+        "galletitas-de-chocolate"
+      ],
+      "collectionKeys": [
+        "galletitas"
+      ],
+      "attributeValueKeys": [],
+      "metadata": {
+        "mostrador": {
+          "demo": true,
+          "unitPricing": {
+            "unit": "kg",
+            "amount": 0.3
+          },
+          "presentation": "300 g"
+        }
+      },
+      "variants": [
+        {
+          "key": "galletitas-de-chocolate/FS-1104",
+          "priceInCents": 13900,
+          "compareAtPriceInCents": null,
+          "weightInGrams": 300,
+          "stock": 20,
+          "sku": "FS-1104",
+          "isListed": true,
+          "coverImageKey": "galletitas-de-chocolate",
+          "attributeValueKeys": []
+        }
+      ],
+      "reviews": []
+    },
+    {
+      "key": "hamburguesas-de-carne-x-8",
+      "title": "Hamburguesas de carne x 8",
+      "handle": "hamburguesas-de-carne-x-8",
+      "currency": "UYU",
+      "description": "Hamburguesas de carne x 8, presentación x 8. Conservá en freezer a −18 °C y prepará desde congelado.",
+      "seo": {
+        "title": "Hamburguesas de carne x 8 · Frío Sur",
+        "description": "Hamburguesas de carne x 8, presentación x 8. Conservá en freezer a −18 °C y prepará desde congelado."
+      },
+      "specifications": [
+        {
+          "name": "Presentación",
+          "value": "x 8"
+        },
+        {
+          "name": "Conservación",
+          "value": "Freezer a −18 °C"
+        }
+      ],
+      "videoUrl": null,
+      "isPhysical": true,
+      "isListed": true,
+      "basePriceInCents": 42000,
+      "baseCompareAtPriceInCents": null,
+      "baseWeightInGrams": null,
+      "templateSuffix": null,
+      "imageKeys": [
+        "hamburguesas-de-carne-x-8"
+      ],
+      "collectionKeys": [
+        "carnes"
+      ],
+      "attributeValueKeys": [],
+      "metadata": {
+        "mostrador": {
+          "demo": true,
+          "unitPricing": {
+            "unit": "unidad",
+            "amount": 8
+          },
+          "presentation": "x 8"
+        }
+      },
+      "variants": [
+        {
+          "key": "hamburguesas-de-carne-x-8/FS-1050",
+          "priceInCents": 42000,
+          "compareAtPriceInCents": null,
+          "weightInGrams": null,
+          "stock": 23,
+          "sku": "FS-1050",
+          "isListed": true,
+          "coverImageKey": "hamburguesas-de-carne-x-8",
+          "attributeValueKeys": []
+        }
+      ],
+      "reviews": []
+    },
+    {
+      "key": "hamburguesas-de-pollo-x-8",
+      "title": "Hamburguesas de pollo x 8",
+      "handle": "hamburguesas-de-pollo-x-8",
+      "currency": "UYU",
+      "description": "Hamburguesas de pollo x 8, presentación x 8. Conservá en freezer a −18 °C y prepará desde congelado.",
+      "seo": {
+        "title": "Hamburguesas de pollo x 8 · Frío Sur",
+        "description": "Hamburguesas de pollo x 8, presentación x 8. Conservá en freezer a −18 °C y prepará desde congelado."
+      },
+      "specifications": [
+        {
+          "name": "Presentación",
+          "value": "x 8"
+        },
+        {
+          "name": "Conservación",
+          "value": "Freezer a −18 °C"
+        }
+      ],
+      "videoUrl": null,
+      "isPhysical": true,
+      "isListed": true,
+      "basePriceInCents": 36000,
+      "baseCompareAtPriceInCents": null,
+      "baseWeightInGrams": null,
+      "templateSuffix": null,
+      "imageKeys": [
+        "hamburguesas-de-pollo-x-8"
+      ],
+      "collectionKeys": [
+        "carnes"
+      ],
+      "attributeValueKeys": [],
+      "metadata": {
+        "mostrador": {
+          "demo": true,
+          "unitPricing": {
+            "unit": "unidad",
+            "amount": 8
+          },
+          "presentation": "x 8"
+        }
+      },
+      "variants": [
+        {
+          "key": "hamburguesas-de-pollo-x-8/FS-1052",
+          "priceInCents": 36000,
+          "compareAtPriceInCents": null,
+          "weightInGrams": null,
+          "stock": 24,
+          "sku": "FS-1052",
+          "isListed": true,
+          "coverImageKey": "hamburguesas-de-pollo-x-8",
+          "attributeValueKeys": []
+        }
+      ],
+      "reviews": []
+    },
+    {
+      "key": "helado-de-chocolate",
+      "title": "Helado de chocolate",
+      "handle": "helado-de-chocolate",
+      "currency": "UYU",
+      "description": "Helado de chocolate, presentación 1 L. Conservá en freezer a −18 °C y prepará desde congelado.",
+      "seo": {
+        "title": "Helado de chocolate · Frío Sur",
+        "description": "Helado de chocolate, presentación 1 L. Conservá en freezer a −18 °C y prepará desde congelado."
+      },
+      "specifications": [
+        {
+          "name": "Presentación",
+          "value": "1 L"
+        },
+        {
+          "name": "Conservación",
+          "value": "Freezer a −18 °C"
+        }
+      ],
+      "videoUrl": null,
+      "isPhysical": true,
+      "isListed": true,
+      "basePriceInCents": 42900,
+      "baseCompareAtPriceInCents": 46900,
+      "baseWeightInGrams": null,
+      "templateSuffix": null,
+      "imageKeys": [
+        "helado-de-chocolate"
+      ],
+      "collectionKeys": [
+        "ofertas",
+        "helados"
+      ],
+      "attributeValueKeys": [],
+      "metadata": {
+        "mostrador": {
+          "demo": true,
+          "unitPricing": {
+            "unit": "L",
+            "amount": 1
+          },
+          "presentation": "1 L"
+        }
+      },
+      "variants": [
+        {
+          "key": "helado-de-chocolate/FS-1088",
+          "priceInCents": 42900,
+          "compareAtPriceInCents": 46900,
+          "weightInGrams": null,
+          "stock": 27,
+          "sku": "FS-1088",
+          "isListed": true,
+          "coverImageKey": "helado-de-chocolate",
+          "attributeValueKeys": []
+        }
+      ],
+      "reviews": []
+    },
+    {
+      "key": "helado-de-crema-americana",
+      "title": "Helado de crema americana",
+      "handle": "helado-de-crema-americana",
+      "currency": "UYU",
+      "description": "Helado de crema americana, presentación 1 L. Conservá en freezer a −18 °C y prepará desde congelado.",
+      "seo": {
+        "title": "Helado de crema americana · Frío Sur",
+        "description": "Helado de crema americana, presentación 1 L. Conservá en freezer a −18 °C y prepará desde congelado."
+      },
+      "specifications": [
+        {
+          "name": "Presentación",
+          "value": "1 L"
+        },
+        {
+          "name": "Conservación",
+          "value": "Freezer a −18 °C"
+        }
+      ],
+      "videoUrl": null,
+      "isPhysical": true,
+      "isListed": true,
+      "basePriceInCents": 39900,
+      "baseCompareAtPriceInCents": null,
+      "baseWeightInGrams": null,
+      "templateSuffix": null,
+      "imageKeys": [
+        "helado-de-crema-americana"
+      ],
+      "collectionKeys": [
+        "helados"
+      ],
+      "attributeValueKeys": [],
+      "metadata": {
+        "mostrador": {
+          "demo": true,
+          "unitPricing": {
+            "unit": "L",
+            "amount": 1
+          },
+          "presentation": "1 L"
+        }
+      },
+      "variants": [
+        {
+          "key": "helado-de-crema-americana/FS-1086",
+          "priceInCents": 39900,
+          "compareAtPriceInCents": null,
+          "weightInGrams": null,
+          "stock": 26,
+          "sku": "FS-1086",
+          "isListed": true,
+          "coverImageKey": "helado-de-crema-americana",
+          "attributeValueKeys": []
+        }
+      ],
+      "reviews": []
+    },
+    {
+      "key": "helado-de-dulce-de-leche",
+      "title": "Helado de dulce de leche",
+      "handle": "helado-de-dulce-de-leche",
+      "currency": "UYU",
+      "description": "Helado de dulce de leche, presentación 1 L. Conservá en freezer a −18 °C y prepará desde congelado.",
+      "seo": {
+        "title": "Helado de dulce de leche · Frío Sur",
+        "description": "Helado de dulce de leche, presentación 1 L. Conservá en freezer a −18 °C y prepará desde congelado."
+      },
+      "specifications": [
+        {
+          "name": "Presentación",
+          "value": "1 L"
+        },
+        {
+          "name": "Conservación",
+          "value": "Freezer a −18 °C"
+        }
+      ],
+      "videoUrl": null,
+      "isPhysical": true,
+      "isListed": true,
+      "basePriceInCents": 42900,
+      "baseCompareAtPriceInCents": null,
+      "baseWeightInGrams": null,
+      "templateSuffix": null,
+      "imageKeys": [
+        "helado-de-dulce-de-leche"
+      ],
+      "collectionKeys": [
+        "helados"
+      ],
+      "attributeValueKeys": [],
+      "metadata": {
+        "mostrador": {
+          "demo": true,
+          "unitPricing": {
+            "unit": "L",
+            "amount": 1
+          },
+          "presentation": "1 L"
+        }
+      },
+      "variants": [
+        {
+          "key": "helado-de-dulce-de-leche/FS-1090",
+          "priceInCents": 42900,
+          "compareAtPriceInCents": null,
+          "weightInGrams": null,
+          "stock": 28,
+          "sku": "FS-1090",
+          "isListed": true,
+          "coverImageKey": "helado-de-dulce-de-leche",
+          "attributeValueKeys": []
+        }
+      ],
+      "reviews": []
+    },
+    {
+      "key": "jugo-de-manzana",
+      "title": "Jugo de manzana",
+      "handle": "jugo-de-manzana",
+      "currency": "UYU",
+      "description": "Jugo de manzana, presentación 1 L. Guardá en un lugar fresco y seco, protegido del sol.",
+      "seo": {
+        "title": "Jugo de manzana · Frío Sur",
+        "description": "Jugo de manzana, presentación 1 L. Guardá en un lugar fresco y seco, protegido del sol."
+      },
+      "specifications": [
+        {
+          "name": "Presentación",
+          "value": "1 L"
+        },
+        {
+          "name": "Conservación",
+          "value": "Lugar fresco y seco"
+        }
+      ],
+      "videoUrl": null,
+      "isPhysical": true,
+      "isListed": true,
+      "basePriceInCents": 10500,
+      "baseCompareAtPriceInCents": null,
+      "baseWeightInGrams": null,
+      "templateSuffix": null,
+      "imageKeys": [
+        "jugo-de-manzana"
+      ],
+      "collectionKeys": [
+        "jugos"
+      ],
+      "attributeValueKeys": [],
+      "metadata": {
+        "mostrador": {
+          "demo": true,
+          "unitPricing": {
+            "unit": "L",
+            "amount": 1
+          },
+          "presentation": "1 L"
+        }
+      },
+      "variants": [
+        {
+          "key": "jugo-de-manzana/FS-1126",
+          "priceInCents": 10500,
+          "compareAtPriceInCents": null,
+          "weightInGrams": null,
+          "stock": 31,
+          "sku": "FS-1126",
+          "isListed": true,
+          "coverImageKey": "jugo-de-manzana",
+          "attributeValueKeys": []
+        }
+      ],
+      "reviews": []
+    },
+    {
+      "key": "jugo-de-naranja",
+      "title": "Jugo de naranja",
+      "handle": "jugo-de-naranja",
+      "currency": "UYU",
+      "description": "Jugo de naranja, presentación 1 L. Guardá en un lugar fresco y seco, protegido del sol.",
+      "seo": {
+        "title": "Jugo de naranja · Frío Sur",
+        "description": "Jugo de naranja, presentación 1 L. Guardá en un lugar fresco y seco, protegido del sol."
+      },
+      "specifications": [
+        {
+          "name": "Presentación",
+          "value": "1 L"
+        },
+        {
+          "name": "Conservación",
+          "value": "Lugar fresco y seco"
+        }
+      ],
+      "videoUrl": null,
+      "isPhysical": true,
+      "isListed": true,
+      "basePriceInCents": 10900,
+      "baseCompareAtPriceInCents": 14900,
+      "baseWeightInGrams": null,
+      "templateSuffix": null,
+      "imageKeys": [
+        "jugo-de-naranja"
+      ],
+      "collectionKeys": [
+        "ofertas",
+        "jugos"
+      ],
+      "attributeValueKeys": [],
+      "metadata": {
+        "mostrador": {
+          "demo": true,
+          "unitPricing": {
+            "unit": "L",
+            "amount": 1
+          },
+          "presentation": "1 L"
+        }
+      },
+      "variants": [
+        {
+          "key": "jugo-de-naranja/FS-1124",
+          "priceInCents": 10900,
+          "compareAtPriceInCents": 14900,
+          "weightInGrams": null,
+          "stock": 30,
+          "sku": "FS-1124",
+          "isListed": true,
+          "coverImageKey": "jugo-de-naranja",
+          "attributeValueKeys": []
+        }
+      ],
+      "reviews": []
+    },
+    {
+      "key": "medallones-de-merluza",
+      "title": "Medallones de merluza",
+      "handle": "medallones-de-merluza",
+      "currency": "UYU",
+      "description": "Filet de merluza de captura uruguaya, sin piel ni espinas, cortado en medallones de unos 100 g y congelados uno por uno. Se cocinan sin descongelar: sartén con un poco de aceite, 5 minutos de cada lado, u horno a 200 °C durante 18 minutos.",
+      "seo": {
+        "title": "Medallones de merluza · Frío Sur",
+        "description": "Filet de merluza de captura uruguaya, sin piel ni espinas, cortado en medallones de unos 100 g y congelados uno por uno. Se cocinan sin descongelar: sartén"
+      },
+      "specifications": [
+        {
+          "name": "Presentación",
+          "value": "800 g"
+        },
+        {
+          "name": "Unidades",
+          "value": "8 medallones"
+        },
+        {
+          "name": "Origen",
+          "value": "Uruguay"
+        },
+        {
+          "name": "Conservación",
+          "value": "Freezer a −18 °C"
+        }
+      ],
+      "videoUrl": null,
+      "isPhysical": true,
+      "isListed": true,
+      "basePriceInCents": 36500,
+      "baseCompareAtPriceInCents": 41000,
+      "baseWeightInGrams": 800,
+      "templateSuffix": null,
+      "imageKeys": [
+        "medallones-merluza-1",
+        "medallones-merluza-2"
+      ],
+      "collectionKeys": [
+        "ofertas",
+        "pescados"
+      ],
+      "attributeValueKeys": [],
+      "metadata": {
+        "mostrador": {
+          "demo": true,
+          "unitPricing": {
+            "unit": "kg",
+            "amount": 0.8
+          },
+          "presentation": "800 g"
+        }
+      },
+      "variants": [
+        {
+          "key": "medallones-de-merluza/FS-1038",
+          "priceInCents": 36500,
+          "compareAtPriceInCents": 41000,
+          "weightInGrams": 800,
+          "stock": 3,
+          "sku": "FS-1038",
+          "isListed": true,
+          "coverImageKey": "medallones-merluza-1",
+          "attributeValueKeys": []
+        }
+      ],
+      "reviews": [
+        {
+          "rating": 5,
+          "authorName": "Pablo L.",
+          "content": "Sin espinas y fáciles de preparar a la plancha.",
+          "isVerifiedPurchase": false,
+          "isListed": true,
+          "createdAt": "2026-10-12T15:00:00.000Z",
+          "imageKeys": []
+        }
+      ]
+    },
+    {
+      "key": "milanesas-de-carne",
+      "title": "Milanesas de carne",
+      "handle": "milanesas-de-carne",
+      "currency": "UYU",
+      "description": "Milanesas de carne, presentación 1 kg. Conservá en freezer a −18 °C y prepará desde congelado.",
+      "seo": {
+        "title": "Milanesas de carne · Frío Sur",
+        "description": "Milanesas de carne, presentación 1 kg. Conservá en freezer a −18 °C y prepará desde congelado."
+      },
+      "specifications": [
+        {
+          "name": "Presentación",
+          "value": "1 kg"
+        },
+        {
+          "name": "Conservación",
+          "value": "Freezer a −18 °C"
+        }
+      ],
+      "videoUrl": null,
+      "isPhysical": true,
+      "isListed": true,
+      "basePriceInCents": 62900,
+      "baseCompareAtPriceInCents": null,
+      "baseWeightInGrams": 1000,
+      "templateSuffix": null,
+      "imageKeys": [
+        "milanesas-de-carne"
+      ],
+      "collectionKeys": [
+        "carnes"
+      ],
+      "attributeValueKeys": [],
+      "metadata": {
+        "mostrador": {
+          "demo": true,
+          "unitPricing": {
+            "unit": "kg",
+            "amount": 1
+          },
+          "presentation": "1 kg"
+        }
+      },
+      "variants": [
+        {
+          "key": "milanesas-de-carne/FS-1044",
+          "priceInCents": 62900,
+          "compareAtPriceInCents": null,
+          "weightInGrams": 1000,
+          "stock": 20,
+          "sku": "FS-1044",
+          "isListed": true,
+          "coverImageKey": "milanesas-de-carne",
+          "attributeValueKeys": []
+        }
+      ],
+      "reviews": []
+    },
+    {
+      "key": "milanesas-de-pollo-rebozadas",
+      "title": "Milanesas de pollo rebozadas",
+      "handle": "milanesas-de-pollo-rebozadas",
+      "currency": "UYU",
+      "description": "Pechuga de pollo entera, apenas aplanada y rebozada con pan rallado y un toque de ajo y perejil. No son de pulpa formada: se nota en el corte. Van directo del freezer al horno o a la freidora de aire, sin descongelar. Vienen separadas con film, así sacás las que vas a usar y el resto queda en el paquete.",
+      "seo": {
+        "title": "Milanesas de pollo rebozadas · Frío Sur",
+        "description": "Pechuga de pollo entera, apenas aplanada y rebozada con pan rallado y un toque de ajo y perejil. No son de pulpa formada: se nota en el corte. Van directo"
+      },
+      "specifications": [
+        {
+          "name": "Presentación",
+          "value": "1 kg"
+        },
+        {
+          "name": "Unidades",
+          "value": "8 a 10 milanesas"
+        },
+        {
+          "name": "Corte",
+          "value": "Pechuga entera, rebozado de pan rallado"
+        },
+        {
+          "name": "Origen",
+          "value": "Elaboradas en Canelones"
+        },
+        {
+          "name": "Conservación",
+          "value": "Freezer a −18 °C, no volver a congelar"
+        },
+        {
+          "name": "Vencimiento",
+          "value": "12 meses desde la elaboración"
+        },
+        {
+          "name": "Cocción",
+          "value": "Horno 220 °C, 18 a 20 min · Freidora de aire 200 °C, 12 min"
+        },
+        {
+          "name": "Sin TACC",
+          "value": "No"
+        }
+      ],
+      "videoUrl": null,
+      "isPhysical": true,
+      "isListed": true,
+      "basePriceInCents": 45900,
+      "baseCompareAtPriceInCents": null,
+      "baseWeightInGrams": 1000,
+      "templateSuffix": null,
+      "imageKeys": [
+        "milanesas-pollo-1",
+        "milanesas-pollo-2",
+        "milanesas-pollo-25",
+        "milanesas-pollo-3"
+      ],
+      "collectionKeys": [
+        "carnes"
+      ],
+      "attributeValueKeys": [
+        "presentacion/1-kg",
+        "presentacion/2-5-kg"
+      ],
+      "metadata": {
+        "mostrador": {
+          "demo": true,
+          "variants": {
+            "milanesas-de-pollo-rebozadas/FS-1032": {
+              "units": "8 a 10 milanesas",
+              "unitPricing": {
+                "unit": "kg",
+                "amount": 1
+              },
+              "presentation": "1 kg"
+            },
+            "milanesas-de-pollo-rebozadas/FS-1033": {
+              "units": "20 a 24 milanesas",
+              "unitPricing": {
+                "unit": "kg",
+                "amount": 2.5
+              },
+              "presentation": "2,5 kg"
+            }
+          },
+          "unitPricing": {
+            "unit": "kg",
+            "amount": 1
+          },
+          "presentation": "1 kg"
+        }
+      },
+      "variants": [
+        {
+          "key": "milanesas-de-pollo-rebozadas/FS-1032",
+          "priceInCents": 45900,
+          "compareAtPriceInCents": null,
+          "weightInGrams": 1000,
+          "stock": 40,
+          "sku": "FS-1032",
+          "isListed": true,
+          "coverImageKey": "milanesas-pollo-1",
+          "attributeValueKeys": [
+            "presentacion/1-kg"
+          ]
+        },
+        {
+          "key": "milanesas-de-pollo-rebozadas/FS-1033",
+          "priceInCents": 104900,
+          "compareAtPriceInCents": null,
+          "weightInGrams": 2500,
+          "stock": 4,
+          "sku": "FS-1033",
+          "isListed": true,
+          "coverImageKey": "milanesas-pollo-25",
+          "attributeValueKeys": [
+            "presentacion/2-5-kg"
+          ]
+        }
+      ],
+      "reviews": [
+        {
+          "rating": 5,
+          "authorName": "Diego F.",
+          "content": "Compro la de 2,5 kg cada dos semanas. Llegaron duras, bien congeladas, en el horario que elegí.",
+          "isVerifiedPurchase": false,
+          "isListed": true,
+          "createdAt": "2026-10-10T15:00:00.000Z",
+          "imageKeys": []
+        },
+        {
+          "rating": 5,
+          "authorName": "Lucía M.",
+          "content": "Son pechuga de verdad, no pasta. En la freidora de aire quedan crocantes en 12 minutos.",
+          "isVerifiedPurchase": false,
+          "isListed": true,
+          "createdAt": "2026-09-15T15:00:00.000Z",
+          "imageKeys": []
+        },
+        {
+          "rating": 4,
+          "authorName": "Andrea P.",
+          "content": "Muy ricas. Algunas vienen más finitas que otras, pero el paquete rinde.",
+          "isVerifiedPurchase": false,
+          "isListed": true,
+          "createdAt": "2026-08-20T15:00:00.000Z",
+          "imageKeys": []
+        }
+      ]
+    },
+    {
+      "key": "mini-pizzas-x-6",
+      "title": "Mini pizzas x 6",
+      "handle": "mini-pizzas-x-6",
+      "currency": "UYU",
+      "description": "Mini pizzas x 6, presentación x 6. Conservá en freezer a −18 °C y prepará desde congelado.",
+      "seo": {
+        "title": "Mini pizzas x 6 · Frío Sur",
+        "description": "Mini pizzas x 6, presentación x 6. Conservá en freezer a −18 °C y prepará desde congelado."
+      },
+      "specifications": [
+        {
+          "name": "Presentación",
+          "value": "x 6"
+        },
+        {
+          "name": "Conservación",
+          "value": "Freezer a −18 °C"
+        }
+      ],
+      "videoUrl": null,
+      "isPhysical": true,
+      "isListed": true,
+      "basePriceInCents": 24900,
+      "baseCompareAtPriceInCents": 28900,
+      "baseWeightInGrams": null,
+      "templateSuffix": null,
+      "imageKeys": [
+        "mini-pizzas-x-6"
+      ],
+      "collectionKeys": [
+        "ofertas",
+        "pastas-y-pizzas"
+      ],
+      "attributeValueKeys": [],
+      "metadata": {
+        "mostrador": {
+          "demo": true,
+          "unitPricing": {
+            "unit": "unidad",
+            "amount": 6
+          },
+          "presentation": "x 6"
+        }
+      },
+      "variants": [
+        {
+          "key": "mini-pizzas-x-6/FS-1076",
+          "priceInCents": 24900,
+          "compareAtPriceInCents": 28900,
+          "weightInGrams": null,
+          "stock": 21,
+          "sku": "FS-1076",
+          "isListed": true,
+          "coverImageKey": "mini-pizzas-x-6",
+          "attributeValueKeys": []
+        }
+      ],
+      "reviews": []
+    },
+    {
+      "key": "mix-de-verduras",
+      "title": "Mix de verduras",
+      "handle": "mix-de-verduras",
+      "currency": "UYU",
+      "description": "Mix de verduras, presentación 1 kg. Conservá en freezer a −18 °C y prepará desde congelado.",
+      "seo": {
+        "title": "Mix de verduras · Frío Sur",
+        "description": "Mix de verduras, presentación 1 kg. Conservá en freezer a −18 °C y prepará desde congelado."
+      },
+      "specifications": [
+        {
+          "name": "Presentación",
+          "value": "1 kg"
+        },
+        {
+          "name": "Conservación",
+          "value": "Freezer a −18 °C"
+        }
+      ],
+      "videoUrl": null,
+      "isPhysical": true,
+      "isListed": true,
+      "basePriceInCents": 17900,
+      "baseCompareAtPriceInCents": null,
+      "baseWeightInGrams": 1000,
+      "templateSuffix": null,
+      "imageKeys": [
+        "mix-de-verduras"
+      ],
+      "collectionKeys": [
+        "verduras"
+      ],
+      "attributeValueKeys": [],
+      "metadata": {
+        "mostrador": {
+          "demo": true,
+          "unitPricing": {
+            "unit": "kg",
+            "amount": 1
+          },
+          "presentation": "1 kg"
+        }
+      },
+      "variants": [
+        {
+          "key": "mix-de-verduras/FS-1070",
+          "priceInCents": 17900,
+          "compareAtPriceInCents": null,
+          "weightInGrams": 1000,
+          "stock": 33,
+          "sku": "FS-1070",
+          "isListed": true,
+          "coverImageKey": "mix-de-verduras",
+          "attributeValueKeys": []
+        }
+      ],
+      "reviews": []
+    },
+    {
+      "key": "noquis-de-papa",
+      "title": "Ñoquis de papa",
+      "handle": "noquis-de-papa",
+      "currency": "UYU",
+      "description": "Ñoquis de papa, presentación 1 kg. Conservá en freezer a −18 °C y prepará desde congelado.",
+      "seo": {
+        "title": "Ñoquis de papa · Frío Sur",
+        "description": "Ñoquis de papa, presentación 1 kg. Conservá en freezer a −18 °C y prepará desde congelado."
+      },
+      "specifications": [
+        {
+          "name": "Presentación",
+          "value": "1 kg"
+        },
+        {
+          "name": "Conservación",
+          "value": "Freezer a −18 °C"
+        }
+      ],
+      "videoUrl": null,
+      "isPhysical": true,
+      "isListed": true,
+      "basePriceInCents": 19900,
+      "baseCompareAtPriceInCents": null,
+      "baseWeightInGrams": 1000,
+      "templateSuffix": null,
+      "imageKeys": [
+        "noquis-de-papa"
+      ],
+      "collectionKeys": [
+        "pastas-y-pizzas"
+      ],
+      "attributeValueKeys": [],
+      "metadata": {
+        "mostrador": {
+          "demo": true,
+          "unitPricing": {
+            "unit": "kg",
+            "amount": 1
+          },
+          "presentation": "1 kg"
+        }
+      },
+      "variants": [
+        {
+          "key": "noquis-de-papa/FS-1080",
+          "priceInCents": 19900,
+          "compareAtPriceInCents": null,
+          "weightInGrams": 1000,
+          "stock": 23,
+          "sku": "FS-1080",
+          "isListed": true,
+          "coverImageKey": "noquis-de-papa",
+          "attributeValueKeys": []
+        }
+      ],
+      "reviews": []
+    },
+    {
+      "key": "nuggets-de-pollo",
+      "title": "Nuggets de pollo",
+      "handle": "nuggets-de-pollo",
+      "currency": "UYU",
+      "description": "Nuggets de pollo, presentación 750 g. Conservá en freezer a −18 °C y prepará desde congelado.",
+      "seo": {
+        "title": "Nuggets de pollo · Frío Sur",
+        "description": "Nuggets de pollo, presentación 750 g. Conservá en freezer a −18 °C y prepará desde congelado."
+      },
+      "specifications": [
+        {
+          "name": "Presentación",
+          "value": "750 g"
+        },
+        {
+          "name": "Conservación",
+          "value": "Freezer a −18 °C"
+        }
+      ],
+      "videoUrl": null,
+      "isPhysical": true,
+      "isListed": true,
+      "basePriceInCents": 29900,
+      "baseCompareAtPriceInCents": 33900,
+      "baseWeightInGrams": 750,
+      "templateSuffix": null,
+      "imageKeys": [
+        "nuggets-de-pollo"
+      ],
+      "collectionKeys": [
+        "ofertas",
+        "carnes"
+      ],
+      "attributeValueKeys": [],
+      "metadata": {
+        "mostrador": {
+          "demo": true,
+          "unitPricing": {
+            "unit": "kg",
+            "amount": 0.75
+          },
+          "presentation": "750 g"
+        }
+      },
+      "variants": [
+        {
+          "key": "nuggets-de-pollo/FS-1048",
+          "priceInCents": 29900,
+          "compareAtPriceInCents": 33900,
+          "weightInGrams": 750,
+          "stock": 22,
+          "sku": "FS-1048",
+          "isListed": true,
+          "coverImageKey": "nuggets-de-pollo",
+          "attributeValueKeys": []
+        }
+      ],
+      "reviews": []
+    },
+    {
+      "key": "papas-prefritas-corte-clasico",
+      "title": "Papas prefritas corte clásico",
+      "handle": "papas-prefritas-corte-clasico",
+      "currency": "UYU",
+      "description": "Papas cortadas en bastón de 9 mm y prefritas en aceite de girasol. La bolsa de 2,5 kg rinde de 10 a 12 porciones y se cierra con el mismo cierre zip. Horno a 220 °C, 25 minutos; freidora de aire a 200 °C, 15 minutos. No hace falta descongelarlas.",
+      "seo": {
+        "title": "Papas prefritas corte clásico · Frío Sur",
+        "description": "Papas cortadas en bastón de 9 mm y prefritas en aceite de girasol. La bolsa de 2,5 kg rinde de 10 a 12 porciones y se cierra con el mismo cierre zip. Horno"
+      },
+      "specifications": [
+        {
+          "name": "Presentación",
+          "value": "2,5 kg"
+        },
+        {
+          "name": "Corte",
+          "value": "Bastón 9 mm"
+        },
+        {
+          "name": "Conservación",
+          "value": "Freezer a −18 °C"
+        },
+        {
+          "name": "Origen",
+          "value": "Argentina"
+        }
+      ],
+      "videoUrl": null,
+      "isPhysical": true,
+      "isListed": true,
+      "basePriceInCents": 38900,
+      "baseCompareAtPriceInCents": 44900,
+      "baseWeightInGrams": 2500,
+      "templateSuffix": null,
+      "imageKeys": [
+        "papas-prefritas-1",
+        "papas-prefritas-2"
+      ],
+      "collectionKeys": [
+        "ofertas",
+        "verduras"
+      ],
+      "attributeValueKeys": [],
+      "metadata": {
+        "mostrador": {
+          "demo": true,
+          "unitPricing": {
+            "unit": "kg",
+            "amount": 2.5
+          },
+          "presentation": "2,5 kg"
+        }
+      },
+      "variants": [
+        {
+          "key": "papas-prefritas-corte-clasico/FS-1034",
+          "priceInCents": 38900,
+          "compareAtPriceInCents": 44900,
+          "weightInGrams": 2500,
+          "stock": 30,
+          "sku": "FS-1034",
+          "isListed": true,
+          "coverImageKey": "papas-prefritas-1",
+          "attributeValueKeys": []
+        }
+      ],
+      "reviews": [
+        {
+          "rating": 5,
+          "authorName": "Martín R.",
+          "content": "Salen doradas y el paquete rinde un montón.",
+          "isVerifiedPurchase": false,
+          "isListed": true,
+          "createdAt": "2026-10-08T15:00:00.000Z",
+          "imageKeys": []
+        }
+      ]
+    },
+    {
+      "key": "pascualina-casera",
+      "title": "Pascualina casera",
+      "handle": "pascualina-casera",
+      "currency": "UYU",
+      "description": "Pascualina casera, presentación 800 g. Conservá en freezer a −18 °C y prepará desde congelado.",
+      "seo": {
+        "title": "Pascualina casera · Frío Sur",
+        "description": "Pascualina casera, presentación 800 g. Conservá en freezer a −18 °C y prepará desde congelado."
+      },
+      "specifications": [
+        {
+          "name": "Presentación",
+          "value": "800 g"
+        },
+        {
+          "name": "Conservación",
+          "value": "Freezer a −18 °C"
+        }
+      ],
+      "videoUrl": null,
+      "isPhysical": true,
+      "isListed": true,
+      "basePriceInCents": 31000,
+      "baseCompareAtPriceInCents": null,
+      "baseWeightInGrams": 800,
+      "templateSuffix": null,
+      "imageKeys": [
+        "pascualina-casera"
+      ],
+      "collectionKeys": [
+        "empanadas-y-tartas"
+      ],
+      "attributeValueKeys": [],
+      "metadata": {
+        "mostrador": {
+          "demo": true,
+          "unitPricing": {
+            "unit": "kg",
+            "amount": 0.8
+          },
+          "presentation": "800 g"
+        }
+      },
+      "variants": [
+        {
+          "key": "pascualina-casera/FS-1084",
+          "priceInCents": 31000,
+          "compareAtPriceInCents": null,
+          "weightInGrams": 800,
+          "stock": 25,
+          "sku": "FS-1084",
+          "isListed": true,
+          "coverImageKey": "pascualina-casera",
+          "attributeValueKeys": []
+        }
+      ],
+      "reviews": []
+    },
+    {
+      "key": "pizza-de-muzzarella",
+      "title": "Pizza de muzzarella",
+      "handle": "pizza-de-muzzarella",
+      "currency": "UYU",
+      "description": "Pizza de muzzarella, presentación 600 g. Conservá en freezer a −18 °C y prepará desde congelado.",
+      "seo": {
+        "title": "Pizza de muzzarella · Frío Sur",
+        "description": "Pizza de muzzarella, presentación 600 g. Conservá en freezer a −18 °C y prepará desde congelado."
+      },
+      "specifications": [
+        {
+          "name": "Presentación",
+          "value": "600 g"
+        },
+        {
+          "name": "Conservación",
+          "value": "Freezer a −18 °C"
+        }
+      ],
+      "videoUrl": null,
+      "isPhysical": true,
+      "isListed": true,
+      "basePriceInCents": 28900,
+      "baseCompareAtPriceInCents": null,
+      "baseWeightInGrams": 600,
+      "templateSuffix": null,
+      "imageKeys": [
+        "pizza-de-muzzarella"
+      ],
+      "collectionKeys": [
+        "pastas-y-pizzas"
+      ],
+      "attributeValueKeys": [],
+      "metadata": {
+        "mostrador": {
+          "demo": true,
+          "unitPricing": {
+            "unit": "kg",
+            "amount": 0.6
+          },
+          "presentation": "600 g"
+        }
+      },
+      "variants": [
+        {
+          "key": "pizza-de-muzzarella/FS-1074",
+          "priceInCents": 28900,
+          "compareAtPriceInCents": null,
+          "weightInGrams": 600,
+          "stock": 20,
+          "sku": "FS-1074",
+          "isListed": true,
+          "coverImageKey": "pizza-de-muzzarella",
+          "attributeValueKeys": []
+        }
+      ],
+      "reviews": []
+    },
+    {
+      "key": "ravioles-de-ricota",
+      "title": "Ravioles de ricota",
+      "handle": "ravioles-de-ricota",
+      "currency": "UYU",
+      "description": "Ravioles de ricota, presentación 500 g. Conservá en freezer a −18 °C y prepará desde congelado.",
+      "seo": {
+        "title": "Ravioles de ricota · Frío Sur",
+        "description": "Ravioles de ricota, presentación 500 g. Conservá en freezer a −18 °C y prepará desde congelado."
+      },
+      "specifications": [
+        {
+          "name": "Presentación",
+          "value": "500 g"
+        },
+        {
+          "name": "Conservación",
+          "value": "Freezer a −18 °C"
+        }
+      ],
+      "videoUrl": null,
+      "isPhysical": true,
+      "isListed": true,
+      "basePriceInCents": 26900,
+      "baseCompareAtPriceInCents": null,
+      "baseWeightInGrams": 500,
+      "templateSuffix": null,
+      "imageKeys": [
+        "ravioles-de-ricota"
+      ],
+      "collectionKeys": [
+        "pastas-y-pizzas"
+      ],
+      "attributeValueKeys": [],
+      "metadata": {
+        "mostrador": {
+          "demo": true,
+          "unitPricing": {
+            "unit": "kg",
+            "amount": 0.5
+          },
+          "presentation": "500 g"
+        }
+      },
+      "variants": [
+        {
+          "key": "ravioles-de-ricota/FS-1078",
+          "priceInCents": 26900,
+          "compareAtPriceInCents": null,
+          "weightInGrams": 500,
+          "stock": 22,
+          "sku": "FS-1078",
+          "isListed": true,
+          "coverImageKey": "ravioles-de-ricota",
+          "attributeValueKeys": []
+        }
+      ],
+      "reviews": []
+    },
+    {
+      "key": "refresco-cola",
+      "title": "Refresco cola",
+      "handle": "refresco-cola",
+      "currency": "UYU",
+      "description": "Refresco cola, presentación 2 L. Guardá en un lugar fresco y seco, protegido del sol.",
+      "seo": {
+        "title": "Refresco cola · Frío Sur",
+        "description": "Refresco cola, presentación 2 L. Guardá en un lugar fresco y seco, protegido del sol."
+      },
+      "specifications": [
+        {
+          "name": "Presentación",
+          "value": "2 L"
+        },
+        {
+          "name": "Conservación",
+          "value": "Lugar fresco y seco"
+        }
+      ],
+      "videoUrl": null,
+      "isPhysical": true,
+      "isListed": true,
+      "basePriceInCents": 11900,
+      "baseCompareAtPriceInCents": 15900,
+      "baseWeightInGrams": null,
+      "templateSuffix": null,
+      "imageKeys": [
+        "refresco-cola"
+      ],
+      "collectionKeys": [
+        "ofertas",
+        "refrescos"
+      ],
+      "attributeValueKeys": [],
+      "metadata": {
+        "mostrador": {
+          "demo": true,
+          "unitPricing": {
+            "unit": "L",
+            "amount": 2
+          },
+          "presentation": "2 L"
+        }
+      },
+      "variants": [
+        {
+          "key": "refresco-cola/FS-1120",
+          "priceInCents": 11900,
+          "compareAtPriceInCents": 15900,
+          "weightInGrams": null,
+          "stock": 28,
+          "sku": "FS-1120",
+          "isListed": true,
+          "coverImageKey": "refresco-cola",
+          "attributeValueKeys": []
+        }
+      ],
+      "reviews": []
+    },
+    {
+      "key": "refresco-de-naranja",
+      "title": "Refresco de naranja",
+      "handle": "refresco-de-naranja",
+      "currency": "UYU",
+      "description": "Refresco de naranja, presentación 2 L. Guardá en un lugar fresco y seco, protegido del sol.",
+      "seo": {
+        "title": "Refresco de naranja · Frío Sur",
+        "description": "Refresco de naranja, presentación 2 L. Guardá en un lugar fresco y seco, protegido del sol."
+      },
+      "specifications": [
+        {
+          "name": "Presentación",
+          "value": "2 L"
+        },
+        {
+          "name": "Conservación",
+          "value": "Lugar fresco y seco"
+        }
+      ],
+      "videoUrl": null,
+      "isPhysical": true,
+      "isListed": true,
+      "basePriceInCents": 11500,
+      "baseCompareAtPriceInCents": null,
+      "baseWeightInGrams": null,
+      "templateSuffix": null,
+      "imageKeys": [
+        "refresco-de-naranja"
+      ],
+      "collectionKeys": [
+        "refrescos"
+      ],
+      "attributeValueKeys": [],
+      "metadata": {
+        "mostrador": {
+          "demo": true,
+          "unitPricing": {
+            "unit": "L",
+            "amount": 2
+          },
+          "presentation": "2 L"
+        }
+      },
+      "variants": [
+        {
+          "key": "refresco-de-naranja/FS-1122",
+          "priceInCents": 11500,
+          "compareAtPriceInCents": null,
+          "weightInGrams": null,
+          "stock": 29,
+          "sku": "FS-1122",
+          "isListed": true,
+          "coverImageKey": "refresco-de-naranja",
+          "attributeValueKeys": []
+        }
+      ],
+      "reviews": []
+    },
+    {
+      "key": "supremas-de-pollo",
+      "title": "Supremas de pollo",
+      "handle": "supremas-de-pollo",
+      "currency": "UYU",
+      "description": "Supremas de pollo, presentación 1 kg. Conservá en freezer a −18 °C y prepará desde congelado.",
+      "seo": {
+        "title": "Supremas de pollo · Frío Sur",
+        "description": "Supremas de pollo, presentación 1 kg. Conservá en freezer a −18 °C y prepará desde congelado."
+      },
+      "specifications": [
+        {
+          "name": "Presentación",
+          "value": "1 kg"
+        },
+        {
+          "name": "Conservación",
+          "value": "Freezer a −18 °C"
+        }
+      ],
+      "videoUrl": null,
+      "isPhysical": true,
+      "isListed": true,
+      "basePriceInCents": 34900,
+      "baseCompareAtPriceInCents": null,
+      "baseWeightInGrams": 1000,
+      "templateSuffix": null,
+      "imageKeys": [
+        "supremas-de-pollo"
+      ],
+      "collectionKeys": [
+        "carnes"
+      ],
+      "attributeValueKeys": [],
+      "metadata": {
+        "mostrador": {
+          "demo": true,
+          "unitPricing": {
+            "unit": "kg",
+            "amount": 1
+          },
+          "presentation": "1 kg"
+        }
+      },
+      "variants": [
+        {
+          "key": "supremas-de-pollo/FS-1046",
+          "priceInCents": 34900,
+          "compareAtPriceInCents": null,
+          "weightInGrams": 1000,
+          "stock": 21,
+          "sku": "FS-1046",
+          "isListed": true,
+          "coverImageKey": "supremas-de-pollo",
+          "attributeValueKeys": []
+        }
+      ],
+      "reviews": []
+    },
+    {
+      "key": "tarta-de-jamon-y-queso",
+      "title": "Tarta de jamón y queso",
+      "handle": "tarta-de-jamon-y-queso",
+      "currency": "UYU",
+      "description": "Tarta de jamón y queso, presentación 800 g. Conservá en freezer a −18 °C y prepará desde congelado.",
+      "seo": {
+        "title": "Tarta de jamón y queso · Frío Sur",
+        "description": "Tarta de jamón y queso, presentación 800 g. Conservá en freezer a −18 °C y prepará desde congelado."
+      },
+      "specifications": [
+        {
+          "name": "Presentación",
+          "value": "800 g"
+        },
+        {
+          "name": "Conservación",
+          "value": "Freezer a −18 °C"
+        }
+      ],
+      "videoUrl": null,
+      "isPhysical": true,
+      "isListed": true,
+      "basePriceInCents": 32900,
+      "baseCompareAtPriceInCents": null,
+      "baseWeightInGrams": 800,
+      "templateSuffix": null,
+      "imageKeys": [
+        "tarta-de-jamon-y-queso"
+      ],
+      "collectionKeys": [
+        "empanadas-y-tartas"
+      ],
+      "attributeValueKeys": [],
+      "metadata": {
+        "mostrador": {
+          "demo": true,
+          "unitPricing": {
+            "unit": "kg",
+            "amount": 0.8
+          },
+          "presentation": "800 g"
+        }
+      },
+      "variants": [
+        {
+          "key": "tarta-de-jamon-y-queso/FS-1082",
+          "priceInCents": 32900,
+          "compareAtPriceInCents": null,
+          "weightInGrams": 800,
+          "stock": 24,
+          "sku": "FS-1082",
+          "isListed": true,
+          "coverImageKey": "tarta-de-jamon-y-queso",
+          "attributeValueKeys": []
+        }
+      ],
+      "reviews": []
+    },
+    {
+      "key": "tomate-triturado",
+      "title": "Tomate triturado",
+      "handle": "tomate-triturado",
+      "currency": "UYU",
+      "description": "Tomate triturado, presentación 400 g. Guardá en un lugar fresco y seco, protegido del sol.",
+      "seo": {
+        "title": "Tomate triturado · Frío Sur",
+        "description": "Tomate triturado, presentación 400 g. Guardá en un lugar fresco y seco, protegido del sol."
+      },
+      "specifications": [
+        {
+          "name": "Presentación",
+          "value": "400 g"
+        },
+        {
+          "name": "Conservación",
+          "value": "Lugar fresco y seco"
+        }
+      ],
+      "videoUrl": null,
+      "isPhysical": true,
+      "isListed": true,
+      "basePriceInCents": 9900,
+      "baseCompareAtPriceInCents": null,
+      "baseWeightInGrams": 400,
+      "templateSuffix": null,
+      "imageKeys": [
+        "tomate-triturado"
+      ],
+      "collectionKeys": [
+        "conservas"
+      ],
+      "attributeValueKeys": [],
+      "metadata": {
+        "mostrador": {
+          "demo": true,
+          "unitPricing": {
+            "unit": "kg",
+            "amount": 0.4
+          },
+          "presentation": "400 g"
+        }
+      },
+      "variants": [
+        {
+          "key": "tomate-triturado/FS-1112",
+          "priceInCents": 9900,
+          "compareAtPriceInCents": null,
+          "weightInGrams": 400,
+          "stock": 24,
+          "sku": "FS-1112",
+          "isListed": true,
+          "coverImageKey": "tomate-triturado",
+          "attributeValueKeys": []
+        }
+      ],
+      "reviews": []
+    },
+    {
+      "key": "torta-de-chocolate",
+      "title": "Torta de chocolate",
+      "handle": "torta-de-chocolate",
+      "currency": "UYU",
+      "description": "Torta de chocolate, presentación 800 g. Conservá en freezer a −18 °C y prepará desde congelado.",
+      "seo": {
+        "title": "Torta de chocolate · Frío Sur",
+        "description": "Torta de chocolate, presentación 800 g. Conservá en freezer a −18 °C y prepará desde congelado."
+      },
+      "specifications": [
+        {
+          "name": "Presentación",
+          "value": "800 g"
+        },
+        {
+          "name": "Conservación",
+          "value": "Freezer a −18 °C"
+        }
+      ],
+      "videoUrl": null,
+      "isPhysical": true,
+      "isListed": true,
+      "basePriceInCents": 69000,
+      "baseCompareAtPriceInCents": null,
+      "baseWeightInGrams": 800,
+      "templateSuffix": null,
+      "imageKeys": [
+        "torta-de-chocolate"
+      ],
+      "collectionKeys": [
+        "postres"
+      ],
+      "attributeValueKeys": [],
+      "metadata": {
+        "mostrador": {
+          "demo": true,
+          "unitPricing": {
+            "unit": "kg",
+            "amount": 0.8
+          },
+          "presentation": "800 g"
+        }
+      },
+      "variants": [
+        {
+          "key": "torta-de-chocolate/FS-1092",
+          "priceInCents": 69000,
+          "compareAtPriceInCents": null,
+          "weightInGrams": 800,
+          "stock": 29,
+          "sku": "FS-1092",
+          "isListed": true,
+          "coverImageKey": "torta-de-chocolate",
+          "attributeValueKeys": []
+        }
+      ],
+      "reviews": []
+    },
+    {
+      "key": "yerba-mate-intensa",
+      "title": "Yerba mate intensa",
+      "handle": "yerba-mate-intensa",
+      "currency": "UYU",
+      "description": "Yerba mate intensa, presentación 1 kg. Guardá en un lugar fresco y seco, protegido del sol.",
+      "seo": {
+        "title": "Yerba mate intensa · Frío Sur",
+        "description": "Yerba mate intensa, presentación 1 kg. Guardá en un lugar fresco y seco, protegido del sol."
+      },
+      "specifications": [
+        {
+          "name": "Presentación",
+          "value": "1 kg"
+        },
+        {
+          "name": "Conservación",
+          "value": "Lugar fresco y seco"
+        }
+      ],
+      "videoUrl": null,
+      "isPhysical": true,
+      "isListed": true,
+      "basePriceInCents": 27500,
+      "baseCompareAtPriceInCents": 31500,
+      "baseWeightInGrams": 1000,
+      "templateSuffix": null,
+      "imageKeys": [
+        "yerba-mate-intensa"
+      ],
+      "collectionKeys": [
+        "ofertas",
+        "yerba-y-cafe"
+      ],
+      "attributeValueKeys": [],
+      "metadata": {
+        "mostrador": {
+          "demo": true,
+          "unitPricing": {
+            "unit": "kg",
+            "amount": 1
+          },
+          "presentation": "1 kg"
+        }
+      },
+      "variants": [
+        {
+          "key": "yerba-mate-intensa/FS-1098",
+          "priceInCents": 27500,
+          "compareAtPriceInCents": 31500,
+          "weightInGrams": 1000,
+          "stock": 32,
+          "sku": "FS-1098",
+          "isListed": true,
+          "coverImageKey": "yerba-mate-intensa",
+          "attributeValueKeys": []
+        }
+      ],
+      "reviews": []
+    },
+    {
+      "key": "yerba-mate-suave",
+      "title": "Yerba mate suave",
+      "handle": "yerba-mate-suave",
+      "currency": "UYU",
+      "description": "Yerba compuesta con palo, estacionada 12 meses. Molienda pareja, con poco polvo, para un mate suave que no se lava rápido. Paquete de papel de 1 kg; conviene pasarla a un frasco con tapa una vez abierta.",
+      "seo": {
+        "title": "Yerba mate suave · Frío Sur",
+        "description": "Yerba compuesta con palo, estacionada 12 meses. Molienda pareja, con poco polvo, para un mate suave que no se lava rápido. Paquete de papel de 1 kg; convie"
+      },
+      "specifications": [
+        {
+          "name": "Presentación",
+          "value": "1 kg"
+        },
+        {
+          "name": "Tipo",
+          "value": "Con palo"
+        },
+        {
+          "name": "Estacionamiento",
+          "value": "12 meses"
+        },
+        {
+          "name": "Origen",
+          "value": "Brasil, envasada en Uruguay"
+        }
+      ],
+      "videoUrl": null,
+      "isPhysical": true,
+      "isListed": true,
+      "basePriceInCents": 26000,
+      "baseCompareAtPriceInCents": 28900,
+      "baseWeightInGrams": 1000,
+      "templateSuffix": null,
+      "imageKeys": [
+        "yerba-suave-1",
+        "yerba-suave-2"
+      ],
+      "collectionKeys": [
+        "ofertas",
+        "yerba-y-cafe"
+      ],
+      "attributeValueKeys": [],
+      "metadata": {
+        "mostrador": {
+          "demo": true,
+          "unitPricing": {
+            "unit": "kg",
+            "amount": 1
+          },
+          "presentation": "1 kg"
+        }
+      },
+      "variants": [
+        {
+          "key": "yerba-mate-suave/FS-1040",
+          "priceInCents": 26000,
+          "compareAtPriceInCents": 28900,
+          "weightInGrams": 1000,
+          "stock": 30,
+          "sku": "FS-1040",
+          "isListed": true,
+          "coverImageKey": "yerba-suave-1",
+          "attributeValueKeys": []
+        }
+      ],
+      "reviews": [
+        {
+          "rating": 4,
+          "authorName": "Laura S.",
+          "content": "Suave, pareja y con buen rendimiento.",
+          "isVerifiedPurchase": false,
+          "isListed": true,
+          "createdAt": "2026-10-02T15:00:00.000Z",
+          "imageKeys": []
+        }
+      ]
+    },
+    {
+      "key": "zanahorias-en-cubos",
+      "title": "Zanahorias en cubos",
+      "handle": "zanahorias-en-cubos",
+      "currency": "UYU",
+      "description": "Zanahorias en cubos, presentación 1 kg. Conservá en freezer a −18 °C y prepará desde congelado.",
+      "seo": {
+        "title": "Zanahorias en cubos · Frío Sur",
+        "description": "Zanahorias en cubos, presentación 1 kg. Conservá en freezer a −18 °C y prepará desde congelado."
+      },
+      "specifications": [
+        {
+          "name": "Presentación",
+          "value": "1 kg"
+        },
+        {
+          "name": "Conservación",
+          "value": "Freezer a −18 °C"
+        }
+      ],
+      "videoUrl": null,
+      "isPhysical": true,
+      "isListed": true,
+      "basePriceInCents": 14900,
+      "baseCompareAtPriceInCents": 18900,
+      "baseWeightInGrams": 1000,
+      "templateSuffix": null,
+      "imageKeys": [
+        "zanahorias-en-cubos"
+      ],
+      "collectionKeys": [
+        "ofertas",
+        "verduras"
+      ],
+      "attributeValueKeys": [],
+      "metadata": {
+        "mostrador": {
+          "demo": true,
+          "unitPricing": {
+            "unit": "kg",
+            "amount": 1
+          },
+          "presentation": "1 kg"
+        }
+      },
+      "variants": [
+        {
+          "key": "zanahorias-en-cubos/FS-1072",
+          "priceInCents": 14900,
+          "compareAtPriceInCents": 18900,
+          "weightInGrams": 1000,
+          "stock": 34,
+          "sku": "FS-1072",
+          "isListed": true,
+          "coverImageKey": "zanahorias-en-cubos",
+          "attributeValueKeys": []
+        }
+      ],
+      "reviews": []
+    }
+  ],
+  "pages": [
+    {
+      "key": "cambios-y-devoluciones",
+      "title": "Cambios y devoluciones",
+      "handle": "cambios-y-devoluciones",
+      "content": [
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Revisá al recibir"
+        },
+        {
+          "type": "paragraph",
+          "text": "Si un producto llega dañado o distinto al pedido, escribinos con el número de orden y una foto."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Cuidamos la cadena de frío"
+        },
+        {
+          "type": "paragraph",
+          "text": "Conservá los congelados a −18 °C. Coordinamos cada reclamo para indicar cómo proceder y resolver un reemplazo o devolución."
+        }
+      ],
+      "seo": {
+        "title": "Cambios y devoluciones · Frío Sur",
+        "description": "Cambios y devoluciones · Información de Frío Sur."
+      },
+      "isListed": true,
+      "isEnabled": true,
+      "templateSuffix": null,
+      "coverImageKey": null,
+      "metadata": null
+    },
+    {
+      "key": "como-comprar",
+      "title": "Cómo comprar",
+      "handle": "como-comprar",
+      "content": [
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Elegí tu surtido"
+        },
+        {
+          "type": "paragraph",
+          "text": "Sumá productos desde la lista con Agregar. Si hay presentaciones o sabores, elegí la variante antes de agregar."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Revisá el pedido"
+        },
+        {
+          "type": "paragraph",
+          "text": "Ajustá las cantidades y revisá el subtotal. La disponibilidad y los costos finales se confirman en el checkout."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Pagá y coordiná la entrega"
+        },
+        {
+          "type": "paragraph",
+          "text": "Elegí envío o retiro y un medio de pago disponible. Para consultas, escribinos por WhatsApp."
+        }
+      ],
+      "seo": {
+        "title": "Cómo comprar · Frío Sur",
+        "description": "Cómo comprar · Información de Frío Sur."
+      },
+      "isListed": true,
+      "isEnabled": true,
+      "templateSuffix": null,
+      "coverImageKey": null,
+      "metadata": null
+    },
+    {
+      "key": "compra-mayorista",
+      "title": "Compra mayorista",
+      "handle": "compra-mayorista",
+      "content": [
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Para restoranes y almacenes"
+        },
+        {
+          "type": "paragraph",
+          "text": "Consultá por formatos grandes y listas por volumen. Escribinos por WhatsApp con los productos, cantidades y zona de entrega."
+        }
+      ],
+      "seo": {
+        "title": "Compra mayorista · Frío Sur",
+        "description": "Compra mayorista · Información de Frío Sur."
+      },
+      "isListed": true,
+      "isEnabled": true,
+      "templateSuffix": null,
+      "coverImageKey": null,
+      "metadata": null
+    },
+    {
+      "key": "envios-y-zonas",
+      "title": "Envíos y zonas",
+      "handle": "envios-y-zonas",
+      "content": [
+        {
+          "type": "html",
+          "code": "<div class=\"facts\">\n        <div class=\"fact\"><span class=\"cat-ico\"><i class=\"ic ic-clock\" aria-hidden=\"true\"></i></span><div><b>Corte a las 14 h</b><span>para recibir hoy en Montevideo</span></div></div>\n        <div class=\"fact\"><span class=\"cat-ico\"><i class=\"ic ic-truck\" aria-hidden=\"true\"></i></span><div><b>Gratis desde $&nbsp;2.500</b><span>en Montevideo</span></div></div>\n        <div class=\"fact\"><span class=\"cat-ico\"><i class=\"ic ic-store\" aria-hidden=\"true\"></i></span><div><b>Retiro sin costo</b><span>listo en 2 horas</span></div></div>\n      </div>\n      <section><h2>Zonas, días y costos</h2>\n        <div class=\"zones\"><div class=\"zone zone--head\"><span>Zona</span><span>Cuándo llega</span><span>Costo</span><span>Gratis desde</span></div><div class=\"zone\"><b>Montevideo</b><span><small>Cuándo llega: </small><em>En el día</em> · pedidos antes de las 14 h</span><span><small>Costo: </small><em>$&nbsp;150</em></span><span><small>Gratis desde: </small><em>$&nbsp;2.500</em></span></div><div class=\"zone\"><b>Ciudad de la Costa</b><span><small>Cuándo llega: </small><em>Al día siguiente</em> · hasta El Pinar</span><span><small>Costo: </small><em>$&nbsp;190</em></span><span><small>Gratis desde: </small><em>$&nbsp;3.000</em></span></div><div class=\"zone\"><b>Resto de Canelones</b><span><small>Cuándo llega: </small><em>Martes y viernes</em> · Pando, Las Piedras, La Paz</span><span><small>Costo: </small><em>$&nbsp;250</em></span><span><small>Gratis desde: </small><em>$&nbsp;4.000</em></span></div><div class=\"zone\"><b>Interior</b><span><small>Cuándo llega: </small><em>DAC, 24 a 72 h</em> · solo productos de almacén</span><span><small>Costo: </small><em>Según DAC</em></span><span><small>Gratis desde: </small><em>—</em></span></div></div></section>\n      <section><h2>Franjas de entrega</h2><div class=\"prose\"><p>De lunes a viernes entregamos de 15 a 18&nbsp;h o de 18 a 21 h; los sábados, de 10 a 14 h. Elegís la franja al pagar y te escribimos por WhatsApp cuando la camioneta sale.</p>\n        <p>La compra mínima para envío es de $&nbsp;900. Si retirás en el local, no hay mínimo.</p></div></section>\n      <p class=\"note\">Los congelados solo se envían a Montevideo y Canelones. Al interior mandamos productos de almacén por DAC, de 24 a 72 h.</p>\n      <section id=\"retiro\"><h2>Retiro en el local</h2><div class=\"prose\"><p>Comprás online, elegís “Retiro” al pagar y te avisamos cuando está listo, en unas 2 horas en horario de local. Lo guardamos en freezer hasta 48 h.</p>\n        <p><b>La Blanqueada:</b> Av. 8 de Octubre 3125, lunes a sábado de 9 a 20&nbsp;h y domingo de 9 a 13 h. <b>Solymar:</b> Av. Giannattasio km 21.200, lunes a sábado de 9 a 20 h.</p></div></section>\n      <section id=\"preguntas\" class=\"faq\"><h2>Preguntas frecuentes</h2><details open><summary>¿Hasta qué hora puedo pedir para recibir hoy? <i class=\"ic ic-plus\" aria-hidden=\"true\"></i></summary><p>Hasta las 14 h, de lunes a sábado, en Montevideo. Lo que entra después sale al día siguiente en la primera franja.</p></details><details><summary>¿Cómo llegan los congelados? <i class=\"ic ic-plus\" aria-hidden=\"true\"></i></summary><p>En cajas térmicas con placas de frío, en camioneta refrigerada. Si no hay nadie, volvemos a pasar en la franja siguiente sin costo.</p></details><details><summary>¿Puedo elegir la franja horaria? <i class=\"ic ic-plus\" aria-hidden=\"true\"></i></summary><p>Sí. Al pagar elegís entre 15 a 18&nbsp;h o 18 a 21 h. Los sábados hay una sola franja, de 10 a 14 h.</p></details><details><summary>¿Mandan congelados al interior? <i class=\"ic ic-plus\" aria-hidden=\"true\"></i></summary><p>No. Al interior solo mandamos almacén por DAC, porque no podemos asegurar la cadena de frío en el viaje.</p></details><details><summary>¿Qué pasa si falta un producto de mi pedido? <i class=\"ic ic-plus\" aria-hidden=\"true\"></i></summary><p>Te escribimos por WhatsApp antes de salir para cambiarlo por otro o devolverte la diferencia.</p></details></section>"
+        }
+      ],
+      "seo": {
+        "title": "Envíos y zonas · Frío Sur",
+        "description": "Envíos y zonas · Información de Frío Sur."
+      },
+      "isListed": true,
+      "isEnabled": true,
+      "templateSuffix": "envios",
+      "coverImageKey": null,
+      "metadata": null
+    },
+    {
+      "key": "politicas-de-privacidad",
+      "title": "Políticas de privacidad",
+      "handle": "politicas-de-privacidad",
+      "content": [
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Tus datos"
+        },
+        {
+          "type": "paragraph",
+          "text": "Usamos los datos de contacto y entrega para gestionar pedidos y responder consultas. Podés solicitar acceso o eliminación escribiendo a hola@friosur.uy."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Newsletter"
+        },
+        {
+          "type": "paragraph",
+          "text": "Solo enviamos novedades si te suscribís. Podés solicitar la baja cuando quieras."
+        }
+      ],
+      "seo": {
+        "title": "Políticas de privacidad · Frío Sur",
+        "description": "Políticas de privacidad · Información de Frío Sur."
+      },
+      "isListed": true,
+      "isEnabled": true,
+      "templateSuffix": null,
+      "coverImageKey": null,
+      "metadata": null
+    },
+    {
+      "key": "preguntas-frecuentes",
+      "title": "Preguntas frecuentes",
+      "handle": "preguntas-frecuentes",
+      "content": [
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "¿Hasta qué hora puedo pedir?"
+        },
+        {
+          "type": "paragraph",
+          "text": "El corte de referencia para Montevideo es a las 14 h, de lunes a sábado. Consultá disponibilidad y coordinación al comprar."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "¿Puedo retirar?"
+        },
+        {
+          "type": "paragraph",
+          "text": "Sí, en La Blanqueada o Solymar. Te avisamos cuando el pedido está listo."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "¿Mandan congelados al interior?"
+        },
+        {
+          "type": "paragraph",
+          "text": "Los congelados se entregan en Montevideo y Canelones. Al interior enviamos únicamente productos de almacén."
+        }
+      ],
+      "seo": {
+        "title": "Preguntas frecuentes · Frío Sur",
+        "description": "Preguntas frecuentes · Información de Frío Sur."
+      },
+      "isListed": true,
+      "isEnabled": true,
+      "templateSuffix": null,
+      "coverImageKey": null,
+      "metadata": null
+    }
+  ],
+  "blogPosts": [
+    {
+      "key": "cuanto-dura-cada-cosa-en-el-freezer",
+      "title": "Cuánto dura cada cosa en el freezer",
+      "handle": "cuanto-dura-cada-cosa-en-el-freezer",
+      "excerpt": "Una guía corta para no tirar nada: tiempos, temperatura y qué no volver a congelar.",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "El freezer tiene que estar a −18 °C o menos. Si tiene termómetro, miralo una vez por semana; si no, un helado duro al tacto es buena señal."
+        },
+        {
+          "type": "paragraph",
+          "text": "Con esa temperatura, el pescado dura unos 6 meses; las milanesas y las empanadas, entre 6 y 12; las verduras, hasta un año. El helado abierto conviene terminarlo en dos meses, antes de que se le formen cristales."
+        },
+        {
+          "type": "paragraph",
+          "text": "Lo que se descongeló no se vuelve a congelar crudo. Si se cortó la luz y el paquete sigue duro, está bien; si se ablandó, cocinalo ese día."
+        }
+      ],
+      "seo": {
+        "title": "Cuánto dura cada cosa en el freezer · Frío Sur",
+        "description": "Una guía corta para no tirar nada: tiempos, temperatura y qué no volver a congelar."
+      },
+      "isListed": true,
+      "templateSuffix": null,
+      "publishedAt": "2026-10-23T02:31:08.264Z",
+      "coverImageKey": "blog-freezer",
+      "metadata": {
+        "category": "consejos",
+        "products": [
+          {
+            "note": "Presentación de 800 g. Producto mencionado en la guía.",
+            "product": {
+              "key": "medallones-de-merluza",
+              "__type__": "product"
+            },
+            "quantity": 1,
+            "variantKey": "medallones-de-merluza/FS-1038"
+          },
+          {
+            "note": "Presentación de 1 kg. Producto mencionado en la guía.",
+            "product": {
+              "key": "milanesas-de-pollo-rebozadas",
+              "__type__": "product"
+            },
+            "quantity": 1,
+            "variantKey": "milanesas-de-pollo-rebozadas/FS-1032"
+          },
+          {
+            "note": "Carne, paquete de 12 unidades. Producto mencionado en la guía.",
+            "product": {
+              "key": "empanadas-para-horno-x-12",
+              "__type__": "product"
+            },
+            "quantity": 1,
+            "variantKey": "empanadas-para-horno-x-12/FS-EMP-1"
+          }
+        ]
+      }
+    },
+    {
+      "key": "empanadas-congeladas",
+      "title": "Empanadas congeladas: horno, freidora de aire o fritas",
+      "handle": "empanadas-congeladas",
+      "excerpt": "Tiempos y temperaturas para las tres formas, siempre desde congeladas.",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Horno: a 200 °C, sobre papel manteca, de 22 a 25 minutos. Si las pintás con huevo antes, quedan más doradas."
+        },
+        {
+          "type": "paragraph",
+          "text": "Freidora de aire: a 180 °C, de 12 a 14 minutos, sin encimarlas. Entran cuatro o cinco por tanda en una freidora mediana."
+        },
+        {
+          "type": "paragraph",
+          "text": "Fritas: aceite a 170 °C y de a dos, para que no baje la temperatura. Cuatro o cinco minutos, dándolas vuelta una vez. Escurrilas en papel."
+        }
+      ],
+      "seo": {
+        "title": "Empanadas congeladas: horno, freidora de aire o fritas · Frío Sur",
+        "description": "Tiempos y temperaturas para las tres formas, siempre desde congeladas."
+      },
+      "isListed": true,
+      "templateSuffix": null,
+      "publishedAt": "2026-10-23T02:31:08.653Z",
+      "coverImageKey": "blog-empanadas",
+      "metadata": {
+        "recipe": {
+          "preparationMinutes": 25,
+          "ovenTemperatureCelsius": 200
+        },
+        "category": "recetas",
+        "products": [
+          {
+            "note": "Carne, paquete de 12 unidades. Los datos de receta corresponden a la preparación al horno; la nota incluye otras técnicas.",
+            "product": {
+              "key": "empanadas-para-horno-x-12",
+              "__type__": "product"
+            },
+            "quantity": 1,
+            "variantKey": "empanadas-para-horno-x-12/FS-EMP-1"
+          }
+        ]
+      }
+    },
+    {
+      "key": "milanesas-al-horno",
+      "title": "Milanesas al horno bien crocantes, sin darlas vuelta",
+      "handle": "milanesas-al-horno",
+      "excerpt": "La clave es la rejilla y el horno bien caliente. Salen parejas y sin aceite de más.",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Las milanesas de pollo rebozadas van directo del freezer al horno: no hace falta descongelarlas. Si las descongelás, el rebozado absorbe agua y después no dora."
+        },
+        {
+          "type": "paragraph",
+          "text": "Prendé el horno a 220 °C diez minutos antes. Poné las milanesas sobre una rejilla, no sobre la asadera: el aire caliente pasa por abajo y no hace falta darlas vuelta. Un hilo de aceite por arriba alcanza."
+        },
+        {
+          "type": "paragraph",
+          "text": "Con 18 a 20 minutos están. Si querés papas en la misma tanda, ponelas en una asadera en el estante de abajo con 5 minutos de ventaja: las prefritas necesitan unos 25 minutos a esa temperatura."
+        },
+        {
+          "type": "paragraph",
+          "text": "Para cuatro personas alcanzan un paquete de 1 kg y media bolsa de papas. Lo que sobra se guarda cocido en la heladera hasta dos días y se recalienta en la freidora de aire."
+        }
+      ],
+      "seo": {
+        "title": "Milanesas al horno bien crocantes, sin darlas vuelta · Frío Sur",
+        "description": "La clave es la rejilla y el horno bien caliente. Salen parejas y sin aceite de más."
+      },
+      "isListed": true,
+      "templateSuffix": null,
+      "publishedAt": "2026-10-23T02:31:07.906Z",
+      "coverImageKey": "blog-milanesas-horno",
+      "metadata": {
+        "recipe": {
+          "servings": 4,
+          "preparationMinutes": 25,
+          "ovenTemperatureCelsius": 220
+        },
+        "category": "recetas",
+        "products": [
+          {
+            "note": "Un paquete de 1 kg para cuatro personas.",
+            "product": {
+              "key": "milanesas-de-pollo-rebozadas",
+              "__type__": "product"
+            },
+            "quantity": 1,
+            "variantKey": "milanesas-de-pollo-rebozadas/FS-1032"
+          },
+          {
+            "note": "La receta usa media bolsa; la compra incluye una bolsa completa de 2,5 kg.",
+            "product": {
+              "key": "papas-prefritas-corte-clasico",
+              "__type__": "product"
+            },
+            "quantity": 1,
+            "variantKey": "papas-prefritas-corte-clasico/FS-1034"
+          }
+        ]
+      }
+    }
+  ],
+  "menus": [
+    {
+      "key": "footer",
+      "handle": "footer",
+      "title": "Ayuda",
+      "items": [
+        {
+          "label": "Cómo comprar",
+          "openInNewTab": false,
+          "resourceType": "page",
+          "resourceKey": "como-comprar"
+        },
+        {
+          "label": "Envíos y zonas",
+          "openInNewTab": false,
+          "resourceType": "page",
+          "resourceKey": "envios-y-zonas"
+        },
+        {
+          "label": "Cambios y devoluciones",
+          "openInNewTab": false,
+          "resourceType": "page",
+          "resourceKey": "cambios-y-devoluciones"
+        },
+        {
+          "label": "Compra mayorista",
+          "openInNewTab": false,
+          "resourceType": "page",
+          "resourceKey": "compra-mayorista"
+        },
+        {
+          "label": "Preguntas frecuentes",
+          "openInNewTab": false,
+          "resourceType": "page",
+          "resourceKey": "preguntas-frecuentes"
+        },
+        {
+          "label": "Privacidad",
+          "openInNewTab": false,
+          "resourceType": "page",
+          "resourceKey": "politicas-de-privacidad"
+        },
+        {
+          "label": "Recetas y consejos",
+          "openInNewTab": false,
+          "url": "/blog"
+        }
+      ]
+    },
+    {
+      "key": "principal",
+      "handle": "principal",
+      "title": "Tienda",
+      "items": [
+        {
+          "label": "Ofertas",
+          "openInNewTab": false,
+          "resourceType": "collection",
+          "resourceKey": "ofertas"
+        },
+        {
+          "label": "Congelados",
+          "openInNewTab": false,
+          "resourceType": "collection",
+          "resourceKey": "congelados"
+        },
+        {
+          "label": "Almacén",
+          "openInNewTab": false,
+          "resourceType": "collection",
+          "resourceKey": "almacen"
+        },
+        {
+          "label": "Bebidas",
+          "openInNewTab": false,
+          "resourceType": "collection",
+          "resourceKey": "bebidas"
+        },
+        {
+          "label": "Recetas",
+          "openInNewTab": false,
+          "url": "/blog"
+        },
+        {
+          "label": "Envíos y zonas",
+          "openInNewTab": false,
+          "resourceType": "page",
+          "resourceKey": "envios-y-zonas"
+        }
+      ]
+    }
+  ],
+  "metadata": [
+    {
+      "key": "--detailed-blog-post-metadata",
+      "name": "Recetas y consejos",
+      "description": "Categoría, datos de receta y productos relacionados de las notas del blog.",
+      "isInternal": false,
+      "isPublic": false,
+      "jsonSchema": {
+        "type": "object",
+        "title": "Recetas y consejos",
+        "properties": {
+          "category": {
+            "type": "string",
+            "title": "Tipo de nota",
+            "required": true,
+            "enum": [
+              "recetas",
+              "consejos"
+            ],
+            "description": "Clasificación para las etiquetas y filtros del blog."
+          },
+          "recipe": {
+            "type": "object",
+            "title": "Datos de la receta",
+            "description": "Completar solo para recetas; omitir datos que no estén indicados en la nota.",
+            "properties": {
+              "preparationMinutes": {
+                "type": "number",
+                "title": "Tiempo total (minutos)",
+                "minimum": 1
+              },
+              "servings": {
+                "type": "number",
+                "title": "Porciones",
+                "minimum": 1
+              },
+              "ovenTemperatureCelsius": {
+                "type": "number",
+                "title": "Temperatura del horno (°C)",
+                "minimum": 1
+              }
+            }
+          },
+          "products": {
+            "type": "array",
+            "title": "Productos de la tienda",
+            "description": "Paquetes completos para comprar; indicar el uso en la receta en la nota.",
+            "items": {
+              "type": "object",
+              "title": "Producto",
+              "properties": {
+                "variantId": {
+                  "type": "string",
+                  "title": "ID de la variante",
+                  "required": true,
+                  "pattern": "^[1-9][0-9]*$",
+                  "description": "Debe pertenecer al producto seleccionado. Define la presentación o el sabor que se compra."
+                },
+                "quantity": {
+                  "type": "number",
+                  "title": "Cantidad de paquetes",
+                  "required": true,
+                  "minimum": 1,
+                  "multipleOf": 1,
+                  "default": 1,
+                  "description": "Número entero de paquetes completos, no kilos ni fracciones de bolsa."
+                },
+                "note": {
+                  "type": "string",
+                  "title": "Uso o presentación",
+                  "isMultiline": true
+                },
+                "product": {
+                  "type": "product",
+                  "title": "Producto",
+                  "description": "Elegí el producto de la tienda. La variante debe pertenecer a ese producto."
+                }
+              }
+            }
+          }
+        }
+      },
+      "data": {}
+    }
+  ],
+  "themeImages": [
+    {
+      "file": "routes/+page.liquid",
+      "slot": "offers.desktop",
+      "imageKey": "banner-papas-wide"
+    },
+    {
+      "file": "routes/+page.liquid",
+      "slot": "offers.mobile",
+      "imageKey": "banner-papas-movil"
+    },
+    {
+      "file": "routes/+page.liquid",
+      "slot": "fish.desktop",
+      "imageKey": "banner-pescado-wide"
+    },
+    {
+      "file": "routes/+page.liquid",
+      "slot": "fish.mobile",
+      "imageKey": "banner-pescado-movil"
+    },
+    {
+      "file": "routes/+page.liquid",
+      "slot": "delivery.desktop",
+      "imageKey": "banner-entrega-wide"
+    },
+    {
+      "file": "routes/+page.liquid",
+      "slot": "delivery.mobile",
+      "imageKey": "banner-entrega-movil"
+    }
+  ]
+}
